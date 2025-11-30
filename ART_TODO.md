@@ -236,14 +236,14 @@ Create the level design document for the battle royale map, defining layout, POI
 - Storm center tendency areas
 
 **Acceptance Criteria:**
-- [ ] Map layout designed for 60 players
-- [ ] Play time of 10-15 minutes
-- [ ] Varied terrain (beach, jungle, mountain, town)
-- [ ] Named locations with distinct themes
-- [ ] Balance of open and covered areas
-- [ ] Multiple approach routes to any POI
-- [ ] No dead zones (always something nearby)
-- [ ] Visual landmarks for navigation
+- [x] Map layout designed for 60 players
+- [x] Play time of 10-15 minutes
+- [x] Varied terrain (beach, jungle, mountain, town)
+- [x] Named locations with distinct themes
+- [x] Balance of open and covered areas
+- [x] Multiple approach routes to any POI
+- [x] No dead zones (always something nearby)
+- [x] Visual landmarks for navigation
 
 **Definition of Done:**
 - Map document approved
@@ -251,7 +251,11 @@ Create the level design document for the battle royale map, defining layout, POI
 - Playtested for flow and pacing
 - Finalized before art pass
 
+**Deliverable:** [docs/MAP_DESIGN_DOCUMENT.md](docs/MAP_DESIGN_DOCUMENT.md)
+
 **Dependencies:** GAME-003
+
+**Status:** Completed
 
 ---
 
@@ -893,7 +897,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-004 | Default Pirate Outfit Set | P0 | M | Not Started |
 | ART-005 | Premium Cosmetic Outfit Set | P1 | L | Not Started |
 | ART-006 | NPC Monster Models | P1 | M | Not Started |
-| ART-007 | Map Design Document | P0 | M | Not Started |
+| ART-007 | Map Design Document | P0 | M | Completed |
 | ART-008 | Map Greybox/Blockout | P0 | M | Not Started |
 | ART-009 | Named Location: Port Plunder | P0 | L | Not Started |
 | ART-010 | Treasure Chest Props | P0 | S | Not Started |
