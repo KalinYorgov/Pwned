@@ -706,13 +706,13 @@ Monitor server health, performance, and errors.
 - Matchmaking queue times
 
 **Acceptance Criteria:**
-- [ ] Real-time metrics dashboard (Grafana, DataDog, etc.)
-- [ ] Alerting for critical issues (server down, high errors)
-- [ ] Log aggregation and search (ELK, CloudWatch)
-- [ ] Error tracking with stack traces
-- [ ] Performance baselines established
-- [ ] Capacity forecasting data
-- [ ] On-call procedures documented
+- [x] Real-time metrics dashboard (Grafana, DataDog, etc.)
+- [x] Alerting for critical issues (server down, high errors)
+- [x] Log aggregation and search (ELK, CloudWatch)
+- [x] Error tracking with stack traces
+- [x] Performance baselines established
+- [x] Capacity forecasting data
+- [x] On-call procedures documented
 
 **Definition of Done:**
 - Issues detected before player impact
@@ -720,7 +720,11 @@ Monitor server health, performance, and errors.
 - Logs searchable for debugging
 - Capacity planning possible from data
 
+**Deliverable:** [docs/SERVER_MONITORING_SPEC.md](docs/SERVER_MONITORING_SPEC.md)
+
 **Dependencies:** BACK-004
+
+**Status:** Completed
 
 ---
 
@@ -803,6 +807,6 @@ Implement A/B testing capability to test features and changes before full rollou
 | BACK-017 | Rate Limiting and DDoS Protection | P1 | M | Not Started |
 | BACK-018 | Secure Communication | P0 | S | Completed |
 | BACK-019 | Game Analytics | P1 | M | Not Started |
-| BACK-020 | Server Monitoring | P0 | M | Not Started |
+| BACK-020 | Server Monitoring | P0 | M | Completed |
 | BACK-021 | Crash Reporting | P0 | S | Not Started |
 | BACK-022 | A/B Testing Framework | P2 | M | Not Started |
