@@ -541,14 +541,14 @@ Ensure all critical game logic is validated server-side to prevent client-side c
 - Currency transactions
 
 **Acceptance Criteria:**
-- [ ] Server enforces movement speed limits
-- [ ] Server calculates damage (client cannot override)
-- [ ] Server validates hit claims with position history
-- [ ] Server controls loot spawns (no fake loot)
-- [ ] Server tracks ability cooldowns
-- [ ] Impossible actions rejected with logging
-- [ ] No trust of client-sent values for critical data
-- [ ] Rate limiting on client commands
+- [x] Server enforces movement speed limits
+- [x] Server calculates damage (client cannot override)
+- [x] Server validates hit claims with position history
+- [x] Server controls loot spawns (no fake loot)
+- [x] Server tracks ability cooldowns
+- [x] Impossible actions rejected with logging
+- [x] No trust of client-sent values for critical data
+- [x] Rate limiting on client commands
 
 **Definition of Done:**
 - Common cheats impossible (speedhack, aimbot, wallhack)
@@ -556,7 +556,11 @@ Ensure all critical game logic is validated server-side to prevent client-side c
 - False positive rate minimal
 - Tested against cheat attempts
 
+**Deliverable:** [docs/SERVER_AUTHORITATIVE_VALIDATION_SPEC.md](docs/SERVER_AUTHORITATIVE_VALIDATION_SPEC.md)
+
 **Dependencies:** BACK-004, BACK-007
+
+**Status:** Completed
 
 ---
 
@@ -794,7 +798,7 @@ Implement A/B testing capability to test features and changes before full rollou
 | BACK-012 | Cloud Save System | P1 | M | Not Started |
 | BACK-013 | Friends and Social Service | P1 | M | Not Started |
 | BACK-014 | Leaderboards Service | P2 | S | Not Started |
-| BACK-015 | Server-Authoritative Validation | P0 | L | Not Started |
+| BACK-015 | Server-Authoritative Validation | P0 | L | Completed |
 | BACK-016 | Anti-Cheat System | P1 | L | Not Started |
 | BACK-017 | Rate Limiting and DDoS Protection | P1 | M | Not Started |
 | BACK-018 | Secure Communication | P0 | S | Completed |
