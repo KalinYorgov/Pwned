@@ -735,13 +735,13 @@ Monitor server health, performance, and errors.
 Capture and aggregate client crash reports for debugging.
 
 **Acceptance Criteria:**
-- [ ] Crashes captured with stack trace
-- [ ] Device info included (OS, model, memory)
-- [ ] Game state at crash time included
-- [ ] Crashes aggregated by type
-- [ ] Prioritization by frequency/severity
-- [ ] Integration with issue tracker
-- [ ] Symbolication for readable traces
+- [x] Crashes captured with stack trace
+- [x] Device info included (OS, model, memory)
+- [x] Game state at crash time included
+- [x] Crashes aggregated by type
+- [x] Prioritization by frequency/severity
+- [x] Integration with issue tracker
+- [x] Symbolication for readable traces
 
 **Definition of Done:**
 - All crashes captured and reported
@@ -749,7 +749,11 @@ Capture and aggregate client crash reports for debugging.
 - Crash rate tracked as KPI (< 1% target)
 - Debugging facilitated by rich crash data
 
+**Deliverable:** [docs/CRASH_REPORTING_SPEC.md](docs/CRASH_REPORTING_SPEC.md)
+
 **Dependencies:** None
+
+**Status:** Completed
 
 ---
 
@@ -808,5 +812,5 @@ Implement A/B testing capability to test features and changes before full rollou
 | BACK-018 | Secure Communication | P0 | S | Completed |
 | BACK-019 | Game Analytics | P1 | M | Not Started |
 | BACK-020 | Server Monitoring | P0 | M | Completed |
-| BACK-021 | Crash Reporting | P0 | S | Not Started |
+| BACK-021 | Crash Reporting | P0 | S | Completed |
 | BACK-022 | A/B Testing Framework | P2 | M | Not Started |
