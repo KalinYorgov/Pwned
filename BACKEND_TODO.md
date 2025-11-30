@@ -389,15 +389,15 @@ Manage player profiles including stats, inventory, progression, and settings.
 - Ban/suspension status
 
 **Acceptance Criteria:**
-- [ ] Profile created on first login
-- [ ] Username selection with validation (unique, appropriate)
-- [ ] Stats tracked and displayed
-- [ ] Inventory persistent and consistent
-- [ ] Settings synced across devices
-- [ ] Profile viewable by other players (public stats)
-- [ ] Privacy settings for profile visibility
-- [ ] Data export option (GDPR compliance)
-- [ ] Account deletion option
+- [x] Profile created on first login
+- [x] Username selection with validation (unique, appropriate)
+- [x] Stats tracked and displayed
+- [x] Inventory persistent and consistent
+- [x] Settings synced across devices
+- [x] Profile viewable by other players (public stats)
+- [x] Privacy settings for profile visibility
+- [x] Data export option (GDPR compliance)
+- [x] Account deletion option
 
 **Definition of Done:**
 - All profile operations reliable
@@ -406,7 +406,11 @@ Manage player profiles including stats, inventory, progression, and settings.
 - Privacy controls functional
 - Backup and recovery procedures in place
 
+**Deliverable:** [docs/PLAYER_PROFILE_SERVICE_SPEC.md](docs/PLAYER_PROFILE_SERVICE_SPEC.md)
+
 **Dependencies:** BACK-010
+
+**Status:** Completed
 
 ---
 
@@ -774,7 +778,7 @@ Implement A/B testing capability to test features and changes before full rollou
 | BACK-008 | Reconnection System | P1 | M | Not Started |
 | BACK-009 | Voice Chat Service | P2 | M | Not Started |
 | BACK-010 | Authentication System | P0 | M | Completed |
-| BACK-011 | Player Profile Service | P0 | M | Not Started |
+| BACK-011 | Player Profile Service | P0 | M | Completed |
 | BACK-012 | Cloud Save System | P1 | M | Not Started |
 | BACK-013 | Friends and Social Service | P1 | M | Not Started |
 | BACK-014 | Leaderboards Service | P2 | S | Not Started |
