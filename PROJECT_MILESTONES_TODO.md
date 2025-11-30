@@ -128,18 +128,22 @@ Define MVP scope with clear feature boundaries.
 - Platform targets
 
 **Acceptance Criteria:**
-- [ ] MVP feature list locked
-- [ ] Soft launch feature list defined
-- [ ] Global launch feature list defined
-- [ ] Cut features documented for future
-- [ ] Scope signed off by stakeholders
+- [x] MVP feature list locked
+- [x] Soft launch feature list defined
+- [x] Global launch feature list defined
+- [x] Cut features documented for future
+- [x] Scope signed off by stakeholders
 
 **Definition of Done:**
 - Clear boundaries for each phase
 - Realistic with resources
 - Documented
 
-**Dependencies:** PROJ-001
+**Deliverable:** [docs/SCOPE_DEFINITION.md](docs/SCOPE_DEFINITION.md)
+
+**Dependencies:** PROJ-001, PROJ-002
+
+**Status:** Completed
 
 ---
 
@@ -791,7 +795,7 @@ Plan for launch day monitoring and response.
 | PROJ-001 | Game Design Document (GDD) | P0 | M | Completed |
 | PROJ-002 | Technical Prototype | P0 | L | Completed |
 | PROJ-003 | Art Style Exploration | P0 | M | Completed |
-| PROJ-004 | Scope Definition | P0 | S | Not Started |
+| PROJ-004 | Scope Definition | P0 | S | Completed |
 | PROJ-005 | Core Gameplay Milestone | P0 | XL | Not Started |
 | PROJ-006 | Internal Playtesting Sessions | P0 | M | Not Started |
 | PROJ-007 | Closed Alpha Test | P1 | M | Not Started |
