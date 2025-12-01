@@ -282,20 +282,24 @@ Create the level design document for the battle royale map, defining layout, POI
 Create playable greybox version of the map for gameplay testing before art investment.
 
 **Acceptance Criteria:**
-- [ ] All terrain features blocked out
-- [ ] All POIs represented (even if simple)
-- [ ] Collision working correctly
-- [ ] Scale feels right for movement speed
-- [ ] Spawn points and loot spawns placeable
-- [ ] Storm zones testable
-- [ ] Playable for full matches
+- [x] All terrain features blocked out
+- [x] All POIs represented (even if simple)
+- [x] Collision working correctly
+- [x] Scale feels right for movement speed
+- [x] Spawn points and loot spawns placeable
+- [x] Storm zones testable
+- [x] Playable for full matches
 
 **Definition of Done:**
 - Map playable for testing
 - Gameplay issues identified and iterated
 - Layout locked before art pass begins
 
+**Deliverable:** [docs/MAP_GREYBOX_BLOCKOUT_SPEC.md](docs/MAP_GREYBOX_BLOCKOUT_SPEC.md)
+
 **Dependencies:** ART-007
+
+**Status:** Completed
 
 ---
 
@@ -914,7 +918,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-005 | Premium Cosmetic Outfit Set | P1 | L | Not Started |
 | ART-006 | NPC Monster Models | P1 | M | Not Started |
 | ART-007 | Map Design Document | P0 | M | Completed |
-| ART-008 | Map Greybox/Blockout | P0 | M | Not Started |
+| ART-008 | Map Greybox/Blockout | P0 | M | Completed |
 | ART-009 | Named Location: Port Plunder | P0 | L | Not Started |
 | ART-010 | Treasure Chest Props | P0 | S | Not Started |
 | ART-011 | Environment Props Kit | P1 | L | Not Started |
