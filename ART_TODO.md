@@ -622,17 +622,21 @@ Create icons for all abilities.
 - Cooldown overlay compatible
 
 **Acceptance Criteria:**
-- [ ] Icon for each ability (10 MVP, 20+ launch)
-- [ ] Icons distinguishable from each other
-- [ ] Consistent style
-- [ ] Rarity border variants
-- [ ] Work on various backgrounds
+- [x] Icon for each ability (10 MVP, 20+ launch)
+- [x] Icons distinguishable from each other
+- [x] Consistent style
+- [x] Rarity border variants
+- [x] Work on various backgrounds
 
 **Definition of Done:**
 - All ability icons in-game
 - Players recognize abilities by icon
 
+**Deliverable:** [docs/ABILITY_ICONS_SPEC.md](docs/ABILITY_ICONS_SPEC.md)
+
 **Dependencies:** GAME-008
+
+**Status:** Completed
 
 ---
 
@@ -952,7 +956,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-015 | Storm/Zone VFX | P0 | M | Completed |
 | ART-016 | UI VFX and Polish | P1 | S | Not Started |
 | ART-017 | UI Theme and Iconography | P0 | M | Completed |
-| ART-018 | Ability Icons | P0 | S | Not Started |
+| ART-018 | Ability Icons | P0 | S | Completed |
 | ART-019 | Currency and Item Icons | P1 | S | Not Started |
 | ART-020 | Shop and Menu Backgrounds | P1 | S | Not Started |
 | ART-021 | Character Animation Set | P0 | L | Not Started |
