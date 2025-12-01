@@ -523,19 +523,23 @@ Create visual effects for the shrinking storm zone.
 - Storm closing animation
 
 **Acceptance Criteria:**
-- [ ] Storm wall clearly visible from anywhere
-- [ ] Inside storm visually distinct (reduced visibility)
-- [ ] Storm wall doesn't tank framerate
-- [ ] Warning VFX before shrink begins
-- [ ] Storm closing is smooth, not choppy
-- [ ] Safe zone edge clearly visible
+- [x] Storm wall clearly visible from anywhere
+- [x] Inside storm visually distinct (reduced visibility)
+- [x] Storm wall doesn't tank framerate
+- [x] Warning VFX before shrink begins
+- [x] Storm closing is smooth, not choppy
+- [x] Safe zone edge clearly visible
 
 **Definition of Done:**
 - Storm VFX functional and clear
 - No gameplay confusion about zone
 - Performance acceptable
 
+**Deliverable:** [docs/STORM_ZONE_VFX_SPEC.md](docs/STORM_ZONE_VFX_SPEC.md)
+
 **Dependencies:** GAME-003
+
+**Status:** Completed
 
 ---
 
@@ -945,7 +949,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-012 | Skybox and Lighting | P1 | M | Not Started |
 | ART-013 | Ability VFX Set | P0 | L | Completed |
 | ART-014 | Combat Feedback VFX | P0 | S | Completed |
-| ART-015 | Storm/Zone VFX | P0 | M | Not Started |
+| ART-015 | Storm/Zone VFX | P0 | M | Completed |
 | ART-016 | UI VFX and Polish | P1 | S | Not Started |
 | ART-017 | UI Theme and Iconography | P0 | M | Completed |
 | ART-018 | Ability Icons | P0 | S | Not Started |
