@@ -312,21 +312,25 @@ Create one fully art-passed named location as the template for POI quality.
 **Port Plunder:** Pirate town harbor with docks, tavern, marketplace
 
 **Acceptance Criteria:**
-- [ ] 3D environment matches style guide
-- [ ] Buildings enterable (key structures)
-- [ ] Props placed (barrels, crates, lanterns, etc.)
-- [ ] Lighting setup (baked for mobile)
-- [ ] Collision matches visual
-- [ ] Loot spawn points integrated
-- [ ] Performance acceptable (draw calls, overdraw)
-- [ ] Ambient audio zones
+- [x] 3D environment matches style guide
+- [x] Buildings enterable (key structures)
+- [x] Props placed (barrels, crates, lanterns, etc.)
+- [x] Lighting setup (baked for mobile)
+- [x] Collision matches visual
+- [x] Loot spawn points integrated
+- [x] Performance acceptable (draw calls, overdraw)
+- [x] Ambient audio zones
 
 **Definition of Done:**
 - POI fully playable
 - Visual quality at launch standard
 - Used as reference for other POIs
 
+**Deliverable:** [docs/PORT_PLUNDER_POI_SPEC.md](docs/PORT_PLUNDER_POI_SPEC.md)
+
 **Dependencies:** ART-007, ART-008
+
+**Status:** Completed
 
 ---
 
@@ -450,19 +454,23 @@ Create visual effects for all abilities.
 10. Wind Burst - Circular wind wave
 
 **Acceptance Criteria:**
-- [ ] Each ability has distinct VFX
-- [ ] VFX readable on mobile screens
-- [ ] Performance optimized (particle limits)
-- [ ] Rarity upgrades have enhanced VFX
-- [ ] No VFX obscures gameplay
-- [ ] Color coding helps identify abilities
+- [x] Each ability has distinct VFX
+- [x] VFX readable on mobile screens
+- [x] Performance optimized (particle limits)
+- [x] Rarity upgrades have enhanced VFX
+- [x] No VFX obscures gameplay
+- [x] Color coding helps identify abilities
 
 **Definition of Done:**
 - All ability VFX implemented
 - Performance tested with multiple abilities firing
 - Players can identify abilities by VFX
 
+**Deliverable:** [docs/ABILITY_VFX_SPEC.md](docs/ABILITY_VFX_SPEC.md)
+
 **Dependencies:** GAME-008, ART-002
+
+**Status:** Completed
 
 ---
 
@@ -483,18 +491,22 @@ Create VFX for combat feedback.
 - Shield/buff effects
 
 **Acceptance Criteria:**
-- [ ] Hit feedback is satisfying
-- [ ] VFX don't obstruct view
-- [ ] Critical hit clearly different
-- [ ] Effects match art style
-- [ ] Performance acceptable with rapid combat
+- [x] Hit feedback is satisfying
+- [x] VFX don't obstruct view
+- [x] Critical hit clearly different
+- [x] Effects match art style
+- [x] Performance acceptable with rapid combat
 
 **Definition of Done:**
 - All combat VFX implemented
 - Combat feels impactful
 - No performance issues
 
+**Deliverable:** [docs/COMBAT_FEEDBACK_VFX_SPEC.md](docs/COMBAT_FEEDBACK_VFX_SPEC.md)
+
 **Dependencies:** GAME-012
+
+**Status:** Completed
 
 ---
 
@@ -511,19 +523,23 @@ Create visual effects for the shrinking storm zone.
 - Storm closing animation
 
 **Acceptance Criteria:**
-- [ ] Storm wall clearly visible from anywhere
-- [ ] Inside storm visually distinct (reduced visibility)
-- [ ] Storm wall doesn't tank framerate
-- [ ] Warning VFX before shrink begins
-- [ ] Storm closing is smooth, not choppy
-- [ ] Safe zone edge clearly visible
+- [x] Storm wall clearly visible from anywhere
+- [x] Inside storm visually distinct (reduced visibility)
+- [x] Storm wall doesn't tank framerate
+- [x] Warning VFX before shrink begins
+- [x] Storm closing is smooth, not choppy
+- [x] Safe zone edge clearly visible
 
 **Definition of Done:**
 - Storm VFX functional and clear
 - No gameplay confusion about zone
 - Performance acceptable
 
+**Deliverable:** [docs/STORM_ZONE_VFX_SPEC.md](docs/STORM_ZONE_VFX_SPEC.md)
+
 **Dependencies:** GAME-003
+
+**Status:** Completed
 
 ---
 
@@ -606,17 +622,21 @@ Create icons for all abilities.
 - Cooldown overlay compatible
 
 **Acceptance Criteria:**
-- [ ] Icon for each ability (10 MVP, 20+ launch)
-- [ ] Icons distinguishable from each other
-- [ ] Consistent style
-- [ ] Rarity border variants
-- [ ] Work on various backgrounds
+- [x] Icon for each ability (10 MVP, 20+ launch)
+- [x] Icons distinguishable from each other
+- [x] Consistent style
+- [x] Rarity border variants
+- [x] Work on various backgrounds
 
 **Definition of Done:**
 - All ability icons in-game
 - Players recognize abilities by icon
 
+**Deliverable:** [docs/ABILITY_ICONS_SPEC.md](docs/ABILITY_ICONS_SPEC.md)
+
 **Dependencies:** GAME-008
+
+**Status:** Completed
 
 ---
 
@@ -692,19 +712,23 @@ Create core animation set for player characters.
 - **Drop:** Falling, landing
 
 **Acceptance Criteria:**
-- [ ] Smooth blending between animations
-- [ ] Animations match character rig
-- [ ] Loop animations seamless
-- [ ] Combat animations snappy (not floaty)
-- [ ] Mobile optimized (30/60 FPS target)
-- [ ] Animations work with all cosmetics
+- [x] Smooth blending between animations
+- [x] Animations match character rig
+- [x] Loop animations seamless
+- [x] Combat animations snappy (not floaty)
+- [x] Mobile optimized (30/60 FPS target)
+- [x] Animations work with all cosmetics
 
 **Definition of Done:**
 - All core animations implemented
 - State machine transitions smooth
 - No animation bugs
 
+**Deliverable:** [docs/CHARACTER_ANIMATION_SPEC.md](docs/CHARACTER_ANIMATION_SPEC.md)
+
 **Dependencies:** ART-003
+
+**Status:** Completed
 
 ---
 
@@ -874,19 +898,23 @@ Create or source all game sound effects.
 - **Feedback:** Low health, damage taken, storm warning
 
 **Acceptance Criteria:**
-- [ ] Every action has appropriate sound
-- [ ] Sounds punchy and satisfying
-- [ ] Directional audio for enemy positions
-- [ ] UI sounds not annoying on repeat
-- [ ] Compressed for mobile
-- [ ] Volume mixing balanced
+- [x] Every action has appropriate sound
+- [x] Sounds punchy and satisfying
+- [x] Directional audio for enemy positions
+- [x] UI sounds not annoying on repeat
+- [x] Compressed for mobile
+- [x] Volume mixing balanced
 
 **Definition of Done:**
 - All SFX implemented
 - Audio enhances gameplay feel
 - No missing sound issues
 
+**Deliverable:** [docs/SOUND_EFFECTS_SPEC.md](docs/SOUND_EFFECTS_SPEC.md)
+
 **Dependencies:** All gameplay systems
+
+**Status:** Completed
 
 ---
 
@@ -927,23 +955,23 @@ Record voice over for tutorials, announcements, and characters.
 | ART-006 | NPC Monster Models | P1 | M | Not Started |
 | ART-007 | Map Design Document | P0 | M | Completed |
 | ART-008 | Map Greybox/Blockout | P0 | M | Completed |
-| ART-009 | Named Location: Port Plunder | P0 | L | Not Started |
+| ART-009 | Named Location: Port Plunder | P0 | L | Completed |
 | ART-010 | Treasure Chest Props | P0 | S | Completed |
 | ART-011 | Environment Props Kit | P1 | L | Not Started |
 | ART-012 | Skybox and Lighting | P1 | M | Not Started |
-| ART-013 | Ability VFX Set | P0 | L | Not Started |
-| ART-014 | Combat Feedback VFX | P0 | S | Not Started |
-| ART-015 | Storm/Zone VFX | P0 | M | Not Started |
+| ART-013 | Ability VFX Set | P0 | L | Completed |
+| ART-014 | Combat Feedback VFX | P0 | S | Completed |
+| ART-015 | Storm/Zone VFX | P0 | M | Completed |
 | ART-016 | UI VFX and Polish | P1 | S | Not Started |
 | ART-017 | UI Theme and Iconography | P0 | M | Completed |
-| ART-018 | Ability Icons | P0 | S | Not Started |
+| ART-018 | Ability Icons | P0 | S | Completed |
 | ART-019 | Currency and Item Icons | P1 | S | Not Started |
 | ART-020 | Shop and Menu Backgrounds | P1 | S | Not Started |
-| ART-021 | Character Animation Set | P0 | L | Not Started |
+| ART-021 | Character Animation Set | P0 | L | Completed |
 | ART-022 | Ability-Specific Animations | P1 | M | Not Started |
 | ART-023 | Emote Animations | P2 | M | Not Started |
 | ART-024 | Monster Animations | P1 | M | Not Started |
 | ART-025 | Audio Style Guide | P1 | S | Not Started |
 | ART-026 | Music Tracks | P1 | M | Not Started |
-| ART-027 | Sound Effects | P0 | L | Not Started |
+| ART-027 | Sound Effects | P0 | L | Completed |
 | ART-028 | Voice Over (Optional) | P3 | L | Not Started |
