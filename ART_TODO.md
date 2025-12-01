@@ -454,19 +454,23 @@ Create visual effects for all abilities.
 10. Wind Burst - Circular wind wave
 
 **Acceptance Criteria:**
-- [ ] Each ability has distinct VFX
-- [ ] VFX readable on mobile screens
-- [ ] Performance optimized (particle limits)
-- [ ] Rarity upgrades have enhanced VFX
-- [ ] No VFX obscures gameplay
-- [ ] Color coding helps identify abilities
+- [x] Each ability has distinct VFX
+- [x] VFX readable on mobile screens
+- [x] Performance optimized (particle limits)
+- [x] Rarity upgrades have enhanced VFX
+- [x] No VFX obscures gameplay
+- [x] Color coding helps identify abilities
 
 **Definition of Done:**
 - All ability VFX implemented
 - Performance tested with multiple abilities firing
 - Players can identify abilities by VFX
 
+**Deliverable:** [docs/ABILITY_VFX_SPEC.md](docs/ABILITY_VFX_SPEC.md)
+
 **Dependencies:** GAME-008, ART-002
+
+**Status:** Completed
 
 ---
 
@@ -935,7 +939,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-010 | Treasure Chest Props | P0 | S | Completed |
 | ART-011 | Environment Props Kit | P1 | L | Not Started |
 | ART-012 | Skybox and Lighting | P1 | M | Not Started |
-| ART-013 | Ability VFX Set | P0 | L | Not Started |
+| ART-013 | Ability VFX Set | P0 | L | Completed |
 | ART-014 | Combat Feedback VFX | P0 | S | Not Started |
 | ART-015 | Storm/Zone VFX | P0 | M | Not Started |
 | ART-016 | UI VFX and Polish | P1 | S | Not Started |
