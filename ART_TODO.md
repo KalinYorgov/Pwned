@@ -712,19 +712,23 @@ Create core animation set for player characters.
 - **Drop:** Falling, landing
 
 **Acceptance Criteria:**
-- [ ] Smooth blending between animations
-- [ ] Animations match character rig
-- [ ] Loop animations seamless
-- [ ] Combat animations snappy (not floaty)
-- [ ] Mobile optimized (30/60 FPS target)
-- [ ] Animations work with all cosmetics
+- [x] Smooth blending between animations
+- [x] Animations match character rig
+- [x] Loop animations seamless
+- [x] Combat animations snappy (not floaty)
+- [x] Mobile optimized (30/60 FPS target)
+- [x] Animations work with all cosmetics
 
 **Definition of Done:**
 - All core animations implemented
 - State machine transitions smooth
 - No animation bugs
 
+**Deliverable:** [docs/CHARACTER_ANIMATION_SPEC.md](docs/CHARACTER_ANIMATION_SPEC.md)
+
 **Dependencies:** ART-003
+
+**Status:** Completed
 
 ---
 
@@ -959,7 +963,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-018 | Ability Icons | P0 | S | Completed |
 | ART-019 | Currency and Item Icons | P1 | S | Not Started |
 | ART-020 | Shop and Menu Backgrounds | P1 | S | Not Started |
-| ART-021 | Character Animation Set | P0 | L | Not Started |
+| ART-021 | Character Animation Set | P0 | L | Completed |
 | ART-022 | Ability-Specific Animations | P1 | M | Not Started |
 | ART-023 | Emote Animations | P2 | M | Not Started |
 | ART-024 | Monster Animations | P1 | M | Not Started |
