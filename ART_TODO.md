@@ -148,19 +148,23 @@ Create the default starting outfit for new players. Should be appealing but clea
 - Accessories: Belt, possibly cutlass sheath
 
 **Acceptance Criteria:**
-- [ ] Outfit fits base character model
-- [ ] Follows style guide (colors, proportions)
-- [ ] Visually distinct at distance
-- [ ] No clipping issues with animations
-- [ ] Texture budget met
-- [ ] Gender variants if applicable
+- [x] Outfit fits base character model
+- [x] Follows style guide (colors, proportions)
+- [x] Visually distinct at distance
+- [x] No clipping issues with animations
+- [x] Texture budget met
+- [x] Gender variants if applicable
 
 **Definition of Done:**
 - Outfit in-game and functional
 - Players start with this outfit
 - No visual bugs
 
+**Deliverable:** [docs/DEFAULT_PIRATE_OUTFIT_SPEC.md](docs/DEFAULT_PIRATE_OUTFIT_SPEC.md)
+
 **Dependencies:** ART-003
+
+**Status:** Completed
 
 ---
 
@@ -906,7 +910,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-001 | Visual Style Guide Document | P0 | M | Completed |
 | ART-002 | Technical Art Specifications | P0 | S | Completed |
 | ART-003 | Base Player Character Model | P0 | L | Completed |
-| ART-004 | Default Pirate Outfit Set | P0 | M | Not Started |
+| ART-004 | Default Pirate Outfit Set | P0 | M | Completed |
 | ART-005 | Premium Cosmetic Outfit Set | P1 | L | Not Started |
 | ART-006 | NPC Monster Models | P1 | M | Not Started |
 | ART-007 | Map Design Document | P0 | M | Completed |
