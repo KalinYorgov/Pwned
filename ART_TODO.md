@@ -343,19 +343,23 @@ Create treasure chest models for loot spawns.
 - Epic chest (magical glow, gems)
 
 **Acceptance Criteria:**
-- [ ] Each tier visually distinct
-- [ ] Open and closed states
-- [ ] Opening animation or VFX
-- [ ] Color coding matches rarity (grey/green/blue/purple)
-- [ ] Readable at distance (silhouette, glow)
-- [ ] Low poly (200-500 triangles each)
+- [x] Each tier visually distinct
+- [x] Open and closed states
+- [x] Opening animation or VFX
+- [x] Color coding matches rarity (grey/green/blue/purple)
+- [x] Readable at distance (silhouette, glow)
+- [x] Low poly (200-500 triangles each)
 
 **Definition of Done:**
 - All chests in-game
 - Loot system uses correct variants
 - Players understand rarity at glance
 
+**Deliverable:** [docs/TREASURE_CHEST_PROPS_SPEC.md](docs/TREASURE_CHEST_PROPS_SPEC.md)
+
 **Dependencies:** ART-001, GAME-004
+
+**Status:** Completed
 
 ---
 
@@ -920,7 +924,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-007 | Map Design Document | P0 | M | Completed |
 | ART-008 | Map Greybox/Blockout | P0 | M | Completed |
 | ART-009 | Named Location: Port Plunder | P0 | L | Not Started |
-| ART-010 | Treasure Chest Props | P0 | S | Not Started |
+| ART-010 | Treasure Chest Props | P0 | S | Completed |
 | ART-011 | Environment Props Kit | P1 | L | Not Started |
 | ART-012 | Skybox and Lighting | P1 | M | Not Started |
 | ART-013 | Ability VFX Set | P0 | L | Not Started |
