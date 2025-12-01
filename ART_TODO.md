@@ -572,19 +572,23 @@ Create the visual theme for all UI elements.
 - Popup/modal styles
 
 **Acceptance Criteria:**
-- [ ] UI theme matches pirate style
-- [ ] Readability maintained (contrast, legibility)
-- [ ] Icons clear at small sizes
-- [ ] Button states obvious (normal, hover, pressed, disabled)
-- [ ] Consistent across all screens
-- [ ] Scalable for different resolutions
+- [x] UI theme matches pirate style
+- [x] Readability maintained (contrast, legibility)
+- [x] Icons clear at small sizes
+- [x] Button states obvious (normal, hover, pressed, disabled)
+- [x] Consistent across all screens
+- [x] Scalable for different resolutions
 
 **Definition of Done:**
 - UI theme implemented across game
 - All icons created
 - Approved by stakeholders
 
+**Deliverable:** [docs/UI_THEME_ICONOGRAPHY_SPEC.md](docs/UI_THEME_ICONOGRAPHY_SPEC.md)
+
 **Dependencies:** ART-001
+
+**Status:** Completed
 
 ---
 
@@ -931,7 +935,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-014 | Combat Feedback VFX | P0 | S | Not Started |
 | ART-015 | Storm/Zone VFX | P0 | M | Not Started |
 | ART-016 | UI VFX and Polish | P1 | S | Not Started |
-| ART-017 | UI Theme and Iconography | P0 | M | Not Started |
+| ART-017 | UI Theme and Iconography | P0 | M | Completed |
 | ART-018 | Ability Icons | P0 | S | Not Started |
 | ART-019 | Currency and Item Icons | P1 | S | Not Started |
 | ART-020 | Shop and Menu Backgrounds | P1 | S | Not Started |
