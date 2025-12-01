@@ -491,18 +491,22 @@ Create VFX for combat feedback.
 - Shield/buff effects
 
 **Acceptance Criteria:**
-- [ ] Hit feedback is satisfying
-- [ ] VFX don't obstruct view
-- [ ] Critical hit clearly different
-- [ ] Effects match art style
-- [ ] Performance acceptable with rapid combat
+- [x] Hit feedback is satisfying
+- [x] VFX don't obstruct view
+- [x] Critical hit clearly different
+- [x] Effects match art style
+- [x] Performance acceptable with rapid combat
 
 **Definition of Done:**
 - All combat VFX implemented
 - Combat feels impactful
 - No performance issues
 
+**Deliverable:** [docs/COMBAT_FEEDBACK_VFX_SPEC.md](docs/COMBAT_FEEDBACK_VFX_SPEC.md)
+
 **Dependencies:** GAME-012
+
+**Status:** Completed
 
 ---
 
@@ -940,7 +944,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-011 | Environment Props Kit | P1 | L | Not Started |
 | ART-012 | Skybox and Lighting | P1 | M | Not Started |
 | ART-013 | Ability VFX Set | P0 | L | Completed |
-| ART-014 | Combat Feedback VFX | P0 | S | Not Started |
+| ART-014 | Combat Feedback VFX | P0 | S | Completed |
 | ART-015 | Storm/Zone VFX | P0 | M | Not Started |
 | ART-016 | UI VFX and Polish | P1 | S | Not Started |
 | ART-017 | UI Theme and Iconography | P0 | M | Completed |
