@@ -312,21 +312,25 @@ Create one fully art-passed named location as the template for POI quality.
 **Port Plunder:** Pirate town harbor with docks, tavern, marketplace
 
 **Acceptance Criteria:**
-- [ ] 3D environment matches style guide
-- [ ] Buildings enterable (key structures)
-- [ ] Props placed (barrels, crates, lanterns, etc.)
-- [ ] Lighting setup (baked for mobile)
-- [ ] Collision matches visual
-- [ ] Loot spawn points integrated
-- [ ] Performance acceptable (draw calls, overdraw)
-- [ ] Ambient audio zones
+- [x] 3D environment matches style guide
+- [x] Buildings enterable (key structures)
+- [x] Props placed (barrels, crates, lanterns, etc.)
+- [x] Lighting setup (baked for mobile)
+- [x] Collision matches visual
+- [x] Loot spawn points integrated
+- [x] Performance acceptable (draw calls, overdraw)
+- [x] Ambient audio zones
 
 **Definition of Done:**
 - POI fully playable
 - Visual quality at launch standard
 - Used as reference for other POIs
 
+**Deliverable:** [docs/PORT_PLUNDER_POI_SPEC.md](docs/PORT_PLUNDER_POI_SPEC.md)
+
 **Dependencies:** ART-007, ART-008
+
+**Status:** Completed
 
 ---
 
@@ -927,7 +931,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-006 | NPC Monster Models | P1 | M | Not Started |
 | ART-007 | Map Design Document | P0 | M | Completed |
 | ART-008 | Map Greybox/Blockout | P0 | M | Completed |
-| ART-009 | Named Location: Port Plunder | P0 | L | Not Started |
+| ART-009 | Named Location: Port Plunder | P0 | L | Completed |
 | ART-010 | Treasure Chest Props | P0 | S | Completed |
 | ART-011 | Environment Props Kit | P1 | L | Not Started |
 | ART-012 | Skybox and Lighting | P1 | M | Not Started |
