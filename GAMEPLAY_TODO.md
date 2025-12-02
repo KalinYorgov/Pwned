@@ -298,13 +298,13 @@ Implement the ability upgrade mechanic where collecting duplicate abilities incr
 - **Rank 3 (Epic):** +50% damage/effect, -20% cooldown, bonus effect
 
 **Acceptance Criteria:**
-- [ ] Picking up same ability when already equipped triggers upgrade
-- [ ] Visual feedback clearly shows upgrade occurring
-- [ ] Ability icon shows current rank (1-3 stars or color border)
-- [ ] Rank 3 abilities have enhanced VFX
-- [ ] Tooltip shows current rank stats vs next rank preview
-- [ ] Cannot upgrade beyond Rank 3 (duplicates become useless/small XP)
-- [ ] Higher rarity chests have higher chance of dropping upgraded abilities directly
+- [x] Picking up same ability when already equipped triggers upgrade
+- [x] Visual feedback clearly shows upgrade occurring
+- [x] Ability icon shows current rank (1-3 stars or color border)
+- [x] Rank 3 abilities have enhanced VFX
+- [x] Tooltip shows current rank stats vs next rank preview
+- [x] Cannot upgrade beyond Rank 3 (duplicates become useless/small XP)
+- [x] Higher rarity chests have higher chance of dropping upgraded abilities directly
 
 **Definition of Done:**
 - Upgrade system balanced (Rank 3 strong but not game-breaking)
@@ -314,6 +314,10 @@ Implement the ability upgrade mechanic where collecting duplicate abilities incr
 - Tested with rapid sequential upgrades
 
 **Dependencies:** GAME-008, GAME-004
+
+**Deliverable:** [Ability Upgrade System Specification](docs/ABILITY_UPGRADE_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -812,7 +816,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-006 | Spectator Mode | P2 | M | Not Started |
 | GAME-007 | Ability Slot System | P0 | M | Completed |
 | GAME-008 | Core Ability Implementation | P0 | XL | Completed |
-| GAME-009 | Ability Upgrade System | P1 | M | Not Started |
+| GAME-009 | Ability Upgrade System | P1 | M | Completed |
 | GAME-010 | Ability Combo System | P2 | M | Not Started |
 | GAME-011 | Basic Attack System | P0 | M | Completed |
 | GAME-012 | Damage and Health System | P0 | M | Completed |
