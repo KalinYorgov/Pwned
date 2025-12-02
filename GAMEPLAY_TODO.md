@@ -422,15 +422,15 @@ Implement the health and damage calculation system. Players start with base heal
 Implement robust hit detection that feels fair to all players regardless of network latency. Use server-authoritative hit registration with client-side prediction and lag compensation.
 
 **Acceptance Criteria:**
-- [ ] Server is authoritative for all hit detection
-- [ ] Client-side prediction for immediate visual feedback
-- [ ] Lag compensation: Server rewinds to shooter's view time
-- [ ] Maximum acceptable lag compensation window: 200ms
-- [ ] Projectiles use server-authoritative trajectory simulation
-- [ ] Hitscan abilities (if any) use raycast with lag compensation
-- [ ] AoE abilities check positions at server tick time
-- [ ] Anti-cheat validation on hit claims
-- [ ] Hit markers show for attacker on successful damage
+- [x] Server is authoritative for all hit detection
+- [x] Client-side prediction for immediate visual feedback
+- [x] Lag compensation: Server rewinds to shooter's view time
+- [x] Maximum acceptable lag compensation window: 200ms
+- [x] Projectiles use server-authoritative trajectory simulation
+- [x] Hitscan abilities (if any) use raycast with lag compensation
+- [x] AoE abilities check positions at server tick time
+- [x] Anti-cheat validation on hit claims
+- [x] Hit markers show for attacker on successful damage
 
 **Definition of Done:**
 - Combat feels responsive with up to 150ms latency
@@ -440,6 +440,11 @@ Implement robust hit detection that feels fair to all players regardless of netw
 - Edge cases handled (shooting through closing doors, etc.)
 
 **Dependencies:** BACK-003, BACK-004
+
+**Deliverables:**
+- [Hit Detection and Lag Compensation Specification](docs/HIT_DETECTION_LAG_COMPENSATION_SPEC.md)
+
+**Status: Completed**
 
 ---
 
@@ -806,7 +811,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-010 | Ability Combo System | P2 | M | Not Started |
 | GAME-011 | Basic Attack System | P0 | M | Completed |
 | GAME-012 | Damage and Health System | P0 | M | Completed |
-| GAME-013 | Hit Detection and Lag Compensation | P0 | L | Not Started |
+| GAME-013 | Hit Detection and Lag Compensation | P0 | L | Completed |
 | GAME-014 | Crowd Control System | P1 | M | Not Started |
 | GAME-015 | NPC Monster System | P1 | L | Not Started |
 | GAME-016 | NPC AI Behavior System | P1 | M | Not Started |
