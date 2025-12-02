@@ -419,21 +419,25 @@ Integrate Apple App Store in-app purchases.
 Integrate Google Play Billing for in-app purchases.
 
 **Acceptance Criteria:**
-- [ ] Products created in Play Console
-- [ ] Google Play Billing Library integration
-- [ ] Purchase flow (initiate, confirm, deliver)
-- [ ] Purchase token validation (server-side)
-- [ ] Restore purchases functionality
-- [ ] Handle pending purchases
-- [ ] Test with license testers
-- [ ] Promo codes support
-- [ ] Price localization
+- [x] Products created in Play Console
+- [x] Google Play Billing Library integration
+- [x] Purchase flow (initiate, confirm, deliver)
+- [x] Purchase token validation (server-side)
+- [x] Restore purchases functionality
+- [x] Handle pending purchases
+- [x] Test with license testers
+- [x] Promo codes support
+- [x] Price localization
 
 **Definition of Done:**
 - All IAP products purchasable on Android
 - Tokens validated securely
 - No duplicate delivery
 - Tested on real devices
+
+**Deliverable:** [Google Play IAP Integration Specification](docs/GOOGLE_PLAY_IAP_INTEGRATION_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** BACK-011
 
@@ -460,15 +464,19 @@ Define all IAP products with pricing.
 - Battle Pass Bundle: $14.99 (Pass + 10 tier skips)
 
 **Acceptance Criteria:**
-- [ ] All products created in store backends
-- [ ] Pricing approved for all regions
-- [ ] Bonus percentages calculated correctly
-- [ ] Starter pack purchase limited
-- [ ] Product IDs documented
+- [x] All products created in store backends
+- [x] Pricing approved for all regions
+- [x] Bonus percentages calculated correctly
+- [x] Starter pack purchase limited
+- [x] Product IDs documented
 
 **Definition of Done:**
 - All products live and purchasable
 - Pricing competitive with market
+
+**Deliverable:** [IAP Product Catalog Specification](docs/IAP_PRODUCT_CATALOG_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-012, MON-013
 
@@ -481,17 +489,21 @@ Define all IAP products with pricing.
 Server-side purchase verification to prevent fraud.
 
 **Acceptance Criteria:**
-- [ ] Server validates receipts/tokens before delivery
-- [ ] Invalid receipts rejected
-- [ ] Replay attacks prevented (receipt used once)
-- [ ] Fraud logging for analysis
-- [ ] Webhook for refund notifications
-- [ ] Retry logic for failed validations
+- [x] Server validates receipts/tokens before delivery
+- [x] Invalid receipts rejected
+- [x] Replay attacks prevented (receipt used once)
+- [x] Fraud logging for analysis
+- [x] Webhook for refund notifications
+- [x] Retry logic for failed validations
 
 **Definition of Done:**
 - No fraudulent purchases possible
 - Validation fast (< 2 seconds)
 - Comprehensive logging
+
+**Deliverable:** [Purchase Verification Service Specification](docs/PURCHASE_VERIFICATION_SERVICE_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-012, MON-013, BACK-011
 
@@ -687,9 +699,9 @@ Prevent economy exploits and abuse.
 | MON-010 | Battle Pass XP System | P1 | M | Not Started |
 | MON-011 | Season Management | P1 | M | Not Started |
 | MON-012 | App Store IAP Integration | P0 | M | Completed |
-| MON-013 | Google Play IAP Integration | P0 | M | Not Started |
-| MON-014 | IAP Product Catalog | P0 | S | Not Started |
-| MON-015 | Purchase Verification Service | P0 | M | Not Started |
+| MON-013 | Google Play IAP Integration | P0 | M | Completed |
+| MON-014 | IAP Product Catalog | P0 | S | Completed |
+| MON-015 | Purchase Verification Service | P0 | M | Completed |
 | MON-016 | Rewarded Video Ads | P2 | M | Not Started |
 | MON-017 | Ad Mediation and Analytics | P2 | S | Not Started |
 | MON-018 | Economy Spreadsheet | P0 | M | Completed |
