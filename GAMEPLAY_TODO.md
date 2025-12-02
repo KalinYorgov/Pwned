@@ -389,15 +389,15 @@ Implement the always-available basic attack that all players have regardless of 
 Implement the health and damage calculation system. Players start with base health that can be increased through leveling. Damage types, resistances, and hit detection must be server-authoritative.
 
 **Acceptance Criteria:**
-- [ ] Base health: 100 HP at level 1
-- [ ] Health scaling: +10 HP per level (max 200 HP at level 10)
-- [ ] Damage numbers displayed on hit (floating combat text)
-- [ ] Critical hits possible (1.5x damage, visual indicator)
-- [ ] Health bar visible above player characters (enemy and self)
-- [ ] Low health warning (screen red edge, heartbeat SFX)
-- [ ] Health regeneration: None passive, only through abilities/items
-- [ ] Damage falloff for ranged abilities (optional, based on balance)
-- [ ] Armor/resistance system (future expansion hook)
+- [x] Base health: 100 HP at level 1
+- [x] Health scaling: +10 HP per level (max 200 HP at level 10)
+- [x] Damage numbers displayed on hit (floating combat text)
+- [x] Critical hits possible (1.5x damage, visual indicator)
+- [x] Health bar visible above player characters (enemy and self)
+- [x] Low health warning (screen red edge, heartbeat SFX)
+- [x] Health regeneration: None passive, only through abilities/items
+- [x] Damage falloff for ranged abilities (optional, based on balance)
+- [x] Armor/resistance system (future expansion hook)
 
 **Definition of Done:**
 - All damage calculations server-authoritative
@@ -407,6 +407,11 @@ Implement the health and damage calculation system. Players start with base heal
 - UI clearly shows current health vs max health
 
 **Dependencies:** GAME-005, BACK-003
+
+**Deliverables:**
+- [Damage and Health System Specification](docs/DAMAGE_HEALTH_SYSTEM_SPEC.md)
+
+**Status: Completed**
 
 ---
 
@@ -800,7 +805,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-009 | Ability Upgrade System | P1 | M | Not Started |
 | GAME-010 | Ability Combo System | P2 | M | Not Started |
 | GAME-011 | Basic Attack System | P0 | M | Completed |
-| GAME-012 | Damage and Health System | P0 | M | Not Started |
+| GAME-012 | Damage and Health System | P0 | M | Completed |
 | GAME-013 | Hit Detection and Lag Compensation | P0 | L | Not Started |
 | GAME-014 | Crowd Control System | P1 | M | Not Started |
 | GAME-015 | NPC Monster System | P1 | L | Not Started |
