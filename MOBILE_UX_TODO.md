@@ -259,15 +259,15 @@ Design and implement the in-game HUD showing all essential information without c
 - Ammo/cooldown indicators
 
 **Acceptance Criteria:**
-- [ ] All essential info visible at a glance
-- [ ] HUD elements do not obscure central gameplay area
-- [ ] Elements scaled appropriately for device size
-- [ ] Critical info (health, abilities) always visible
-- [ ] Secondary info (kill feed) can be minimized
-- [ ] HUD transparency adjustable
-- [ ] Safe area respected (notch, rounded corners)
-- [ ] Landscape orientation optimized
-- [ ] Portrait mode not supported (or limited)
+- [x] All essential info visible at a glance
+- [x] HUD elements do not obscure central gameplay area
+- [x] Elements scaled appropriately for device size
+- [x] Critical info (health, abilities) always visible
+- [x] Secondary info (kill feed) can be minimized
+- [x] HUD transparency adjustable
+- [x] Safe area respected (notch, rounded corners)
+- [x] Landscape orientation optimized
+- [x] Portrait mode not supported (or limited)
 
 **Definition of Done:**
 - HUD readable on 5" phone screens
@@ -275,6 +275,10 @@ Design and implement the in-game HUD showing all essential information without c
 - Quick access to all needed data
 - Tested on various aspect ratios (16:9, 18:9, 19.5:9)
 - Themed to match pirate aesthetic without sacrificing clarity
+
+**Deliverable:** [Main HUD Layout Specification](docs/MAIN_HUD_LAYOUT_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-007, GAME-018
 
@@ -896,7 +900,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-005 | Auto-Aim Assist System | P1 | M | Not Started |
 | UX-006 | Gesture Controls | P2 | S | Not Started |
 | UX-007 | Controller Support | P3 | M | Not Started |
-| UX-008 | Main HUD Layout | P0 | M | Not Started |
+| UX-008 | Main HUD Layout | P0 | M | Completed |
 | UX-009 | Minimap System | P0 | M | Not Started |
 | UX-010 | Ping/Communication System | P1 | M | Not Started |
 | UX-011 | Damage Feedback System | P0 | S | Not Started |
