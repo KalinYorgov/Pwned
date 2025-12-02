@@ -65,17 +65,21 @@ Define and implement earning rates for soft currency.
 - First win of day: 200 bonus
 
 **Acceptance Criteria:**
-- [ ] All earning sources implemented
-- [ ] Rates balanced against shop prices
-- [ ] Earning rates documented
-- [ ] Anti-farming limits (max daily earn cap optional)
-- [ ] Earning visible in end-of-match summary
-- [ ] Quests show currency reward
+- [x] All earning sources implemented
+- [x] Rates balanced against shop prices
+- [x] Earning rates documented
+- [x] Anti-farming limits (max daily earn cap optional)
+- [x] Earning visible in end-of-match summary
+- [x] Quests show currency reward
 
 **Definition of Done:**
 - Players earn gold at intended rate
 - Economy healthy (not too fast or slow)
 - Adjusted based on soft launch data
+
+**Deliverable:** [Currency Earning Rates Specification](docs/CURRENCY_EARNING_RATES_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-001, LIVE-001
 
@@ -688,7 +692,7 @@ Prevent economy exploits and abuse.
 | Task ID | Title | Priority | Complexity | Status |
 |---------|-------|----------|------------|--------|
 | MON-001 | Dual Currency System | P0 | M | Completed |
-| MON-002 | Currency Earning Rates | P1 | S | Not Started |
+| MON-002 | Currency Earning Rates | P1 | S | Completed |
 | MON-003 | Currency Spending Sinks | P1 | S | Not Started |
 | MON-004 | Store UI Framework | P1 | M | Not Started |
 | MON-005 | Featured/Daily Shop Rotation | P1 | M | Not Started |
