@@ -84,15 +84,15 @@ Create the drop-in mechanic where players select a landing zone and descend onto
 Implement the shrinking safe zone mechanic that forces players together over the match duration. The storm deals damage to players outside the safe zone and creates visual/audio warnings as it approaches.
 
 **Acceptance Criteria:**
-- [ ] Safe zone starts covering 80% of map, shrinks in 4-5 phases
-- [ ] Each phase has: warning period, shrink period, stable period
-- [ ] Storm damage scales with phase (Phase 1: 2 DPS, Phase 5: 10 DPS)
-- [ ] Visual indicator shows current safe zone on minimap and main view
-- [ ] Storm wall is clearly visible (towering clouds/magical barrier)
-- [ ] Audio cue warns when storm is about to shrink
-- [ ] UI shows time until next shrink phase
-- [ ] Final zone converges to small area forcing final confrontation
-- [ ] Storm movement is smooth and predictable (no stuttering)
+- [x] Safe zone starts covering 80% of map, shrinks in 4-5 phases
+- [x] Each phase has: warning period, shrink period, stable period
+- [x] Storm damage scales with phase (Phase 1: 2 DPS, Phase 5: 10 DPS)
+- [x] Visual indicator shows current safe zone on minimap and main view
+- [x] Storm wall is clearly visible (towering clouds/magical barrier)
+- [x] Audio cue warns when storm is about to shrink
+- [x] UI shows time until next shrink phase
+- [x] Final zone converges to small area forcing final confrontation
+- [x] Storm movement is smooth and predictable (no stuttering)
 
 **Definition of Done:**
 - Storm phases balance match length to 10-15 minutes
@@ -102,6 +102,11 @@ Implement the shrinking safe zone mechanic that forces players together over the
 - Edge cases handled (player on zone boundary, zone crossing water/terrain)
 
 **Dependencies:** GAME-001, ART-015 (Storm VFX)
+
+**Deliverables:**
+- [Storm/Safe Zone System Specification](docs/STORM_SAFE_ZONE_SYSTEM_SPEC.md)
+
+**Status: Completed**
 
 ---
 
@@ -761,7 +766,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 |---------|-------|----------|------------|--------|
 | GAME-001 | Match Initialization System | P0 | L | Completed |
 | GAME-002 | Player Drop-In System | P0 | M | Completed |
-| GAME-003 | Storm/Safe Zone System | P0 | M | Not Started |
+| GAME-003 | Storm/Safe Zone System | P0 | M | Completed |
 | GAME-004 | Loot Spawn System | P0 | M | Not Started |
 | GAME-005 | Player Elimination System | P0 | S | Not Started |
 | GAME-006 | Spectator Mode | P2 | M | Not Started |
