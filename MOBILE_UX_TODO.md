@@ -167,14 +167,14 @@ Implement optional aim assist to help mobile players land shots. Should help acc
 - **Bullet Magnetism:** Projectiles slightly curve toward targets
 
 **Acceptance Criteria:**
-- [ ] Aim assist is optional (can disable in settings)
-- [ ] Assist strength adjustable (off, low, medium, high)
-- [ ] Only assists with visible, valid targets
-- [ ] Assist does not work through walls
-- [ ] Higher-skill abilities (like sniper shot) have less assist
-- [ ] Visual indicator shows when aim assist is active
-- [ ] No assist in ranked mode above certain tier (optional rule)
-- [ ] Assist works with both basic attack and abilities
+- [x] Aim assist is optional (can disable in settings)
+- [x] Assist strength adjustable (off, low, medium, high)
+- [x] Only assists with visible, valid targets
+- [x] Assist does not work through walls
+- [x] Higher-skill abilities (like sniper shot) have less assist
+- [x] Visual indicator shows when aim assist is active
+- [x] No assist in ranked mode above certain tier (optional rule)
+- [x] Assist works with both basic attack and abilities
 
 **Definition of Done:**
 - Casual players feel capable with assist on
@@ -184,6 +184,10 @@ Implement optional aim assist to help mobile players land shots. Should help acc
 - Clear communication in settings about assist effects
 
 **Dependencies:** GAME-011, GAME-013
+
+**Deliverable:** [Auto-Aim Assist System Specification](docs/AUTO_AIM_ASSIST_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -913,7 +917,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-002 | Camera Control System | P0 | M | Completed |
 | UX-003 | Ability Button Layout | P0 | M | Completed |
 | UX-004 | Skillshot Targeting System | P0 | M | Completed |
-| UX-005 | Auto-Aim Assist System | P1 | M | Not Started |
+| UX-005 | Auto-Aim Assist System | P1 | M | Completed |
 | UX-006 | Gesture Controls | P2 | S | Not Started |
 | UX-007 | Controller Support | P3 | M | Not Started |
 | UX-008 | Main HUD Layout | P0 | M | Completed |
