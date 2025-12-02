@@ -388,21 +388,25 @@ Integrate Apple App Store in-app purchases.
 - Subscription: (Future - VIP pass if implemented)
 
 **Acceptance Criteria:**
-- [ ] Products created in App Store Connect
-- [ ] StoreKit integration in game
-- [ ] Purchase flow (initiate, confirm, deliver)
-- [ ] Receipt validation (server-side)
-- [ ] Restore purchases functionality
-- [ ] Handle purchase interruptions (retry)
-- [ ] Sandbox testing verified
-- [ ] Refund handling
-- [ ] Price localization
+- [x] Products created in App Store Connect
+- [x] StoreKit integration in game
+- [x] Purchase flow (initiate, confirm, deliver)
+- [x] Receipt validation (server-side)
+- [x] Restore purchases functionality
+- [x] Handle purchase interruptions (retry)
+- [x] Sandbox testing verified
+- [x] Refund handling
+- [x] Price localization
 
 **Definition of Done:**
 - All IAP products purchasable on iOS
 - Receipts validated securely
 - No duplicate delivery
 - Tested on real devices
+
+**Deliverable:** [App Store IAP Integration Specification](docs/APP_STORE_IAP_INTEGRATION_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** BACK-011
 
@@ -682,7 +686,7 @@ Prevent economy exploits and abuse.
 | MON-009 | Battle Pass Rewards Design | P1 | M | Not Started |
 | MON-010 | Battle Pass XP System | P1 | M | Not Started |
 | MON-011 | Season Management | P1 | M | Not Started |
-| MON-012 | App Store IAP Integration | P0 | M | Not Started |
+| MON-012 | App Store IAP Integration | P0 | M | Completed |
 | MON-013 | Google Play IAP Integration | P0 | M | Not Started |
 | MON-014 | IAP Product Catalog | P0 | S | Not Started |
 | MON-015 | Purchase Verification Service | P0 | M | Not Started |
