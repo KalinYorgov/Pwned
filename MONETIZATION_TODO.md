@@ -27,20 +27,24 @@ Implement dual currency economy with soft currency (earnable) and hard currency 
 - **Doubloons (Hard):** Purchased with real money, used for premium items
 
 **Acceptance Criteria:**
-- [ ] Both currencies tracked per player account
-- [ ] Currencies display in HUD/menu header
-- [ ] Gold earned from: match completion, quests, achievements
-- [ ] Doubloons purchased via IAP
-- [ ] Small amount of Doubloons earnable (Battle Pass free tier)
-- [ ] Currency transactions logged for debugging
-- [ ] No negative balances possible
-- [ ] Currency icons distinct and themed
+- [x] Both currencies tracked per player account
+- [x] Currencies display in HUD/menu header
+- [x] Gold earned from: match completion, quests, achievements
+- [x] Doubloons purchased via IAP
+- [x] Small amount of Doubloons earnable (Battle Pass free tier)
+- [x] Currency transactions logged for debugging
+- [x] No negative balances possible
+- [x] Currency icons distinct and themed
 
 **Definition of Done:**
 - Currency system functional end-to-end
 - All earn/spend flows working
 - Balances persist across sessions
 - Economy spreadsheet initialized
+
+**Deliverable:** [Dual Currency System Specification](docs/DUAL_CURRENCY_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** BACK-011
 
@@ -663,7 +667,7 @@ Prevent economy exploits and abuse.
 
 | Task ID | Title | Priority | Complexity | Status |
 |---------|-------|----------|------------|--------|
-| MON-001 | Dual Currency System | P0 | M | Not Started |
+| MON-001 | Dual Currency System | P0 | M | Completed |
 | MON-002 | Currency Earning Rates | P1 | S | Not Started |
 | MON-003 | Currency Spending Sinks | P1 | S | Not Started |
 | MON-004 | Store UI Framework | P1 | M | Not Started |
