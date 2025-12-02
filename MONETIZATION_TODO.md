@@ -140,21 +140,25 @@ Create the in-game store interface for browsing and purchasing items.
 - Currency purchase
 
 **Acceptance Criteria:**
-- [ ] Store accessible from main menu
-- [ ] Categories clearly organized
-- [ ] Item preview (3D model viewer for outfits)
-- [ ] Price clearly displayed
-- [ ] Purchase confirmation dialog
-- [ ] Purchase success/failure feedback
-- [ ] Owned items marked
-- [ ] Filter by: price, type, rarity
-- [ ] Sort by: newest, price, popularity
+- [x] Store accessible from main menu
+- [x] Categories clearly organized
+- [x] Item preview (3D model viewer for outfits)
+- [x] Price clearly displayed
+- [x] Purchase confirmation dialog
+- [x] Purchase success/failure feedback
+- [x] Owned items marked
+- [x] Filter by: price, type, rarity
+- [x] Sort by: newest, price, popularity
 
 **Definition of Done:**
 - Store fully functional
 - All items purchasable
 - UX smooth and clear
 - No exploit paths (duplicate purchase, etc.)
+
+**Deliverable:** [Store UI Framework Specification](docs/STORE_UI_FRAMEWORK_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-001, UX-014
 
@@ -698,7 +702,7 @@ Prevent economy exploits and abuse.
 | MON-001 | Dual Currency System | P0 | M | Completed |
 | MON-002 | Currency Earning Rates | P1 | S | Completed |
 | MON-003 | Currency Spending Sinks | P1 | S | Completed |
-| MON-004 | Store UI Framework | P1 | M | Not Started |
+| MON-004 | Store UI Framework | P1 | M | Completed |
 | MON-005 | Featured/Daily Shop Rotation | P1 | M | Not Started |
 | MON-006 | Bundle System | P1 | S | Not Started |
 | MON-007 | Cosmetic Inventory System | P0 | M | Completed |
