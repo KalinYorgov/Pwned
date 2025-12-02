@@ -319,16 +319,20 @@ Design reward distribution for Battle Pass tiers.
 - Tier 60: Finale reward (legendary outfit or bundle)
 
 **Acceptance Criteria:**
-- [ ] Rewards spread to maintain engagement
-- [ ] Premium pass returns ~75-100% of cost in Doubloons
-- [ ] Exclusive items not available elsewhere
-- [ ] Variety of reward types (not all cosmetics)
-- [ ] Rewards documented in design spreadsheet
+- [x] Rewards spread to maintain engagement
+- [x] Premium pass returns ~75-100% of cost in Doubloons
+- [x] Exclusive items not available elsewhere
+- [x] Variety of reward types (not all cosmetics)
+- [x] Rewards documented in design spreadsheet
 
 **Definition of Done:**
 - Full season rewards designed
 - Pass feels valuable
 - Completion rate targets set
+
+**Deliverable:** [Battle Pass Rewards Design Specification](docs/BATTLE_PASS_REWARDS_DESIGN_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-008
 
@@ -719,7 +723,7 @@ Prevent economy exploits and abuse.
 | MON-006 | Bundle System | P1 | S | Completed |
 | MON-007 | Cosmetic Inventory System | P0 | M | Completed |
 | MON-008 | Battle Pass Framework | P1 | L | Completed |
-| MON-009 | Battle Pass Rewards Design | P1 | M | Not Started |
+| MON-009 | Battle Pass Rewards Design | P1 | M | Completed |
 | MON-010 | Battle Pass XP System | P1 | M | Not Started |
 | MON-011 | Season Management | P1 | M | Not Started |
 | MON-012 | App Store IAP Integration | P0 | M | Completed |
