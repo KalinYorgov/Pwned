@@ -595,19 +595,23 @@ Screen for selecting game mode before matchmaking.
 Design loading screens that maintain engagement and provide useful info.
 
 **Acceptance Criteria:**
-- [ ] Loading bar or spinner shows progress
-- [ ] Gameplay tips displayed during load
-- [ ] Character/cosmetic preview shown
-- [ ] Map preview for match loading
-- [ ] Loading time minimized (< 10 seconds target)
-- [ ] Themed artwork on loading screens
-- [ ] No false "100%" stuck issues
+- [x] Loading bar or spinner shows progress
+- [x] Gameplay tips displayed during load
+- [x] Character/cosmetic preview shown
+- [x] Map preview for match loading
+- [x] Loading time minimized (< 10 seconds target)
+- [x] Themed artwork on loading screens
+- [x] No false "100%" stuck issues
 
 **Definition of Done:**
 - Players stay engaged during loads
 - Loading feels fast
 - Tips are actually helpful
 - No jarring transitions
+
+**Deliverable:** [Loading Screens Specification](docs/LOADING_SCREENS_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** None
 
@@ -945,7 +949,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-014 | Main Menu Design | P1 | M | Completed |
 | UX-015 | Settings Menu | P0 | M | Completed |
 | UX-016 | Mode Selection Screen | P1 | S | Completed |
-| UX-017 | Loading Screens | P1 | S | Not Started |
+| UX-017 | Loading Screens | P1 | S | Completed |
 | UX-018 | Colorblind Modes | P2 | S | Not Started |
 | UX-019 | Text and UI Scaling | P2 | S | Not Started |
 | UX-020 | Audio Accessibility | P2 | S | Not Started |
