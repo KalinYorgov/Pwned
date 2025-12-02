@@ -466,13 +466,13 @@ Implement crowd control (CC) effects that abilities can apply: stuns, slows, roo
 - **Silence:** Cannot use abilities, can still move
 
 **Acceptance Criteria:**
-- [ ] Each CC type has clear visual indicator on affected player
-- [ ] CC duration shown on UI (debuff timer)
-- [ ] Diminishing returns: Repeated CC of same type has reduced duration
-- [ ] CC immunity window after extended CC (prevent permastun)
-- [ ] Some abilities grant CC immunity (e.g., Barrel Roll)
-- [ ] CC affects both players and NPCs
-- [ ] Knockbacks interact correctly with terrain/walls
+- [x] Each CC type has clear visual indicator on affected player
+- [x] CC duration shown on UI (debuff timer)
+- [x] Diminishing returns: Repeated CC of same type has reduced duration
+- [x] CC immunity window after extended CC (prevent permastun)
+- [x] Some abilities grant CC immunity (e.g., Barrel Roll)
+- [x] CC affects both players and NPCs
+- [x] Knockbacks interact correctly with terrain/walls
 
 **Definition of Done:**
 - All CC types feel distinct and readable
@@ -482,6 +482,10 @@ Implement crowd control (CC) effects that abilities can apply: stuns, slows, roo
 - Tested all CC interactions with all abilities
 
 **Dependencies:** GAME-008, GAME-012
+
+**Deliverable:** [Crowd Control System Specification](docs/CROWD_CONTROL_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -821,7 +825,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-011 | Basic Attack System | P0 | M | Completed |
 | GAME-012 | Damage and Health System | P0 | M | Completed |
 | GAME-013 | Hit Detection and Lag Compensation | P0 | L | Completed |
-| GAME-014 | Crowd Control System | P1 | M | Not Started |
+| GAME-014 | Crowd Control System | P1 | M | Completed |
 | GAME-015 | NPC Monster System | P1 | L | Not Started |
 | GAME-016 | NPC AI Behavior System | P1 | M | Not Started |
 | GAME-017 | World Events System | P2 | M | Not Started |
