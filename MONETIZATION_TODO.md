@@ -176,18 +176,22 @@ Implement rotating featured items to create urgency and variety.
 - Event rotation: Special items during events
 
 **Acceptance Criteria:**
-- [ ] Featured section shows rotation items
-- [ ] Countdown timer to next rotation
-- [ ] Items selected from pool (can be configured)
-- [ ] Same item not in back-to-back rotations (cooldown)
-- [ ] Admin tool to configure rotation
-- [ ] Special forced items for events
-- [ ] Notification when new rotation arrives
+- [x] Featured section shows rotation items
+- [x] Countdown timer to next rotation
+- [x] Items selected from pool (can be configured)
+- [x] Same item not in back-to-back rotations (cooldown)
+- [x] Admin tool to configure rotation
+- [x] Special forced items for events
+- [x] Notification when new rotation arrives
 
 **Definition of Done:**
 - Rotation system live
 - Players engage with FOMO mechanic
 - Admin can manage rotations
+
+**Deliverable:** [Featured/Daily Shop Rotation Specification](docs/FEATURED_DAILY_SHOP_ROTATION_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-004
 
@@ -703,7 +707,7 @@ Prevent economy exploits and abuse.
 | MON-002 | Currency Earning Rates | P1 | S | Completed |
 | MON-003 | Currency Spending Sinks | P1 | S | Completed |
 | MON-004 | Store UI Framework | P1 | M | Completed |
-| MON-005 | Featured/Daily Shop Rotation | P1 | M | Not Started |
+| MON-005 | Featured/Daily Shop Rotation | P1 | M | Completed |
 | MON-006 | Bundle System | P1 | S | Not Started |
 | MON-007 | Cosmetic Inventory System | P0 | M | Completed |
 | MON-008 | Battle Pass Framework | P1 | L | Not Started |
