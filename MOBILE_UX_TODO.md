@@ -892,20 +892,24 @@ Create step-by-step interactive tutorial teaching core mechanics.
 9. Victory (tutorial bot match)
 
 **Acceptance Criteria:**
-- [ ] Each step has clear instruction
-- [ ] Action is gated until player performs it
-- [ ] Visual arrows/highlights guide player
-- [ ] Voice-over or text narration (pirate themed)
-- [ ] Can pause and resume tutorial
-- [ ] Skip option (for returning players)
-- [ ] Tutorial progress saved
-- [ ] Reward upon completion (gold, skin)
+- [x] Each step has clear instruction
+- [x] Action is gated until player performs it
+- [x] Visual arrows/highlights guide player
+- [x] Voice-over or text narration (pirate themed)
+- [x] Can pause and resume tutorial
+- [x] Skip option (for returning players)
+- [x] Tutorial progress saved
+- [x] Reward upon completion (gold, skin)
 
 **Definition of Done:**
 - New players competent after tutorial
 - Tutorial is engaging, not boring
 - No softlocks or progression bugs
 - Tested with actual new players
+
+**Deliverable:** [Interactive Tutorial Specification](docs/INTERACTIVE_TUTORIAL_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-024
 
@@ -971,5 +975,5 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-024 | Notch and Safe Area Handling | P0 | S | Completed |
 | UX-025 | Network Quality Indicator | P1 | S | Completed |
 | UX-026 | First-Time User Experience | P1 | L | Completed |
-| UX-027 | Interactive Tutorial | P1 | M | Not Started |
+| UX-027 | Interactive Tutorial | P1 | M | Completed |
 | UX-028 | Contextual Hints System | P2 | S | Not Started |
