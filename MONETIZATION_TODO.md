@@ -390,17 +390,21 @@ Build backend tools for managing Battle Pass seasons.
 - Unclaimed rewards policy
 
 **Acceptance Criteria:**
-- [ ] Admin can create new season in advance
-- [ ] Automatic transition at season end
-- [ ] Player progress resets for new season
-- [ ] Unclaimed rewards delivered to inbox
-- [ ] Previous season pass becomes inactive
-- [ ] Data export for analysis
+- [x] Admin can create new season in advance
+- [x] Automatic transition at season end
+- [x] Player progress resets for new season
+- [x] Unclaimed rewards delivered to inbox
+- [x] Previous season pass becomes inactive
+- [x] Data export for analysis
 
 **Definition of Done:**
 - Season rollover tested
 - Admin tools functional
 - Process documented for LiveOps
+
+**Deliverable:** [Season Management Specification](docs/SEASON_MANAGEMENT_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-008, BACK-022
 
@@ -729,7 +733,7 @@ Prevent economy exploits and abuse.
 | MON-008 | Battle Pass Framework | P1 | L | Completed |
 | MON-009 | Battle Pass Rewards Design | P1 | M | Completed |
 | MON-010 | Battle Pass XP System | P1 | M | Completed |
-| MON-011 | Season Management | P1 | M | Not Started |
+| MON-011 | Season Management | P1 | M | Completed |
 | MON-012 | App Store IAP Integration | P0 | M | Completed |
 | MON-013 | Google Play IAP Integration | P0 | M | Completed |
 | MON-014 | IAP Product Catalog | P0 | S | Completed |
