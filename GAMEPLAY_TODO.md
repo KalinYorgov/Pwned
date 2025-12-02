@@ -655,11 +655,11 @@ Define and implement the core player stats that scale with level and potentially
 - **Movement Speed:** Base movement rate
 
 **Acceptance Criteria:**
-- [ ] Stats system is extensible for future additions
-- [ ] All stat effects are server-calculated
-- [ ] Stats visible in pause/info menu
-- [ ] Stat boosts stack additively (not multiplicatively to prevent exploits)
-- [ ] Temporary stat buffs possible (from abilities or pickups)
+- [x] Stats system is extensible for future additions
+- [x] All stat effects are server-calculated
+- [x] Stats visible in pause/info menu
+- [x] Stat boosts stack additively (not multiplicatively to prevent exploits)
+- [x] Temporary stat buffs possible (from abilities or pickups)
 
 **Definition of Done:**
 - Stats system documented and maintainable
@@ -668,6 +668,10 @@ Define and implement the core player stats that scale with level and potentially
 - Performance negligible (simple math)
 
 **Dependencies:** GAME-018
+
+**Deliverable:** [Player Stats and Scaling Specification](docs/PLAYER_STATS_SCALING_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -842,7 +846,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-016 | NPC AI Behavior System | P1 | M | Completed |
 | GAME-017 | World Events System | P2 | M | Not Started |
 | GAME-018 | In-Match Leveling System | P1 | M | Completed |
-| GAME-019 | Player Stats and Scaling | P1 | S | Not Started |
+| GAME-019 | Player Stats and Scaling | P1 | S | Completed |
 | GAME-020 | Solo Mode | P0 | M | Completed |
 | GAME-021 | Duo Mode | P1 | M | Not Started |
 | GAME-022 | Squad Mode | P3 | M | Not Started |
