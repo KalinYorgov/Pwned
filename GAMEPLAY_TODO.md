@@ -212,14 +212,14 @@ Allow eliminated players to spectate remaining players in the match. In team mod
 Implement the ability loadout system where players have limited slots for collected abilities. Based on Plunderstorm design: 2 offensive slots + 2 utility slots, plus a basic attack always available.
 
 **Acceptance Criteria:**
-- [ ] Players always have access to basic attack (no slot required)
-- [ ] 4 ability slots available: 2 offensive (red border), 2 utility (blue border)
-- [ ] Picking up ability auto-equips to matching empty slot
-- [ ] If slot type is full, player sees swap prompt (new ability vs current)
-- [ ] Swapping drops the old ability on ground (can be picked up)
-- [ ] Abilities show cooldown timers on UI
-- [ ] Each ability has unique icon, clearly visible on mobile
-- [ ] Slot arrangement is consistent across all matches
+- [x] Players always have access to basic attack (no slot required)
+- [x] 4 ability slots available: 2 offensive (red border), 2 utility (blue border)
+- [x] Picking up ability auto-equips to matching empty slot
+- [x] If slot type is full, player sees swap prompt (new ability vs current)
+- [x] Swapping drops the old ability on ground (can be picked up)
+- [x] Abilities show cooldown timers on UI
+- [x] Each ability has unique icon, clearly visible on mobile
+- [x] Slot arrangement is consistent across all matches
 
 **Definition of Done:**
 - Ability pickup feels instant and responsive
@@ -229,6 +229,11 @@ Implement the ability loadout system where players have limited slots for collec
 - Tested with all ability combinations
 
 **Dependencies:** UX-006 (Ability UI), GAME-008 (Ability Implementation)
+
+**Deliverables:**
+- [Ability Slot System Specification](docs/ABILITY_SLOT_SYSTEM_SPEC.md)
+
+**Status: Completed**
 
 ---
 
@@ -780,7 +785,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-004 | Loot Spawn System | P0 | M | Completed |
 | GAME-005 | Player Elimination System | P0 | S | Completed |
 | GAME-006 | Spectator Mode | P2 | M | Not Started |
-| GAME-007 | Ability Slot System | P0 | M | Not Started |
+| GAME-007 | Ability Slot System | P0 | M | Completed |
 | GAME-008 | Core Ability Implementation | P0 | XL | Not Started |
 | GAME-009 | Ability Upgrade System | P1 | M | Not Started |
 | GAME-010 | Ability Combo System | P2 | M | Not Started |
