@@ -356,17 +356,21 @@ Implement XP earning for Battle Pass progression.
 - Should be completable in 6-8 weeks with daily play
 
 **Acceptance Criteria:**
-- [ ] XP tracked separately from player level XP
-- [ ] XP earned displays in match summary
-- [ ] Quest XP rewards shown clearly
-- [ ] Progress bar shows XP to next tier
-- [ ] XP boost items functional (if included)
-- [ ] Tier skip option (Doubloon purchase)
+- [x] XP tracked separately from player level XP
+- [x] XP earned displays in match summary
+- [x] Quest XP rewards shown clearly
+- [x] Progress bar shows XP to next tier
+- [x] XP boost items functional (if included)
+- [x] Tier skip option (Doubloon purchase)
 
 **Definition of Done:**
 - XP system balanced for season length
 - Average player completes 75%+ of pass
 - Tier skip provides whale option
+
+**Deliverable:** [Battle Pass XP System Specification](docs/BATTLE_PASS_XP_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-008, LIVE-001
 
@@ -724,7 +728,7 @@ Prevent economy exploits and abuse.
 | MON-007 | Cosmetic Inventory System | P0 | M | Completed |
 | MON-008 | Battle Pass Framework | P1 | L | Completed |
 | MON-009 | Battle Pass Rewards Design | P1 | M | Completed |
-| MON-010 | Battle Pass XP System | P1 | M | Not Started |
+| MON-010 | Battle Pass XP System | P1 | M | Completed |
 | MON-011 | Season Management | P1 | M | Not Started |
 | MON-012 | App Store IAP Integration | P0 | M | Completed |
 | MON-013 | Google Play IAP Integration | P0 | M | Completed |
