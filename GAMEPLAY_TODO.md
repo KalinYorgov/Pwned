@@ -543,14 +543,14 @@ Create the AI behavior system for NPC monsters. AI should be simple but engaging
 - **Death:** Play death animation, drop loot
 
 **Acceptance Criteria:**
-- [ ] AI uses state machine architecture for clarity
-- [ ] Pathfinding uses NavMesh (pre-baked for performance)
-- [ ] Monsters leash to spawn area (max chase distance)
-- [ ] Attack patterns are predictable (learnable by player)
-- [ ] Mini-bosses have 2-3 attack phases
-- [ ] AI doesn't get stuck on terrain
-- [ ] Multiple players can fight same monster camp
-- [ ] AI performance optimized (< 1ms per monster per tick)
+- [x] AI uses state machine architecture for clarity
+- [x] Pathfinding uses NavMesh (pre-baked for performance)
+- [x] Monsters leash to spawn area (max chase distance)
+- [x] Attack patterns are predictable (learnable by player)
+- [x] Mini-bosses have 2-3 attack phases
+- [x] AI doesn't get stuck on terrain
+- [x] Multiple players can fight same monster camp
+- [x] AI performance optimized (< 1ms per monster per tick)
 
 **Definition of Done:**
 - AI feels fair and predictable
@@ -560,6 +560,10 @@ Create the AI behavior system for NPC monsters. AI should be simple but engaging
 - Edge cases handled (disconnect while fighting, etc.)
 
 **Dependencies:** GAME-015
+
+**Deliverable:** [NPC AI Behavior System Specification](docs/NPC_AI_BEHAVIOR_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -831,7 +835,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-013 | Hit Detection and Lag Compensation | P0 | L | Completed |
 | GAME-014 | Crowd Control System | P1 | M | Completed |
 | GAME-015 | NPC Monster System | P1 | L | Completed |
-| GAME-016 | NPC AI Behavior System | P1 | M | Not Started |
+| GAME-016 | NPC AI Behavior System | P1 | M | Completed |
 | GAME-017 | World Events System | P2 | M | Not Started |
 | GAME-018 | In-Match Leveling System | P1 | M | Not Started |
 | GAME-019 | Player Stats and Scaling | P1 | S | Not Started |
