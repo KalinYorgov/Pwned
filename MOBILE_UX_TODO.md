@@ -565,20 +565,24 @@ Screen for selecting game mode before matchmaking.
 - Practice/Training
 
 **Acceptance Criteria:**
-- [ ] Each mode clearly described
-- [ ] Player count for each mode shown
-- [ ] Estimated wait time displayed
-- [ ] Locked modes show unlock requirements
-- [ ] LTM highlighted with event theming
-- [ ] One-tap to start matchmaking
-- [ ] Cancel matchmaking option
-- [ ] Map selection (if multiple maps)
+- [x] Each mode clearly described
+- [x] Player count for each mode shown
+- [x] Estimated wait time displayed
+- [x] Locked modes show unlock requirements
+- [x] LTM highlighted with event theming
+- [x] One-tap to start matchmaking
+- [x] Cancel matchmaking option
+- [x] Map selection (if multiple maps)
 
 **Definition of Done:**
 - Mode selection is quick and clear
 - Wait times reasonably accurate
 - LTMs draw attention appropriately
 - Works with all planned modes
+
+**Deliverable:** [Mode Selection Screen Specification](docs/MODE_SELECTION_SCREEN_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-020, GAME-021, GAME-023
 
@@ -940,7 +944,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-013 | Victory/Defeat Screen | P1 | S | Completed |
 | UX-014 | Main Menu Design | P1 | M | Completed |
 | UX-015 | Settings Menu | P0 | M | Completed |
-| UX-016 | Mode Selection Screen | P1 | S | Not Started |
+| UX-016 | Mode Selection Screen | P1 | S | Completed |
 | UX-017 | Loading Screens | P1 | S | Not Started |
 | UX-018 | Colorblind Modes | P2 | S | Not Started |
 | UX-019 | Text and UI Scaling | P2 | S | Not Started |
