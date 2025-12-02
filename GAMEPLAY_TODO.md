@@ -53,13 +53,13 @@ Implement the core match initialization flow including player joining, countdown
 Create the drop-in mechanic where players select a landing zone and descend onto the map. Inspired by Plunderstorm's "bombing in" mechanic, players should be launched from a pirate ship circling the island and can control their descent trajectory.
 
 **Acceptance Criteria:**
-- [ ] Pre-drop phase shows full map with selectable landing zones
-- [ ] Players can mark intended drop location (visible to teammates in duo/squad)
-- [ ] Drop animation shows player launching from cannon/ship
-- [ ] Player has glide control during descent (directional input affects trajectory)
-- [ ] Landing triggers brief animation and vulnerability period (0.5s)
-- [ ] Camera smoothly transitions from bird's eye to third-person on landing
-- [ ] Drop path is visible to other players (for strategic awareness)
+- [x] Pre-drop phase shows full map with selectable landing zones
+- [x] Players can mark intended drop location (visible to teammates in duo/squad)
+- [x] Drop animation shows player launching from cannon/ship
+- [x] Player has glide control during descent (directional input affects trajectory)
+- [x] Landing triggers brief animation and vulnerability period (0.5s)
+- [x] Camera smoothly transitions from bird's eye to third-person on landing
+- [x] Drop path is visible to other players (for strategic awareness)
 
 **Definition of Done:**
 - Drop feels responsive and satisfying on mobile touch controls
@@ -69,6 +69,11 @@ Create the drop-in mechanic where players select a landing zone and descend onto
 - Tested on both high-end and low-end devices
 
 **Dependencies:** GAME-001, UX-003 (Touch Controls)
+
+**Deliverables:**
+- [Player Drop-In System Specification](docs/PLAYER_DROP_IN_SYSTEM_SPEC.md)
+
+**Status: Completed**
 
 ---
 
@@ -755,7 +760,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | Task ID | Title | Priority | Complexity | Status |
 |---------|-------|----------|------------|--------|
 | GAME-001 | Match Initialization System | P0 | L | Completed |
-| GAME-002 | Player Drop-In System | P0 | M | Not Started |
+| GAME-002 | Player Drop-In System | P0 | M | Completed |
 | GAME-003 | Storm/Safe Zone System | P0 | M | Not Started |
 | GAME-004 | Loot Spawn System | P0 | M | Not Started |
 | GAME-005 | Player Elimination System | P0 | S | Not Started |
