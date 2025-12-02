@@ -715,15 +715,15 @@ Implement the core solo battle royale mode: 30-60 players, last one standing win
 Implement duo mode: teams of 2, last team standing wins. Includes teammate features.
 
 **Acceptance Criteria:**
-- [ ] 30-60 players (15-30 teams)
-- [ ] Party system: queue with a friend
-- [ ] Random teammate matching if solo queue
-- [ ] Teammates visible on map (icon, distance)
-- [ ] Team voice chat or ping system
-- [ ] Downed state before elimination (can be revived)
-- [ ] Revive mechanic: 5 second channel, restores 50% HP
-- [ ] Both teammates must be eliminated for team loss
-- [ ] Share loot pings with teammate
+- [x] 30-60 players (15-30 teams)
+- [x] Party system: queue with a friend
+- [x] Random teammate matching if solo queue
+- [x] Teammates visible on map (icon, distance)
+- [x] Team voice chat or ping system
+- [x] Downed state before elimination (can be revived)
+- [x] Revive mechanic: 5 second channel, restores 50% HP
+- [x] Both teammates must be eliminated for team loss
+- [x] Share loot pings with teammate
 
 **Definition of Done:**
 - Team systems fully functional
@@ -733,6 +733,10 @@ Implement duo mode: teams of 2, last team standing wins. Includes teammate featu
 - Tested with full teams
 
 **Dependencies:** GAME-020, BACK-002, UX-010
+
+**Deliverable:** [Duo Mode Specification](docs/DUO_MODE_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -848,7 +852,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-018 | In-Match Leveling System | P1 | M | Completed |
 | GAME-019 | Player Stats and Scaling | P1 | S | Completed |
 | GAME-020 | Solo Mode | P0 | M | Completed |
-| GAME-021 | Duo Mode | P1 | M | Not Started |
+| GAME-021 | Duo Mode | P1 | M | Completed |
 | GAME-022 | Squad Mode | P3 | M | Not Started |
 | GAME-023 | Ranked Mode | P2 | L | Not Started |
 | GAME-024 | Practice/Tutorial Mode | P1 | M | Not Started |
