@@ -210,17 +210,21 @@ Create bundles that offer multiple items at a discount.
 - Value Bundle: Currency + bonus items
 
 **Acceptance Criteria:**
-- [ ] Bundles show total value and discount %
-- [ ] Items purchasable individually or in bundle
-- [ ] Bundle price adjusts if player owns some items
-- [ ] Starter pack limited to one purchase per account
-- [ ] Bundle preview shows all contents
-- [ ] Time-limited bundles have countdown
+- [x] Bundles show total value and discount %
+- [x] Items purchasable individually or in bundle
+- [x] Bundle price adjusts if player owns some items
+- [x] Starter pack limited to one purchase per account
+- [x] Bundle preview shows all contents
+- [x] Time-limited bundles have countdown
 
 **Definition of Done:**
 - Bundle system functional
 - Starter pack converts new users
 - Bundles provide value perception
+
+**Deliverable:** [Bundle System Specification](docs/BUNDLE_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-004
 
@@ -708,7 +712,7 @@ Prevent economy exploits and abuse.
 | MON-003 | Currency Spending Sinks | P1 | S | Completed |
 | MON-004 | Store UI Framework | P1 | M | Completed |
 | MON-005 | Featured/Daily Shop Rotation | P1 | M | Completed |
-| MON-006 | Bundle System | P1 | S | Not Started |
+| MON-006 | Bundle System | P1 | S | Completed |
 | MON-007 | Cosmetic Inventory System | P0 | M | Completed |
 | MON-008 | Battle Pass Framework | P1 | L | Not Started |
 | MON-009 | Battle Pass Rewards Design | P1 | M | Not Started |
