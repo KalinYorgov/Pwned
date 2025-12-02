@@ -299,15 +299,15 @@ Implement a minimap showing player position, storm location, teammates, and poin
 - Enemy sighting (briefly shown when shooting)
 
 **Acceptance Criteria:**
-- [ ] Minimap in corner (adjustable: any corner)
-- [ ] Zoomable minimap (pinch or button toggle)
-- [ ] Tap to enlarge to full-screen map view
-- [ ] Full map shows all named locations
-- [ ] Storm position clearly marked (current + next)
-- [ ] Team colors consistent
-- [ ] Pings appear on minimap with icons
-- [ ] North indicator for orientation
-- [ ] Treasure map aesthetic (styled border)
+- [x] Minimap in corner (adjustable: any corner)
+- [x] Zoomable minimap (pinch or button toggle)
+- [x] Tap to enlarge to full-screen map view
+- [x] Full map shows all named locations
+- [x] Storm position clearly marked (current + next)
+- [x] Team colors consistent
+- [x] Pings appear on minimap with icons
+- [x] North indicator for orientation
+- [x] Treasure map aesthetic (styled border)
 
 **Definition of Done:**
 - Minimap provides tactical advantage without distraction
@@ -315,6 +315,10 @@ Implement a minimap showing player position, storm location, teammates, and poin
 - Full map usable for strategic planning
 - Performance impact negligible
 - Works correctly as storm shrinks
+
+**Deliverable:** [Minimap System Specification](docs/MINIMAP_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-003, UX-010
 
@@ -901,7 +905,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-006 | Gesture Controls | P2 | S | Not Started |
 | UX-007 | Controller Support | P3 | M | Not Started |
 | UX-008 | Main HUD Layout | P0 | M | Completed |
-| UX-009 | Minimap System | P0 | M | Not Started |
+| UX-009 | Minimap System | P0 | M | Completed |
 | UX-010 | Ping/Communication System | P1 | M | Not Started |
 | UX-011 | Damage Feedback System | P0 | S | Not Started |
 | UX-012 | Spectator UI | P2 | S | Not Started |
