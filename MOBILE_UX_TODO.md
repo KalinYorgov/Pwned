@@ -851,20 +851,24 @@ Design the first-time user journey from app install to first match completion.
 7. Prompt to play more
 
 **Acceptance Criteria:**
-- [ ] FTUE completable in < 10 minutes
-- [ ] Can skip tutorial after first time
-- [ ] Progress saved immediately (no lost progress on crash)
-- [ ] Rewarding feeling after tutorial (free cosmetic)
-- [ ] Introduces core loop naturally
-- [ ] No overwhelming info dumps
-- [ ] Guest play option (link account later)
-- [ ] Age gate if required by region
+- [x] FTUE completable in < 10 minutes
+- [x] Can skip tutorial after first time
+- [x] Progress saved immediately (no lost progress on crash)
+- [x] Rewarding feeling after tutorial (free cosmetic)
+- [x] Introduces core loop naturally
+- [x] No overwhelming info dumps
+- [x] Guest play option (link account later)
+- [x] Age gate if required by region
 
 **Definition of Done:**
 - Day 1 retention improved by FTUE
 - 80%+ complete tutorial
 - Players understand how to play after FTUE
 - A/B tested for optimization
+
+**Deliverable:** [First-Time User Experience Specification](docs/FIRST_TIME_USER_EXPERIENCE_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-024, BACK-005
 
@@ -966,6 +970,6 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-023 | Battery Optimization | P2 | S | Not Started |
 | UX-024 | Notch and Safe Area Handling | P0 | S | Completed |
 | UX-025 | Network Quality Indicator | P1 | S | Completed |
-| UX-026 | First-Time User Experience | P1 | L | Not Started |
+| UX-026 | First-Time User Experience | P1 | L | Completed |
 | UX-027 | Interactive Tutorial | P1 | M | Not Started |
 | UX-028 | Contextual Hints System | P2 | S | Not Started |
