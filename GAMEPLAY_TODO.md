@@ -357,14 +357,14 @@ Design and implement synergies between certain abilities when used in combinatio
 Implement the always-available basic attack that all players have regardless of looted abilities. This should be a simple, reliable attack for early-game and ability cooldown periods.
 
 **Acceptance Criteria:**
-- [ ] Basic attack available from match start (no pickup required)
-- [ ] Moderate damage, short-medium range, no cooldown (or very short ~1s)
-- [ ] Visual: Pirate pistol shot or magic bolt
-- [ ] Auto-aim assist option for mobile (soft lock to nearest enemy in cone)
-- [ ] Manual aim mode for skilled players
-- [ ] Cannot spam infinitely (slight fire rate limit)
-- [ ] Headshots deal bonus damage (optional - based on balance testing)
-- [ ] Audio and visual feedback on hit confirmation
+- [x] Basic attack available from match start (no pickup required)
+- [x] Moderate damage, short-medium range, no cooldown (or very short ~1s)
+- [x] Visual: Pirate pistol shot or magic bolt
+- [x] Auto-aim assist option for mobile (soft lock to nearest enemy in cone)
+- [x] Manual aim mode for skilled players
+- [x] Cannot spam infinitely (slight fire rate limit)
+- [x] Headshots deal bonus damage (optional - based on balance testing)
+- [x] Audio and visual feedback on hit confirmation
 
 **Definition of Done:**
 - Basic attack feels responsive (< 50ms input to visual)
@@ -374,6 +374,11 @@ Implement the always-available basic attack that all players have regardless of 
 - Tested on various device screen sizes
 
 **Dependencies:** UX-003, GAME-012
+
+**Deliverables:**
+- [Basic Attack System Specification](docs/BASIC_ATTACK_SYSTEM_SPEC.md)
+
+**Status: Completed**
 
 ---
 
@@ -794,7 +799,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-008 | Core Ability Implementation | P0 | XL | Completed |
 | GAME-009 | Ability Upgrade System | P1 | M | Not Started |
 | GAME-010 | Ability Combo System | P2 | M | Not Started |
-| GAME-011 | Basic Attack System | P0 | M | Not Started |
+| GAME-011 | Basic Attack System | P0 | M | Completed |
 | GAME-012 | Damage and Health System | P0 | M | Not Started |
 | GAME-013 | Hit Detection and Lag Compensation | P0 | L | Not Started |
 | GAME-014 | Crowd Control System | P1 | M | Not Started |
