@@ -504,15 +504,15 @@ Implement NPC monster camps scattered across the map. Monsters provide alternati
 4. **Mini-Bosses (Rare):** High HP, unique attack patterns, epic loot potential
 
 **Acceptance Criteria:**
-- [ ] Monster camps spawn at predefined locations on map
-- [ ] Monsters are aggressive when player enters range
-- [ ] Each monster has simple AI (patrol, chase, attack, return)
-- [ ] Killing monsters grants XP (scaling by type)
-- [ ] Monsters have chance to drop abilities (higher tier = better drops)
-- [ ] Monsters respawn after timer (60-90 seconds)
-- [ ] Monster health bars visible when in combat
-- [ ] Monsters can be kited, use terrain strategically
-- [ ] Monsters attack any nearby player (no ownership)
+- [x] Monster camps spawn at predefined locations on map
+- [x] Monsters are aggressive when player enters range
+- [x] Each monster has simple AI (patrol, chase, attack, return)
+- [x] Killing monsters grants XP (scaling by type)
+- [x] Monsters have chance to drop abilities (higher tier = better drops)
+- [x] Monsters respawn after timer (60-90 seconds)
+- [x] Monster health bars visible when in combat
+- [x] Monsters can be kited, use terrain strategically
+- [x] Monsters attack any nearby player (no ownership)
 
 **Definition of Done:**
 - Monster AI performs well with 60 players on map
@@ -522,6 +522,10 @@ Implement NPC monster camps scattered across the map. Monsters provide alternati
 - Server-authoritative monster state (no desync)
 
 **Dependencies:** ART-011 (Monster Models), GAME-016
+
+**Deliverable:** [NPC Monster System Specification](docs/NPC_MONSTER_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -826,7 +830,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-012 | Damage and Health System | P0 | M | Completed |
 | GAME-013 | Hit Detection and Lag Compensation | P0 | L | Completed |
 | GAME-014 | Crowd Control System | P1 | M | Completed |
-| GAME-015 | NPC Monster System | P1 | L | Not Started |
+| GAME-015 | NPC Monster System | P1 | L | Completed |
 | GAME-016 | NPC AI Behavior System | P1 | M | Not Started |
 | GAME-017 | World Events System | P2 | M | Not Started |
 | GAME-018 | In-Match Leveling System | P1 | M | Not Started |
