@@ -813,17 +813,21 @@ Ensure UI respects device safe areas (notches, rounded corners, home indicators)
 Display network quality to help players understand performance issues.
 
 **Acceptance Criteria:**
-- [ ] Ping display (ms) in HUD (optional)
-- [ ] Connection quality icon (green/yellow/red bars)
-- [ ] Warning when connection poor
-- [ ] Packet loss indicator
-- [ ] Server region shown
-- [ ] Reconnection status when disconnected
+- [x] Ping display (ms) in HUD (optional)
+- [x] Connection quality icon (green/yellow/red bars)
+- [x] Warning when connection poor
+- [x] Packet loss indicator
+- [x] Server region shown
+- [x] Reconnection status when disconnected
 
 **Definition of Done:**
 - Players can diagnose connection issues
 - Indicators accurate and real-time
 - Reconnection works smoothly
+
+**Deliverable:** [Network Quality Indicator Specification](docs/NETWORK_QUALITY_INDICATOR_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** BACK-003
 
@@ -961,7 +965,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-022 | Device Performance Detection | P1 | M | Completed |
 | UX-023 | Battery Optimization | P2 | S | Not Started |
 | UX-024 | Notch and Safe Area Handling | P0 | S | Completed |
-| UX-025 | Network Quality Indicator | P1 | S | Not Started |
+| UX-025 | Network Quality Indicator | P1 | S | Completed |
 | UX-026 | First-Time User Experience | P1 | L | Not Started |
 | UX-027 | Interactive Tutorial | P1 | M | Not Started |
 | UX-028 | Contextual Hints System | P2 | S | Not Started |
