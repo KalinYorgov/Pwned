@@ -150,15 +150,15 @@ Create the system for spawning loot (abilities) across the map. Loot appears in 
 Handle player death, elimination announcement, and match end conditions. When a player's health reaches zero, they are eliminated from the match with appropriate feedback.
 
 **Acceptance Criteria:**
-- [ ] Player elimination triggers death animation
-- [ ] Eliminated player drops a "soul orb" or treasure pile (grants XP to killer)
-- [ ] Kill feed shows elimination (Killer eliminated Victim)
-- [ ] Eliminating player sees "+1 Kill" notification
-- [ ] Remaining player count updates globally
-- [ ] Eliminated player can choose: spectate or return to lobby
-- [ ] Last player/team standing wins the match
-- [ ] Victory screen shows stats (kills, damage, abilities used, placement)
-- [ ] Match end broadcasts winner to all spectators
+- [x] Player elimination triggers death animation
+- [x] Eliminated player drops a "soul orb" or treasure pile (grants XP to killer)
+- [x] Kill feed shows elimination (Killer eliminated Victim)
+- [x] Eliminating player sees "+1 Kill" notification
+- [x] Remaining player count updates globally
+- [x] Eliminated player can choose: spectate or return to lobby
+- [x] Last player/team standing wins the match
+- [x] Victory screen shows stats (kills, damage, abilities used, placement)
+- [x] Match end broadcasts winner to all spectators
 
 **Definition of Done:**
 - Elimination is server-authoritative (no fake deaths)
@@ -168,6 +168,11 @@ Handle player death, elimination announcement, and match end conditions. When a 
 - Tested with rapid successive eliminations
 
 **Dependencies:** GAME-012 (Combat), BACK-005 (Stats Tracking)
+
+**Deliverables:**
+- [Player Elimination System Specification](docs/PLAYER_ELIMINATION_SYSTEM_SPEC.md)
+
+**Status: Completed**
 
 ---
 
@@ -773,7 +778,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-002 | Player Drop-In System | P0 | M | Completed |
 | GAME-003 | Storm/Safe Zone System | P0 | M | Completed |
 | GAME-004 | Loot Spawn System | P0 | M | Completed |
-| GAME-005 | Player Elimination System | P0 | S | Not Started |
+| GAME-005 | Player Elimination System | P0 | S | Completed |
 | GAME-006 | Spectator Mode | P2 | M | Not Started |
 | GAME-007 | Ability Slot System | P0 | M | Not Started |
 | GAME-008 | Core Ability Implementation | P0 | XL | Not Started |
