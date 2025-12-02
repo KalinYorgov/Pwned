@@ -130,15 +130,15 @@ Implement intuitive skillshot targeting for abilities that require aiming (proje
 3. **Quick Cast:** Tap ability to immediately fire in facing direction
 
 **Acceptance Criteria:**
-- [ ] All three targeting methods supported
-- [ ] Player can set preferred method in settings (per ability optional)
-- [ ] Targeting indicator shows trajectory/landing zone
-- [ ] Range indicator shows max ability range
-- [ ] Valid targets highlighted (enemies in range)
-- [ ] Invalid areas grayed out (out of range, blocked by terrain)
-- [ ] Targeting can be canceled without firing
-- [ ] Aim sensitivity adjustable
-- [ ] Joystick can be used simultaneously while aiming (move + aim)
+- [x] All three targeting methods supported
+- [x] Player can set preferred method in settings (per ability optional)
+- [x] Targeting indicator shows trajectory/landing zone
+- [x] Range indicator shows max ability range
+- [x] Valid targets highlighted (enemies in range)
+- [x] Invalid areas grayed out (out of range, blocked by terrain)
+- [x] Targeting can be canceled without firing
+- [x] Aim sensitivity adjustable
+- [x] Joystick can be used simultaneously while aiming (move + aim)
 
 **Definition of Done:**
 - Skillshots feel accurate and satisfying to land
@@ -146,6 +146,10 @@ Implement intuitive skillshot targeting for abilities that require aiming (proje
 - No frustration from "misfire" issues
 - Performance stable during targeting mode
 - Tested with all skillshot abilities
+
+**Deliverable:** [Skillshot Targeting System Specification](docs/SKILLSHOT_TARGETING_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** UX-003, GAME-008
 
@@ -888,7 +892,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-001 | Virtual Joystick Movement | P0 | M | Completed |
 | UX-002 | Camera Control System | P0 | M | Completed |
 | UX-003 | Ability Button Layout | P0 | M | Completed |
-| UX-004 | Skillshot Targeting System | P0 | M | Not Started |
+| UX-004 | Skillshot Targeting System | P0 | M | Completed |
 | UX-005 | Auto-Aim Assist System | P1 | M | Not Started |
 | UX-006 | Gesture Controls | P2 | S | Not Started |
 | UX-007 | Controller Support | P3 | M | Not Started |
