@@ -704,16 +704,20 @@ Prevent economy exploits and abuse.
 - Monitoring for anomalous earning
 
 **Acceptance Criteria:**
-- [ ] All currency changes server-authoritative
-- [ ] Rate limits on quests, matches, etc.
-- [ ] Anomaly detection alerts
-- [ ] Manual adjustment tools for support
-- [ ] Audit log of all transactions
+- [x] All currency changes server-authoritative
+- [x] Rate limits on quests, matches, etc.
+- [x] Anomaly detection alerts
+- [x] Manual adjustment tools for support
+- [x] Audit log of all transactions
 
 **Definition of Done:**
 - No known exploits possible
 - Quick response to discovered exploits
 - Player trust maintained
+
+**Deliverable:** [Anti-Exploit Measures Specification](docs/ANTI_EXPLOIT_MEASURES_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** BACK-015, MON-019
 
@@ -743,4 +747,4 @@ Prevent economy exploits and abuse.
 | MON-018 | Economy Spreadsheet | P0 | M | Completed |
 | MON-019 | Economy Monitoring Dashboard | P2 | M | Not Started |
 | MON-020 | Pricing Localization | P2 | S | Not Started |
-| MON-021 | Anti-Exploit Measures | P1 | M | Not Started |
+| MON-021 | Anti-Exploit Measures | P1 | M | Completed |
