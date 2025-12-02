@@ -510,15 +510,15 @@ Create comprehensive settings for gameplay, controls, audio, video, and account.
 5. **Account:** Login, link accounts, privacy, data
 
 **Acceptance Criteria:**
-- [ ] All settings organized in logical categories
-- [ ] Settings save immediately on change
-- [ ] Reset to defaults option
-- [ ] Preview changes before applying (for controls)
-- [ ] Device-specific recommendations shown
-- [ ] Cloud save settings to account
-- [ ] Import/export layout option
-- [ ] FPS counter toggle
-- [ ] Network stats display toggle
+- [x] All settings organized in logical categories
+- [x] Settings save immediately on change
+- [x] Reset to defaults option
+- [x] Preview changes before applying (for controls)
+- [x] Device-specific recommendations shown
+- [x] Cloud save settings to account
+- [x] Import/export layout option
+- [x] FPS counter toggle
+- [x] Network stats display toggle
 
 **Definition of Done:**
 - All player preferences addressable
@@ -526,6 +526,10 @@ Create comprehensive settings for gameplay, controls, audio, video, and account.
 - No settings cause crashes or issues
 - Tooltips explain complex options
 - Tested on low-end and high-end devices
+
+**Deliverable:** [Settings Menu Specification](docs/SETTINGS_MENU_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** BACK-005
 
@@ -915,7 +919,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-012 | Spectator UI | P2 | S | Not Started |
 | UX-013 | Victory/Defeat Screen | P1 | S | Not Started |
 | UX-014 | Main Menu Design | P1 | M | Not Started |
-| UX-015 | Settings Menu | P0 | M | Not Started |
+| UX-015 | Settings Menu | P0 | M | Completed |
 | UX-016 | Mode Selection Screen | P1 | S | Not Started |
 | UX-017 | Loading Screens | P1 | S | Not Started |
 | UX-018 | Colorblind Modes | P2 | S | Not Started |
