@@ -117,15 +117,15 @@ Implement the shrinking safe zone mechanic that forces players together over the
 Create the system for spawning loot (abilities) across the map. Loot appears in treasure chests of varying rarity and as drops from defeated NPCs. The system must ensure balanced distribution and fair early-game opportunities.
 
 **Acceptance Criteria:**
-- [ ] Predefined loot spawn points distributed across map
-- [ ] Loot spawns on match start (randomized within spawn point pools)
-- [ ] Treasure chests have rarity tiers: Common (60%), Uncommon (25%), Rare (12%), Epic (3%)
-- [ ] Chest rarity affects quality of contained abilities
-- [ ] Higher-tier areas (named locations) have better loot density
-- [ ] Chests have opening animation (0.5-1s) - interruptible by damage
-- [ ] Opened chests are visually distinct (open lid, empty glow)
-- [ ] Abilities auto-equip to empty slots or show prompt if slots full
-- [ ] Loot from NPCs drops on ground briefly before auto-pickup radius
+- [x] Predefined loot spawn points distributed across map
+- [x] Loot spawns on match start (randomized within spawn point pools)
+- [x] Treasure chests have rarity tiers: Common (60%), Uncommon (25%), Rare (12%), Epic (3%)
+- [x] Chest rarity affects quality of contained abilities
+- [x] Higher-tier areas (named locations) have better loot density
+- [x] Chests have opening animation (0.5-1s) - interruptible by damage
+- [x] Opened chests are visually distinct (open lid, empty glow)
+- [x] Abilities auto-equip to empty slots or show prompt if slots full
+- [x] Loot from NPCs drops on ground briefly before auto-pickup radius
 
 **Definition of Done:**
 - Loot distribution tested for balance (no single OP landing spot)
@@ -135,6 +135,11 @@ Create the system for spawning loot (abilities) across the map. Loot appears in 
 - Performance tested with 200+ active loot items on map
 
 **Dependencies:** GAME-005 (Ability System), ART-010 (Treasure Chests)
+
+**Deliverables:**
+- [Loot Spawn System Specification](docs/LOOT_SPAWN_SYSTEM_SPEC.md)
+
+**Status: Completed**
 
 ---
 
@@ -767,7 +772,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-001 | Match Initialization System | P0 | L | Completed |
 | GAME-002 | Player Drop-In System | P0 | M | Completed |
 | GAME-003 | Storm/Safe Zone System | P0 | M | Completed |
-| GAME-004 | Loot Spawn System | P0 | M | Not Started |
+| GAME-004 | Loot Spawn System | P0 | M | Completed |
 | GAME-005 | Player Elimination System | P0 | S | Not Started |
 | GAME-006 | Spectator Mode | P2 | M | Not Started |
 | GAME-007 | Ability Slot System | P0 | M | Not Started |
