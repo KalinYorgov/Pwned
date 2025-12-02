@@ -104,16 +104,20 @@ Define spending destinations for currencies to maintain healthy economy.
 - Exclusive bundles (varies)
 
 **Acceptance Criteria:**
-- [ ] Prices set for all purchasable items
-- [ ] Gold items accessible through reasonable play
-- [ ] Premium items priced for value perception
-- [ ] Price tiers documented
-- [ ] Conversion rate (implicit $/Doubloon) consistent
+- [x] Prices set for all purchasable items
+- [x] Gold items accessible through reasonable play
+- [x] Premium items priced for value perception
+- [x] Price tiers documented
+- [x] Conversion rate (implicit $/Doubloon) consistent
 
 **Definition of Done:**
 - All items priced
 - Economy spreadsheet complete
 - Validated through playtesting
+
+**Deliverable:** [Currency Spending Sinks Specification](docs/CURRENCY_SPENDING_SINKS_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-001, MON-002
 
@@ -693,7 +697,7 @@ Prevent economy exploits and abuse.
 |---------|-------|----------|------------|--------|
 | MON-001 | Dual Currency System | P0 | M | Completed |
 | MON-002 | Currency Earning Rates | P1 | S | Completed |
-| MON-003 | Currency Spending Sinks | P1 | S | Not Started |
+| MON-003 | Currency Spending Sinks | P1 | S | Completed |
 | MON-004 | Store UI Framework | P1 | M | Not Started |
 | MON-005 | Featured/Daily Shop Rotation | P1 | M | Not Started |
 | MON-006 | Bundle System | P1 | S | Not Started |
