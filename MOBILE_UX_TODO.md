@@ -92,16 +92,16 @@ Design and implement the touch button layout for abilities and basic attack. Mus
 - Each button sized for reliable touch (minimum 44pt)
 
 **Acceptance Criteria:**
-- [ ] Basic attack button in easy-to-reach position (bottom right)
-- [ ] 4 ability buttons arranged around basic attack
-- [ ] Clear visual distinction between offensive (red) and utility (blue) abilities
-- [ ] Button shows ability icon, cooldown overlay, and hotkey number
-- [ ] Press to activate instant abilities
-- [ ] Press and hold to enter targeting mode for skillshots
-- [ ] Drag from button to aim, release to fire
-- [ ] Cancel skillshot by dragging back to button
-- [ ] Buttons gray out when on cooldown
-- [ ] Customizable button positions via drag-and-drop editor
+- [x] Basic attack button in easy-to-reach position (bottom right)
+- [x] 4 ability buttons arranged around basic attack
+- [x] Clear visual distinction between offensive (red) and utility (blue) abilities
+- [x] Button shows ability icon, cooldown overlay, and hotkey number
+- [x] Press to activate instant abilities
+- [x] Press and hold to enter targeting mode for skillshots
+- [x] Drag from button to aim, release to fire
+- [x] Cancel skillshot by dragging back to button
+- [x] Buttons gray out when on cooldown
+- [x] Customizable button positions via drag-and-drop editor
 
 **Definition of Done:**
 - All abilities usable without looking at controls
@@ -109,6 +109,10 @@ Design and implement the touch button layout for abilities and basic attack. Mus
 - No accidental ability activations in testing
 - Layout works on 5.5" to 12.9" screens
 - Touch targets meet accessibility guidelines
+
+**Deliverable:** [Ability Button Layout Specification](docs/ABILITY_BUTTON_LAYOUT_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-007 (Ability Slot System)
 
@@ -883,7 +887,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 |---------|-------|----------|------------|--------|
 | UX-001 | Virtual Joystick Movement | P0 | M | Completed |
 | UX-002 | Camera Control System | P0 | M | Completed |
-| UX-003 | Ability Button Layout | P0 | M | Not Started |
+| UX-003 | Ability Button Layout | P0 | M | Completed |
 | UX-004 | Skillshot Targeting System | P0 | M | Not Started |
 | UX-005 | Auto-Aim Assist System | P1 | M | Not Started |
 | UX-006 | Gesture Controls | P2 | S | Not Started |
