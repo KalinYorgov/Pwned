@@ -660,13 +660,13 @@ Define and implement the core player stats that scale with level and potentially
 Implement the core solo battle royale mode: 30-60 players, last one standing wins.
 
 **Acceptance Criteria:**
-- [ ] 30-60 players per match (scalable based on population)
-- [ ] Free-for-all, no teams
-- [ ] All core systems functional (drop, loot, combat, storm)
-- [ ] Match ends when 1 player remains
-- [ ] Placement tracked (1st, 2nd, 3rd, etc.)
-- [ ] Rewards based on placement
-- [ ] Queue available 24/7 (bot fill if needed)
+- [x] 30-60 players per match (scalable based on population)
+- [x] Free-for-all, no teams
+- [x] All core systems functional (drop, loot, combat, storm)
+- [x] Match ends when 1 player remains
+- [x] Placement tracked (1st, 2nd, 3rd, etc.)
+- [x] Rewards based on placement
+- [x] Queue available 24/7 (bot fill if needed)
 
 **Definition of Done:**
 - Solo mode fully playable end-to-end
@@ -676,6 +676,11 @@ Implement the core solo battle royale mode: 30-60 players, last one standing win
 - Tested with full player count
 
 **Dependencies:** All P0 GAME tasks, BACK-001
+
+**Deliverables:**
+- [Solo Mode Specification](docs/SOLO_MODE_SPEC.md)
+
+**Status: Completed**
 
 ---
 
@@ -818,7 +823,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-017 | World Events System | P2 | M | Not Started |
 | GAME-018 | In-Match Leveling System | P1 | M | Not Started |
 | GAME-019 | Player Stats and Scaling | P1 | S | Not Started |
-| GAME-020 | Solo Mode | P0 | M | Not Started |
+| GAME-020 | Solo Mode | P0 | M | Completed |
 | GAME-021 | Duo Mode | P1 | M | Not Started |
 | GAME-022 | Squad Mode | P3 | M | Not Started |
 | GAME-023 | Ranked Mode | P2 | L | Not Started |
