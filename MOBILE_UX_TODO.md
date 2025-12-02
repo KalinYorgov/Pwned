@@ -372,14 +372,14 @@ Implement clear visual and audio feedback when dealing or receiving damage.
 - **Kill confirmation:** Distinct sound and visual
 
 **Acceptance Criteria:**
-- [ ] Hit marker appears on crosshair when damage dealt
-- [ ] Damage numbers float above damaged target
-- [ ] Directional damage indicator shows where attack came from
-- [ ] Screen edges flash red when taking damage (intensity = damage)
-- [ ] Low health persistent warning (heartbeat, red vignette)
-- [ ] Kill sound is satisfying and distinct
-- [ ] Optional screen shake on big hits (toggleable)
-- [ ] Haptic feedback on device (toggleable)
+- [x] Hit marker appears on crosshair when damage dealt
+- [x] Damage numbers float above damaged target
+- [x] Directional damage indicator shows where attack came from
+- [x] Screen edges flash red when taking damage (intensity = damage)
+- [x] Low health persistent warning (heartbeat, red vignette)
+- [x] Kill sound is satisfying and distinct
+- [x] Optional screen shake on big hits (toggleable)
+- [x] Haptic feedback on device (toggleable)
 
 **Definition of Done:**
 - Player always knows when they deal/receive damage
@@ -387,6 +387,10 @@ Implement clear visual and audio feedback when dealing or receiving damage.
 - Feedback doesn't obscure gameplay
 - All feedback toggleable for accessibility
 - Tested across ability types
+
+**Deliverable:** [Damage Feedback System Specification](docs/DAMAGE_FEEDBACK_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-012
 
@@ -907,7 +911,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-008 | Main HUD Layout | P0 | M | Completed |
 | UX-009 | Minimap System | P0 | M | Completed |
 | UX-010 | Ping/Communication System | P1 | M | Not Started |
-| UX-011 | Damage Feedback System | P0 | S | Not Started |
+| UX-011 | Damage Feedback System | P0 | S | Completed |
 | UX-012 | Spectator UI | P2 | S | Not Started |
 | UX-013 | Victory/Defeat Screen | P1 | S | Not Started |
 | UX-014 | Main Menu Design | P1 | M | Not Started |
