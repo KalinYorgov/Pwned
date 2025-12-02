@@ -810,12 +810,12 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 3. **Bot Match:** Full match against AI players only
 
 **Acceptance Criteria:**
-- [ ] Mandatory tutorial for first-time players (skippable after)
-- [ ] Tutorial covers: movement, aiming, ability pickup, ability use, storm
-- [ ] Training ground available from main menu
-- [ ] Bot match option in casual queue
-- [ ] Bots have adjustable difficulty (Easy, Medium, Hard)
-- [ ] Progress in tutorial unlocks small reward
+- [x] Mandatory tutorial for first-time players (skippable after)
+- [x] Tutorial covers: movement, aiming, ability pickup, ability use, storm
+- [x] Training ground available from main menu
+- [x] Bot match option in casual queue
+- [x] Bots have adjustable difficulty (Easy, Medium, Hard)
+- [x] Progress in tutorial unlocks small reward
 
 **Definition of Done:**
 - New players understand core mechanics after tutorial
@@ -825,6 +825,10 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 - Tested with real new players for UX feedback
 
 **Dependencies:** GAME-016 (AI), UX-002
+
+**Deliverable:** [Practice/Tutorial Mode Specification](docs/PRACTICE_TUTORIAL_MODE_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -855,4 +859,4 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-021 | Duo Mode | P1 | M | Completed |
 | GAME-022 | Squad Mode | P3 | M | Not Started |
 | GAME-023 | Ranked Mode | P2 | L | Not Started |
-| GAME-024 | Practice/Tutorial Mode | P1 | M | Not Started |
+| GAME-024 | Practice/Tutorial Mode | P1 | M | Completed |
