@@ -281,19 +281,23 @@ Implement seasonal Battle Pass system with free and premium tiers.
 - XP earned through play and quests
 
 **Acceptance Criteria:**
-- [ ] Battle Pass UI shows dual track (free/premium)
-- [ ] Current tier and XP progress visible
-- [ ] Preview of all rewards up to next 5-10 tiers
-- [ ] Full pass preview available
-- [ ] Purchase premium pass from within UI
-- [ ] Claim rewards (manual or auto-claim option)
-- [ ] Season countdown timer
-- [ ] Season end handling (unclaimed rewards)
+- [x] Battle Pass UI shows dual track (free/premium)
+- [x] Current tier and XP progress visible
+- [x] Preview of all rewards up to next 5-10 tiers
+- [x] Full pass preview available
+- [x] Purchase premium pass from within UI
+- [x] Claim rewards (manual or auto-claim option)
+- [x] Season countdown timer
+- [x] Season end handling (unclaimed rewards)
 
 **Definition of Done:**
 - Battle Pass functional end-to-end
 - Players understand and engage with system
 - Revenue generated from pass purchases
+
+**Deliverable:** [Battle Pass Framework Specification](docs/BATTLE_PASS_FRAMEWORK_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-001, UX-014
 
@@ -714,7 +718,7 @@ Prevent economy exploits and abuse.
 | MON-005 | Featured/Daily Shop Rotation | P1 | M | Completed |
 | MON-006 | Bundle System | P1 | S | Completed |
 | MON-007 | Cosmetic Inventory System | P0 | M | Completed |
-| MON-008 | Battle Pass Framework | P1 | L | Not Started |
+| MON-008 | Battle Pass Framework | P1 | L | Completed |
 | MON-009 | Battle Pass Rewards Design | P1 | M | Not Started |
 | MON-010 | Battle Pass XP System | P1 | M | Not Started |
 | MON-011 | Season Management | P1 | M | Not Started |
