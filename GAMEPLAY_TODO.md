@@ -619,13 +619,13 @@ Implement the within-match leveling system (1-10) that increases player power ov
 - Survival time: 5 XP per 30 seconds
 
 **Acceptance Criteria:**
-- [ ] XP bar visible on HUD
-- [ ] Level up triggers celebration effect (visual, audio)
-- [ ] Stats immediately update on level up
-- [ ] Level visible on player nameplates
-- [ ] XP gain shows as floating text
-- [ ] Level cap of 10 reached by ~70% of match duration
-- [ ] Falling behind in levels is recoverable (not snowbally)
+- [x] XP bar visible on HUD
+- [x] Level up triggers celebration effect (visual, audio)
+- [x] Stats immediately update on level up
+- [x] Level visible on player nameplates
+- [x] XP gain shows as floating text
+- [x] Level cap of 10 reached by ~70% of match duration
+- [x] Falling behind in levels is recoverable (not snowbally)
 
 **Definition of Done:**
 - Leveling curve balanced for match duration
@@ -635,6 +635,10 @@ Implement the within-match leveling system (1-10) that increases player power ov
 - Tested with various play styles (aggressive vs passive)
 
 **Dependencies:** GAME-012, GAME-015, UX-005
+
+**Deliverable:** [In-Match Leveling System Specification](docs/IN_MATCH_LEVELING_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -837,7 +841,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-015 | NPC Monster System | P1 | L | Completed |
 | GAME-016 | NPC AI Behavior System | P1 | M | Completed |
 | GAME-017 | World Events System | P2 | M | Not Started |
-| GAME-018 | In-Match Leveling System | P1 | M | Not Started |
+| GAME-018 | In-Match Leveling System | P1 | M | Completed |
 | GAME-019 | Player Stats and Scaling | P1 | S | Not Started |
 | GAME-020 | Solo Mode | P0 | M | Completed |
 | GAME-021 | Duo Mode | P1 | M | Not Started |
