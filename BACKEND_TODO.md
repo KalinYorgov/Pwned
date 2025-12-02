@@ -30,15 +30,15 @@ Implement the matchmaking service that groups players into matches based on crit
 5. Match begins
 
 **Acceptance Criteria:**
-- [ ] Players can queue for solo or team modes
-- [ ] Queue groups players by region for low latency
-- [ ] Average queue time < 30 seconds (with bot fill if needed)
-- [ ] Parties queue together and placed on same team
-- [ ] Skill-based matching for ranked mode (separate queue)
-- [ ] Cancel queue option with instant exit
-- [ ] Queue status visible (searching, players found, connecting)
-- [ ] Fallback to bot fill if player count insufficient
-- [ ] Handles edge cases (player disconnect during matchmaking)
+- [x] Players can queue for solo or team modes
+- [x] Queue groups players by region for low latency
+- [x] Average queue time < 30 seconds (with bot fill if needed)
+- [x] Parties queue together and placed on same team
+- [x] Skill-based matching for ranked mode (separate queue)
+- [x] Cancel queue option with instant exit
+- [x] Queue status visible (searching, players found, connecting)
+- [x] Fallback to bot fill if player count insufficient
+- [x] Handles edge cases (player disconnect during matchmaking)
 
 **Definition of Done:**
 - Matchmaking tested with 1000+ concurrent players
@@ -47,7 +47,11 @@ Implement the matchmaking service that groups players into matches based on crit
 - Party matchmaking works correctly
 - Load tested for launch-day traffic
 
+**Deliverable:** [docs/CORE_MATCHMAKING_SERVICE_SPEC.md](docs/CORE_MATCHMAKING_SERVICE_SPEC.md)
+
 **Dependencies:** BACK-002, BACK-003
+
+**Status:** Completed
 
 ---
 
@@ -792,7 +796,7 @@ Implement A/B testing capability to test features and changes before full rollou
 
 | Task ID | Title | Priority | Complexity | Status |
 |---------|-------|----------|------------|--------|
-| BACK-001 | Core Matchmaking Service | P0 | L | Not Started |
+| BACK-001 | Core Matchmaking Service | P0 | L | Completed |
 | BACK-002 | Party/Squad System | P1 | M | Not Started |
 | BACK-003 | Skill-Based Matchmaking | P2 | M | Not Started |
 | BACK-004 | Dedicated Game Servers | P0 | XL | Completed |
