@@ -260,14 +260,14 @@ Design and implement the initial roster of abilities. MVP requires minimum 10 ab
 10. **Wind Burst** - Knockback enemies in radius
 
 **Acceptance Criteria:**
-- [ ] Each ability has unique visual and audio feedback
-- [ ] Abilities have appropriate cooldowns (5-20 seconds depending on power)
-- [ ] Skillshot abilities require aim input before firing
-- [ ] AoE abilities show ground indicator during targeting
-- [ ] Abilities interact correctly with terrain (no shooting through walls)
-- [ ] Each ability has clear counterplay potential
-- [ ] Abilities scale with rarity/upgrade level
-- [ ] Animation canceling rules defined and consistent
+- [x] Each ability has unique visual and audio feedback
+- [x] Abilities have appropriate cooldowns (5-20 seconds depending on power)
+- [x] Skillshot abilities require aim input before firing
+- [x] AoE abilities show ground indicator during targeting
+- [x] Abilities interact correctly with terrain (no shooting through walls)
+- [x] Each ability has clear counterplay potential
+- [x] Abilities scale with rarity/upgrade level
+- [x] Animation canceling rules defined and consistent
 
 **Definition of Done:**
 - All 10 MVP abilities fully functional in multiplayer
@@ -278,6 +278,11 @@ Design and implement the initial roster of abilities. MVP requires minimum 10 ab
 - Cooldown and damage values documented in design spreadsheet
 
 **Dependencies:** GAME-007, UX-003 (Touch Controls), ART-013 (Ability VFX)
+
+**Deliverables:**
+- [Core Ability Implementation Specification](docs/CORE_ABILITY_IMPLEMENTATION_SPEC.md)
+
+**Status: Completed**
 
 ---
 
@@ -786,7 +791,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-005 | Player Elimination System | P0 | S | Completed |
 | GAME-006 | Spectator Mode | P2 | M | Not Started |
 | GAME-007 | Ability Slot System | P0 | M | Completed |
-| GAME-008 | Core Ability Implementation | P0 | XL | Not Started |
+| GAME-008 | Core Ability Implementation | P0 | XL | Completed |
 | GAME-009 | Ability Upgrade System | P1 | M | Not Started |
 | GAME-010 | Ability Combo System | P2 | M | Not Started |
 | GAME-011 | Basic Attack System | P0 | M | Not Started |
