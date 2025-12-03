@@ -56,7 +56,7 @@ Implement the matchmaking service that groups players into matches based on crit
 ---
 
 ### BACK-002: Party/Squad System
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Implement the party system allowing players to team up before queuing.
@@ -69,16 +69,16 @@ Implement the party system allowing players to team up before queuing.
 - Party persists across matches
 
 **Acceptance Criteria:**
-- [ ] Create party (becomes leader)
-- [ ] Invite via friend list, username, or share link
-- [ ] Invite notifications appear in-game
-- [ ] Accept/decline with timeout
-- [ ] Kick party member (leader only)
-- [ ] Leave party option
-- [ ] Transfer leadership if leader leaves
-- [ ] Party size capped by mode (2 for duos, etc.)
-- [ ] Party voice chat in lobby
-- [ ] Cross-platform party support
+- [x] Create party (becomes leader)
+- [x] Invite via friend list, username, or share link
+- [x] Invite notifications appear in-game
+- [x] Accept/decline with timeout
+- [x] Kick party member (leader only)
+- [x] Leave party option
+- [x] Transfer leadership if leader leaves
+- [x] Party size capped by mode (2 for duos, etc.)
+- [x] Party voice chat in lobby
+- [x] Cross-platform party support
 
 **Definition of Done:**
 - Party formation fast and reliable
@@ -86,6 +86,9 @@ Implement the party system allowing players to team up before queuing.
 - No orphaned party states
 - Voice chat quality acceptable
 - Tested with all party sizes
+
+**Deliverables:**
+- [Party/Squad System Specification](docs/PARTY_SQUAD_SYSTEM_SPEC.md)
 
 **Dependencies:** BACK-005 (Friends System)
 
@@ -797,7 +800,7 @@ Implement A/B testing capability to test features and changes before full rollou
 | Task ID | Title | Priority | Complexity | Status |
 |---------|-------|----------|------------|--------|
 | BACK-001 | Core Matchmaking Service | P0 | L | Completed |
-| BACK-002 | Party/Squad System | P1 | M | Not Started |
+| BACK-002 | Party/Squad System | P1 | M | Completed |
 | BACK-003 | Skill-Based Matchmaking | P2 | M | Not Started |
 | BACK-004 | Dedicated Game Servers | P0 | XL | Completed |
 | BACK-005 | Server Orchestration | P0 | L | Completed |
