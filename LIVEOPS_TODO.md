@@ -54,7 +54,7 @@ Implement rotating daily quests that give players daily engagement goals.
 ---
 
 ### LIVE-002: Weekly Quest System
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Implement weekly quests with larger objectives and rewards.
@@ -66,17 +66,20 @@ Implement weekly quests with larger objectives and rewards.
 - "Play 20 matches" - 600 Gold + Rare Chest
 
 **Acceptance Criteria:**
-- [ ] 5-7 weekly quests assigned
-- [ ] Quests reset weekly (e.g., Monday UTC)
-- [ ] Larger rewards than dailies
-- [ ] Progress persists through week
-- [ ] Weekly summary at reset
-- [ ] Quests contribute to Battle Pass significantly
+- [x] 5-7 weekly quests assigned
+- [x] Quests reset weekly (e.g., Monday UTC)
+- [x] Larger rewards than dailies
+- [x] Progress persists through week
+- [x] Weekly summary at reset
+- [x] Quests contribute to Battle Pass significantly
 
 **Definition of Done:**
 - Weekly quests functional
 - Encourages regular weekly play
 - Balanced with daily quests
+
+**Deliverables:**
+- [Weekly Quest System Specification](docs/WEEKLY_QUEST_SYSTEM_SPEC.md)
 
 **Dependencies:** LIVE-001
 
@@ -774,7 +777,7 @@ Build comprehensive analytics dashboard for live ops decisions.
 | Task ID | Title | Priority | Complexity | Status |
 |---------|-------|----------|------------|--------|
 | LIVE-001 | Daily Quest System | P1 | M | Completed |
-| LIVE-002 | Weekly Quest System | P1 | M | Not Started |
+| LIVE-002 | Weekly Quest System | P1 | M | Completed |
 | LIVE-003 | Achievement System | P2 | M | Not Started |
 | LIVE-004 | Quest Admin Tools | P1 | M | Not Started |
 | LIVE-005 | Limited-Time Event Framework | P1 | L | Not Started |
