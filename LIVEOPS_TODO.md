@@ -17,7 +17,7 @@ This document covers all live operations systems including quests, events, seaso
 ## 1. Quest System
 
 ### LIVE-001: Daily Quest System
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Implement rotating daily quests that give players daily engagement goals.
@@ -31,20 +31,23 @@ Implement rotating daily quests that give players daily engagement goals.
 - "Survive to top 10 twice" - 200 Gold
 
 **Acceptance Criteria:**
-- [ ] 3 daily quests assigned per day
-- [ ] Quests reset at fixed time (UTC midnight or player local)
-- [ ] Progress tracked across matches
-- [ ] Completion grants rewards immediately
-- [ ] Quest UI shows progress (3/5 chests opened)
-- [ ] Quest difficulty scales appropriately
-- [ ] Quests completable by average player in 30-60 min
-- [ ] Re-roll option for 1 quest per day (optional)
+- [x] 3 daily quests assigned per day
+- [x] Quests reset at fixed time (UTC midnight or player local)
+- [x] Progress tracked across matches
+- [x] Completion grants rewards immediately
+- [x] Quest UI shows progress (3/5 chests opened)
+- [x] Quest difficulty scales appropriately
+- [x] Quests completable by average player in 30-60 min
+- [x] Re-roll option for 1 quest per day (optional)
 
 **Definition of Done:**
 - Daily quest system functional
 - Players engage with quests regularly
 - Completion rate 60%+ target
 - Tested for edge cases
+
+**Deliverables:**
+- [Daily Quest System Specification](docs/DAILY_QUEST_SYSTEM_SPEC.md)
 
 **Dependencies:** BACK-011, UX-014
 
@@ -770,7 +773,7 @@ Build comprehensive analytics dashboard for live ops decisions.
 
 | Task ID | Title | Priority | Complexity | Status |
 |---------|-------|----------|------------|--------|
-| LIVE-001 | Daily Quest System | P1 | M | Not Started |
+| LIVE-001 | Daily Quest System | P1 | M | Completed |
 | LIVE-002 | Weekly Quest System | P1 | M | Not Started |
 | LIVE-003 | Achievement System | P2 | M | Not Started |
 | LIVE-004 | Quest Admin Tools | P1 | M | Not Started |
