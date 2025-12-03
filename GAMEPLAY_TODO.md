@@ -23,12 +23,12 @@ This document covers all core gameplay systems including battle royale mechanics
 Implement the core match initialization flow including player joining, countdown timer, and match start synchronization. The system must handle 30-60 players joining a match instance, synchronize game state, and transition all players from lobby to active gameplay simultaneously.
 
 **Acceptance Criteria:**
-- [ ] Players can queue for a match and are placed in a lobby
-- [ ] Lobby displays player count and countdown timer
-- [ ] Match starts when minimum player threshold is reached (or timer expires with bot fill)
-- [ ] All players receive synchronized match start signal
-- [ ] Match state properly initializes (storm position, loot spawns, NPC spawns)
-- [ ] Players who disconnect during init can reconnect within grace period (30 seconds)
+- [x] Players can queue for a match and are placed in a lobby
+- [x] Lobby displays player count and countdown timer
+- [x] Match starts when minimum player threshold is reached (or timer expires with bot fill)
+- [x] All players receive synchronized match start signal
+- [x] Match state properly initializes (storm position, loot spawns, NPC spawns)
+- [x] Players who disconnect during init can reconnect within grace period (30 seconds)
 
 **Definition of Done:**
 - Match initialization works reliably with 60 concurrent players
@@ -39,6 +39,11 @@ Implement the core match initialization flow including player joining, countdown
 
 **Dependencies:** BACK-001 (Matchmaking), BACK-003 (Game Server)
 
+**Deliverables:**
+- [Match Initialization System Specification](docs/MATCH_INITIALIZATION_SYSTEM_SPEC.md)
+
+**Status: Completed**
+
 ---
 
 ### GAME-002: Player Drop-In System
@@ -48,13 +53,13 @@ Implement the core match initialization flow including player joining, countdown
 Create the drop-in mechanic where players select a landing zone and descend onto the map. Inspired by Plunderstorm's "bombing in" mechanic, players should be launched from a pirate ship circling the island and can control their descent trajectory.
 
 **Acceptance Criteria:**
-- [ ] Pre-drop phase shows full map with selectable landing zones
-- [ ] Players can mark intended drop location (visible to teammates in duo/squad)
-- [ ] Drop animation shows player launching from cannon/ship
-- [ ] Player has glide control during descent (directional input affects trajectory)
-- [ ] Landing triggers brief animation and vulnerability period (0.5s)
-- [ ] Camera smoothly transitions from bird's eye to third-person on landing
-- [ ] Drop path is visible to other players (for strategic awareness)
+- [x] Pre-drop phase shows full map with selectable landing zones
+- [x] Players can mark intended drop location (visible to teammates in duo/squad)
+- [x] Drop animation shows player launching from cannon/ship
+- [x] Player has glide control during descent (directional input affects trajectory)
+- [x] Landing triggers brief animation and vulnerability period (0.5s)
+- [x] Camera smoothly transitions from bird's eye to third-person on landing
+- [x] Drop path is visible to other players (for strategic awareness)
 
 **Definition of Done:**
 - Drop feels responsive and satisfying on mobile touch controls
@@ -65,6 +70,11 @@ Create the drop-in mechanic where players select a landing zone and descend onto
 
 **Dependencies:** GAME-001, UX-003 (Touch Controls)
 
+**Deliverables:**
+- [Player Drop-In System Specification](docs/PLAYER_DROP_IN_SYSTEM_SPEC.md)
+
+**Status: Completed**
+
 ---
 
 ### GAME-003: Storm/Safe Zone System
@@ -74,15 +84,15 @@ Create the drop-in mechanic where players select a landing zone and descend onto
 Implement the shrinking safe zone mechanic that forces players together over the match duration. The storm deals damage to players outside the safe zone and creates visual/audio warnings as it approaches.
 
 **Acceptance Criteria:**
-- [ ] Safe zone starts covering 80% of map, shrinks in 4-5 phases
-- [ ] Each phase has: warning period, shrink period, stable period
-- [ ] Storm damage scales with phase (Phase 1: 2 DPS, Phase 5: 10 DPS)
-- [ ] Visual indicator shows current safe zone on minimap and main view
-- [ ] Storm wall is clearly visible (towering clouds/magical barrier)
-- [ ] Audio cue warns when storm is about to shrink
-- [ ] UI shows time until next shrink phase
-- [ ] Final zone converges to small area forcing final confrontation
-- [ ] Storm movement is smooth and predictable (no stuttering)
+- [x] Safe zone starts covering 80% of map, shrinks in 4-5 phases
+- [x] Each phase has: warning period, shrink period, stable period
+- [x] Storm damage scales with phase (Phase 1: 2 DPS, Phase 5: 10 DPS)
+- [x] Visual indicator shows current safe zone on minimap and main view
+- [x] Storm wall is clearly visible (towering clouds/magical barrier)
+- [x] Audio cue warns when storm is about to shrink
+- [x] UI shows time until next shrink phase
+- [x] Final zone converges to small area forcing final confrontation
+- [x] Storm movement is smooth and predictable (no stuttering)
 
 **Definition of Done:**
 - Storm phases balance match length to 10-15 minutes
@@ -93,6 +103,11 @@ Implement the shrinking safe zone mechanic that forces players together over the
 
 **Dependencies:** GAME-001, ART-015 (Storm VFX)
 
+**Deliverables:**
+- [Storm/Safe Zone System Specification](docs/STORM_SAFE_ZONE_SYSTEM_SPEC.md)
+
+**Status: Completed**
+
 ---
 
 ### GAME-004: Loot Spawn System
@@ -102,15 +117,15 @@ Implement the shrinking safe zone mechanic that forces players together over the
 Create the system for spawning loot (abilities) across the map. Loot appears in treasure chests of varying rarity and as drops from defeated NPCs. The system must ensure balanced distribution and fair early-game opportunities.
 
 **Acceptance Criteria:**
-- [ ] Predefined loot spawn points distributed across map
-- [ ] Loot spawns on match start (randomized within spawn point pools)
-- [ ] Treasure chests have rarity tiers: Common (60%), Uncommon (25%), Rare (12%), Epic (3%)
-- [ ] Chest rarity affects quality of contained abilities
-- [ ] Higher-tier areas (named locations) have better loot density
-- [ ] Chests have opening animation (0.5-1s) - interruptible by damage
-- [ ] Opened chests are visually distinct (open lid, empty glow)
-- [ ] Abilities auto-equip to empty slots or show prompt if slots full
-- [ ] Loot from NPCs drops on ground briefly before auto-pickup radius
+- [x] Predefined loot spawn points distributed across map
+- [x] Loot spawns on match start (randomized within spawn point pools)
+- [x] Treasure chests have rarity tiers: Common (60%), Uncommon (25%), Rare (12%), Epic (3%)
+- [x] Chest rarity affects quality of contained abilities
+- [x] Higher-tier areas (named locations) have better loot density
+- [x] Chests have opening animation (0.5-1s) - interruptible by damage
+- [x] Opened chests are visually distinct (open lid, empty glow)
+- [x] Abilities auto-equip to empty slots or show prompt if slots full
+- [x] Loot from NPCs drops on ground briefly before auto-pickup radius
 
 **Definition of Done:**
 - Loot distribution tested for balance (no single OP landing spot)
@@ -121,6 +136,11 @@ Create the system for spawning loot (abilities) across the map. Loot appears in 
 
 **Dependencies:** GAME-005 (Ability System), ART-010 (Treasure Chests)
 
+**Deliverables:**
+- [Loot Spawn System Specification](docs/LOOT_SPAWN_SYSTEM_SPEC.md)
+
+**Status: Completed**
+
 ---
 
 ### GAME-005: Player Elimination System
@@ -130,15 +150,15 @@ Create the system for spawning loot (abilities) across the map. Loot appears in 
 Handle player death, elimination announcement, and match end conditions. When a player's health reaches zero, they are eliminated from the match with appropriate feedback.
 
 **Acceptance Criteria:**
-- [ ] Player elimination triggers death animation
-- [ ] Eliminated player drops a "soul orb" or treasure pile (grants XP to killer)
-- [ ] Kill feed shows elimination (Killer eliminated Victim)
-- [ ] Eliminating player sees "+1 Kill" notification
-- [ ] Remaining player count updates globally
-- [ ] Eliminated player can choose: spectate or return to lobby
-- [ ] Last player/team standing wins the match
-- [ ] Victory screen shows stats (kills, damage, abilities used, placement)
-- [ ] Match end broadcasts winner to all spectators
+- [x] Player elimination triggers death animation
+- [x] Eliminated player drops a "soul orb" or treasure pile (grants XP to killer)
+- [x] Kill feed shows elimination (Killer eliminated Victim)
+- [x] Eliminating player sees "+1 Kill" notification
+- [x] Remaining player count updates globally
+- [x] Eliminated player can choose: spectate or return to lobby
+- [x] Last player/team standing wins the match
+- [x] Victory screen shows stats (kills, damage, abilities used, placement)
+- [x] Match end broadcasts winner to all spectators
 
 **Definition of Done:**
 - Elimination is server-authoritative (no fake deaths)
@@ -148,6 +168,11 @@ Handle player death, elimination announcement, and match end conditions. When a 
 - Tested with rapid successive eliminations
 
 **Dependencies:** GAME-012 (Combat), BACK-005 (Stats Tracking)
+
+**Deliverables:**
+- [Player Elimination System Specification](docs/PLAYER_ELIMINATION_SYSTEM_SPEC.md)
+
+**Status: Completed**
 
 ---
 
@@ -187,14 +212,14 @@ Allow eliminated players to spectate remaining players in the match. In team mod
 Implement the ability loadout system where players have limited slots for collected abilities. Based on Plunderstorm design: 2 offensive slots + 2 utility slots, plus a basic attack always available.
 
 **Acceptance Criteria:**
-- [ ] Players always have access to basic attack (no slot required)
-- [ ] 4 ability slots available: 2 offensive (red border), 2 utility (blue border)
-- [ ] Picking up ability auto-equips to matching empty slot
-- [ ] If slot type is full, player sees swap prompt (new ability vs current)
-- [ ] Swapping drops the old ability on ground (can be picked up)
-- [ ] Abilities show cooldown timers on UI
-- [ ] Each ability has unique icon, clearly visible on mobile
-- [ ] Slot arrangement is consistent across all matches
+- [x] Players always have access to basic attack (no slot required)
+- [x] 4 ability slots available: 2 offensive (red border), 2 utility (blue border)
+- [x] Picking up ability auto-equips to matching empty slot
+- [x] If slot type is full, player sees swap prompt (new ability vs current)
+- [x] Swapping drops the old ability on ground (can be picked up)
+- [x] Abilities show cooldown timers on UI
+- [x] Each ability has unique icon, clearly visible on mobile
+- [x] Slot arrangement is consistent across all matches
 
 **Definition of Done:**
 - Ability pickup feels instant and responsive
@@ -204,6 +229,11 @@ Implement the ability loadout system where players have limited slots for collec
 - Tested with all ability combinations
 
 **Dependencies:** UX-006 (Ability UI), GAME-008 (Ability Implementation)
+
+**Deliverables:**
+- [Ability Slot System Specification](docs/ABILITY_SLOT_SYSTEM_SPEC.md)
+
+**Status: Completed**
 
 ---
 
@@ -230,14 +260,14 @@ Design and implement the initial roster of abilities. MVP requires minimum 10 ab
 10. **Wind Burst** - Knockback enemies in radius
 
 **Acceptance Criteria:**
-- [ ] Each ability has unique visual and audio feedback
-- [ ] Abilities have appropriate cooldowns (5-20 seconds depending on power)
-- [ ] Skillshot abilities require aim input before firing
-- [ ] AoE abilities show ground indicator during targeting
-- [ ] Abilities interact correctly with terrain (no shooting through walls)
-- [ ] Each ability has clear counterplay potential
-- [ ] Abilities scale with rarity/upgrade level
-- [ ] Animation canceling rules defined and consistent
+- [x] Each ability has unique visual and audio feedback
+- [x] Abilities have appropriate cooldowns (5-20 seconds depending on power)
+- [x] Skillshot abilities require aim input before firing
+- [x] AoE abilities show ground indicator during targeting
+- [x] Abilities interact correctly with terrain (no shooting through walls)
+- [x] Each ability has clear counterplay potential
+- [x] Abilities scale with rarity/upgrade level
+- [x] Animation canceling rules defined and consistent
 
 **Definition of Done:**
 - All 10 MVP abilities fully functional in multiplayer
@@ -248,6 +278,11 @@ Design and implement the initial roster of abilities. MVP requires minimum 10 ab
 - Cooldown and damage values documented in design spreadsheet
 
 **Dependencies:** GAME-007, UX-003 (Touch Controls), ART-013 (Ability VFX)
+
+**Deliverables:**
+- [Core Ability Implementation Specification](docs/CORE_ABILITY_IMPLEMENTATION_SPEC.md)
+
+**Status: Completed**
 
 ---
 
@@ -263,13 +298,13 @@ Implement the ability upgrade mechanic where collecting duplicate abilities incr
 - **Rank 3 (Epic):** +50% damage/effect, -20% cooldown, bonus effect
 
 **Acceptance Criteria:**
-- [ ] Picking up same ability when already equipped triggers upgrade
-- [ ] Visual feedback clearly shows upgrade occurring
-- [ ] Ability icon shows current rank (1-3 stars or color border)
-- [ ] Rank 3 abilities have enhanced VFX
-- [ ] Tooltip shows current rank stats vs next rank preview
-- [ ] Cannot upgrade beyond Rank 3 (duplicates become useless/small XP)
-- [ ] Higher rarity chests have higher chance of dropping upgraded abilities directly
+- [x] Picking up same ability when already equipped triggers upgrade
+- [x] Visual feedback clearly shows upgrade occurring
+- [x] Ability icon shows current rank (1-3 stars or color border)
+- [x] Rank 3 abilities have enhanced VFX
+- [x] Tooltip shows current rank stats vs next rank preview
+- [x] Cannot upgrade beyond Rank 3 (duplicates become useless/small XP)
+- [x] Higher rarity chests have higher chance of dropping upgraded abilities directly
 
 **Definition of Done:**
 - Upgrade system balanced (Rank 3 strong but not game-breaking)
@@ -279,6 +314,10 @@ Implement the ability upgrade mechanic where collecting duplicate abilities incr
 - Tested with rapid sequential upgrades
 
 **Dependencies:** GAME-008, GAME-004
+
+**Deliverable:** [Ability Upgrade System Specification](docs/ABILITY_UPGRADE_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -322,14 +361,14 @@ Design and implement synergies between certain abilities when used in combinatio
 Implement the always-available basic attack that all players have regardless of looted abilities. This should be a simple, reliable attack for early-game and ability cooldown periods.
 
 **Acceptance Criteria:**
-- [ ] Basic attack available from match start (no pickup required)
-- [ ] Moderate damage, short-medium range, no cooldown (or very short ~1s)
-- [ ] Visual: Pirate pistol shot or magic bolt
-- [ ] Auto-aim assist option for mobile (soft lock to nearest enemy in cone)
-- [ ] Manual aim mode for skilled players
-- [ ] Cannot spam infinitely (slight fire rate limit)
-- [ ] Headshots deal bonus damage (optional - based on balance testing)
-- [ ] Audio and visual feedback on hit confirmation
+- [x] Basic attack available from match start (no pickup required)
+- [x] Moderate damage, short-medium range, no cooldown (or very short ~1s)
+- [x] Visual: Pirate pistol shot or magic bolt
+- [x] Auto-aim assist option for mobile (soft lock to nearest enemy in cone)
+- [x] Manual aim mode for skilled players
+- [x] Cannot spam infinitely (slight fire rate limit)
+- [x] Headshots deal bonus damage (optional - based on balance testing)
+- [x] Audio and visual feedback on hit confirmation
 
 **Definition of Done:**
 - Basic attack feels responsive (< 50ms input to visual)
@@ -340,6 +379,11 @@ Implement the always-available basic attack that all players have regardless of 
 
 **Dependencies:** UX-003, GAME-012
 
+**Deliverables:**
+- [Basic Attack System Specification](docs/BASIC_ATTACK_SYSTEM_SPEC.md)
+
+**Status: Completed**
+
 ---
 
 ### GAME-012: Damage and Health System
@@ -349,15 +393,15 @@ Implement the always-available basic attack that all players have regardless of 
 Implement the health and damage calculation system. Players start with base health that can be increased through leveling. Damage types, resistances, and hit detection must be server-authoritative.
 
 **Acceptance Criteria:**
-- [ ] Base health: 100 HP at level 1
-- [ ] Health scaling: +10 HP per level (max 200 HP at level 10)
-- [ ] Damage numbers displayed on hit (floating combat text)
-- [ ] Critical hits possible (1.5x damage, visual indicator)
-- [ ] Health bar visible above player characters (enemy and self)
-- [ ] Low health warning (screen red edge, heartbeat SFX)
-- [ ] Health regeneration: None passive, only through abilities/items
-- [ ] Damage falloff for ranged abilities (optional, based on balance)
-- [ ] Armor/resistance system (future expansion hook)
+- [x] Base health: 100 HP at level 1
+- [x] Health scaling: +10 HP per level (max 200 HP at level 10)
+- [x] Damage numbers displayed on hit (floating combat text)
+- [x] Critical hits possible (1.5x damage, visual indicator)
+- [x] Health bar visible above player characters (enemy and self)
+- [x] Low health warning (screen red edge, heartbeat SFX)
+- [x] Health regeneration: None passive, only through abilities/items
+- [x] Damage falloff for ranged abilities (optional, based on balance)
+- [x] Armor/resistance system (future expansion hook)
 
 **Definition of Done:**
 - All damage calculations server-authoritative
@@ -368,6 +412,11 @@ Implement the health and damage calculation system. Players start with base heal
 
 **Dependencies:** GAME-005, BACK-003
 
+**Deliverables:**
+- [Damage and Health System Specification](docs/DAMAGE_HEALTH_SYSTEM_SPEC.md)
+
+**Status: Completed**
+
 ---
 
 ### GAME-013: Hit Detection and Lag Compensation
@@ -377,15 +426,15 @@ Implement the health and damage calculation system. Players start with base heal
 Implement robust hit detection that feels fair to all players regardless of network latency. Use server-authoritative hit registration with client-side prediction and lag compensation.
 
 **Acceptance Criteria:**
-- [ ] Server is authoritative for all hit detection
-- [ ] Client-side prediction for immediate visual feedback
-- [ ] Lag compensation: Server rewinds to shooter's view time
-- [ ] Maximum acceptable lag compensation window: 200ms
-- [ ] Projectiles use server-authoritative trajectory simulation
-- [ ] Hitscan abilities (if any) use raycast with lag compensation
-- [ ] AoE abilities check positions at server tick time
-- [ ] Anti-cheat validation on hit claims
-- [ ] Hit markers show for attacker on successful damage
+- [x] Server is authoritative for all hit detection
+- [x] Client-side prediction for immediate visual feedback
+- [x] Lag compensation: Server rewinds to shooter's view time
+- [x] Maximum acceptable lag compensation window: 200ms
+- [x] Projectiles use server-authoritative trajectory simulation
+- [x] Hitscan abilities (if any) use raycast with lag compensation
+- [x] AoE abilities check positions at server tick time
+- [x] Anti-cheat validation on hit claims
+- [x] Hit markers show for attacker on successful damage
 
 **Definition of Done:**
 - Combat feels responsive with up to 150ms latency
@@ -395,6 +444,11 @@ Implement robust hit detection that feels fair to all players regardless of netw
 - Edge cases handled (shooting through closing doors, etc.)
 
 **Dependencies:** BACK-003, BACK-004
+
+**Deliverables:**
+- [Hit Detection and Lag Compensation Specification](docs/HIT_DETECTION_LAG_COMPENSATION_SPEC.md)
+
+**Status: Completed**
 
 ---
 
@@ -412,13 +466,13 @@ Implement crowd control (CC) effects that abilities can apply: stuns, slows, roo
 - **Silence:** Cannot use abilities, can still move
 
 **Acceptance Criteria:**
-- [ ] Each CC type has clear visual indicator on affected player
-- [ ] CC duration shown on UI (debuff timer)
-- [ ] Diminishing returns: Repeated CC of same type has reduced duration
-- [ ] CC immunity window after extended CC (prevent permastun)
-- [ ] Some abilities grant CC immunity (e.g., Barrel Roll)
-- [ ] CC affects both players and NPCs
-- [ ] Knockbacks interact correctly with terrain/walls
+- [x] Each CC type has clear visual indicator on affected player
+- [x] CC duration shown on UI (debuff timer)
+- [x] Diminishing returns: Repeated CC of same type has reduced duration
+- [x] CC immunity window after extended CC (prevent permastun)
+- [x] Some abilities grant CC immunity (e.g., Barrel Roll)
+- [x] CC affects both players and NPCs
+- [x] Knockbacks interact correctly with terrain/walls
 
 **Definition of Done:**
 - All CC types feel distinct and readable
@@ -428,6 +482,10 @@ Implement crowd control (CC) effects that abilities can apply: stuns, slows, roo
 - Tested all CC interactions with all abilities
 
 **Dependencies:** GAME-008, GAME-012
+
+**Deliverable:** [Crowd Control System Specification](docs/CROWD_CONTROL_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -446,15 +504,15 @@ Implement NPC monster camps scattered across the map. Monsters provide alternati
 4. **Mini-Bosses (Rare):** High HP, unique attack patterns, epic loot potential
 
 **Acceptance Criteria:**
-- [ ] Monster camps spawn at predefined locations on map
-- [ ] Monsters are aggressive when player enters range
-- [ ] Each monster has simple AI (patrol, chase, attack, return)
-- [ ] Killing monsters grants XP (scaling by type)
-- [ ] Monsters have chance to drop abilities (higher tier = better drops)
-- [ ] Monsters respawn after timer (60-90 seconds)
-- [ ] Monster health bars visible when in combat
-- [ ] Monsters can be kited, use terrain strategically
-- [ ] Monsters attack any nearby player (no ownership)
+- [x] Monster camps spawn at predefined locations on map
+- [x] Monsters are aggressive when player enters range
+- [x] Each monster has simple AI (patrol, chase, attack, return)
+- [x] Killing monsters grants XP (scaling by type)
+- [x] Monsters have chance to drop abilities (higher tier = better drops)
+- [x] Monsters respawn after timer (60-90 seconds)
+- [x] Monster health bars visible when in combat
+- [x] Monsters can be kited, use terrain strategically
+- [x] Monsters attack any nearby player (no ownership)
 
 **Definition of Done:**
 - Monster AI performs well with 60 players on map
@@ -464,6 +522,10 @@ Implement NPC monster camps scattered across the map. Monsters provide alternati
 - Server-authoritative monster state (no desync)
 
 **Dependencies:** ART-011 (Monster Models), GAME-016
+
+**Deliverable:** [NPC Monster System Specification](docs/NPC_MONSTER_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -481,14 +543,14 @@ Create the AI behavior system for NPC monsters. AI should be simple but engaging
 - **Death:** Play death animation, drop loot
 
 **Acceptance Criteria:**
-- [ ] AI uses state machine architecture for clarity
-- [ ] Pathfinding uses NavMesh (pre-baked for performance)
-- [ ] Monsters leash to spawn area (max chase distance)
-- [ ] Attack patterns are predictable (learnable by player)
-- [ ] Mini-bosses have 2-3 attack phases
-- [ ] AI doesn't get stuck on terrain
-- [ ] Multiple players can fight same monster camp
-- [ ] AI performance optimized (< 1ms per monster per tick)
+- [x] AI uses state machine architecture for clarity
+- [x] Pathfinding uses NavMesh (pre-baked for performance)
+- [x] Monsters leash to spawn area (max chase distance)
+- [x] Attack patterns are predictable (learnable by player)
+- [x] Mini-bosses have 2-3 attack phases
+- [x] AI doesn't get stuck on terrain
+- [x] Multiple players can fight same monster camp
+- [x] AI performance optimized (< 1ms per monster per tick)
 
 **Definition of Done:**
 - AI feels fair and predictable
@@ -498,6 +560,10 @@ Create the AI behavior system for NPC monsters. AI should be simple but engaging
 - Edge cases handled (disconnect while fighting, etc.)
 
 **Dependencies:** GAME-015
+
+**Deliverable:** [NPC AI Behavior System Specification](docs/NPC_AI_BEHAVIOR_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -553,13 +619,13 @@ Implement the within-match leveling system (1-10) that increases player power ov
 - Survival time: 5 XP per 30 seconds
 
 **Acceptance Criteria:**
-- [ ] XP bar visible on HUD
-- [ ] Level up triggers celebration effect (visual, audio)
-- [ ] Stats immediately update on level up
-- [ ] Level visible on player nameplates
-- [ ] XP gain shows as floating text
-- [ ] Level cap of 10 reached by ~70% of match duration
-- [ ] Falling behind in levels is recoverable (not snowbally)
+- [x] XP bar visible on HUD
+- [x] Level up triggers celebration effect (visual, audio)
+- [x] Stats immediately update on level up
+- [x] Level visible on player nameplates
+- [x] XP gain shows as floating text
+- [x] Level cap of 10 reached by ~70% of match duration
+- [x] Falling behind in levels is recoverable (not snowbally)
 
 **Definition of Done:**
 - Leveling curve balanced for match duration
@@ -569,6 +635,10 @@ Implement the within-match leveling system (1-10) that increases player power ov
 - Tested with various play styles (aggressive vs passive)
 
 **Dependencies:** GAME-012, GAME-015, UX-005
+
+**Deliverable:** [In-Match Leveling System Specification](docs/IN_MATCH_LEVELING_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -585,11 +655,11 @@ Define and implement the core player stats that scale with level and potentially
 - **Movement Speed:** Base movement rate
 
 **Acceptance Criteria:**
-- [ ] Stats system is extensible for future additions
-- [ ] All stat effects are server-calculated
-- [ ] Stats visible in pause/info menu
-- [ ] Stat boosts stack additively (not multiplicatively to prevent exploits)
-- [ ] Temporary stat buffs possible (from abilities or pickups)
+- [x] Stats system is extensible for future additions
+- [x] All stat effects are server-calculated
+- [x] Stats visible in pause/info menu
+- [x] Stat boosts stack additively (not multiplicatively to prevent exploits)
+- [x] Temporary stat buffs possible (from abilities or pickups)
 
 **Definition of Done:**
 - Stats system documented and maintainable
@@ -598,6 +668,10 @@ Define and implement the core player stats that scale with level and potentially
 - Performance negligible (simple math)
 
 **Dependencies:** GAME-018
+
+**Deliverable:** [Player Stats and Scaling Specification](docs/PLAYER_STATS_SCALING_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -610,13 +684,13 @@ Define and implement the core player stats that scale with level and potentially
 Implement the core solo battle royale mode: 30-60 players, last one standing wins.
 
 **Acceptance Criteria:**
-- [ ] 30-60 players per match (scalable based on population)
-- [ ] Free-for-all, no teams
-- [ ] All core systems functional (drop, loot, combat, storm)
-- [ ] Match ends when 1 player remains
-- [ ] Placement tracked (1st, 2nd, 3rd, etc.)
-- [ ] Rewards based on placement
-- [ ] Queue available 24/7 (bot fill if needed)
+- [x] 30-60 players per match (scalable based on population)
+- [x] Free-for-all, no teams
+- [x] All core systems functional (drop, loot, combat, storm)
+- [x] Match ends when 1 player remains
+- [x] Placement tracked (1st, 2nd, 3rd, etc.)
+- [x] Rewards based on placement
+- [x] Queue available 24/7 (bot fill if needed)
 
 **Definition of Done:**
 - Solo mode fully playable end-to-end
@@ -627,6 +701,11 @@ Implement the core solo battle royale mode: 30-60 players, last one standing win
 
 **Dependencies:** All P0 GAME tasks, BACK-001
 
+**Deliverables:**
+- [Solo Mode Specification](docs/SOLO_MODE_SPEC.md)
+
+**Status: Completed**
+
 ---
 
 ### GAME-021: Duo Mode
@@ -636,15 +715,15 @@ Implement the core solo battle royale mode: 30-60 players, last one standing win
 Implement duo mode: teams of 2, last team standing wins. Includes teammate features.
 
 **Acceptance Criteria:**
-- [ ] 30-60 players (15-30 teams)
-- [ ] Party system: queue with a friend
-- [ ] Random teammate matching if solo queue
-- [ ] Teammates visible on map (icon, distance)
-- [ ] Team voice chat or ping system
-- [ ] Downed state before elimination (can be revived)
-- [ ] Revive mechanic: 5 second channel, restores 50% HP
-- [ ] Both teammates must be eliminated for team loss
-- [ ] Share loot pings with teammate
+- [x] 30-60 players (15-30 teams)
+- [x] Party system: queue with a friend
+- [x] Random teammate matching if solo queue
+- [x] Teammates visible on map (icon, distance)
+- [x] Team voice chat or ping system
+- [x] Downed state before elimination (can be revived)
+- [x] Revive mechanic: 5 second channel, restores 50% HP
+- [x] Both teammates must be eliminated for team loss
+- [x] Share loot pings with teammate
 
 **Definition of Done:**
 - Team systems fully functional
@@ -654,6 +733,10 @@ Implement duo mode: teams of 2, last team standing wins. Includes teammate featu
 - Tested with full teams
 
 **Dependencies:** GAME-020, BACK-002, UX-010
+
+**Deliverable:** [Duo Mode Specification](docs/DUO_MODE_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -727,12 +810,12 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 3. **Bot Match:** Full match against AI players only
 
 **Acceptance Criteria:**
-- [ ] Mandatory tutorial for first-time players (skippable after)
-- [ ] Tutorial covers: movement, aiming, ability pickup, ability use, storm
-- [ ] Training ground available from main menu
-- [ ] Bot match option in casual queue
-- [ ] Bots have adjustable difficulty (Easy, Medium, Hard)
-- [ ] Progress in tutorial unlocks small reward
+- [x] Mandatory tutorial for first-time players (skippable after)
+- [x] Tutorial covers: movement, aiming, ability pickup, ability use, storm
+- [x] Training ground available from main menu
+- [x] Bot match option in casual queue
+- [x] Bots have adjustable difficulty (Easy, Medium, Hard)
+- [x] Progress in tutorial unlocks small reward
 
 **Definition of Done:**
 - New players understand core mechanics after tutorial
@@ -743,33 +826,37 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 
 **Dependencies:** GAME-016 (AI), UX-002
 
+**Deliverable:** [Practice/Tutorial Mode Specification](docs/PRACTICE_TUTORIAL_MODE_SPEC.md)
+
+**Status:** Completed
+
 ---
 
 ## Task Summary
 
 | Task ID | Title | Priority | Complexity | Status |
 |---------|-------|----------|------------|--------|
-| GAME-001 | Match Initialization System | P0 | L | Not Started |
-| GAME-002 | Player Drop-In System | P0 | M | Not Started |
-| GAME-003 | Storm/Safe Zone System | P0 | M | Not Started |
-| GAME-004 | Loot Spawn System | P0 | M | Not Started |
-| GAME-005 | Player Elimination System | P0 | S | Not Started |
+| GAME-001 | Match Initialization System | P0 | L | Completed |
+| GAME-002 | Player Drop-In System | P0 | M | Completed |
+| GAME-003 | Storm/Safe Zone System | P0 | M | Completed |
+| GAME-004 | Loot Spawn System | P0 | M | Completed |
+| GAME-005 | Player Elimination System | P0 | S | Completed |
 | GAME-006 | Spectator Mode | P2 | M | Not Started |
-| GAME-007 | Ability Slot System | P0 | M | Not Started |
-| GAME-008 | Core Ability Implementation | P0 | XL | Not Started |
-| GAME-009 | Ability Upgrade System | P1 | M | Not Started |
+| GAME-007 | Ability Slot System | P0 | M | Completed |
+| GAME-008 | Core Ability Implementation | P0 | XL | Completed |
+| GAME-009 | Ability Upgrade System | P1 | M | Completed |
 | GAME-010 | Ability Combo System | P2 | M | Not Started |
-| GAME-011 | Basic Attack System | P0 | M | Not Started |
-| GAME-012 | Damage and Health System | P0 | M | Not Started |
-| GAME-013 | Hit Detection and Lag Compensation | P0 | L | Not Started |
-| GAME-014 | Crowd Control System | P1 | M | Not Started |
-| GAME-015 | NPC Monster System | P1 | L | Not Started |
-| GAME-016 | NPC AI Behavior System | P1 | M | Not Started |
+| GAME-011 | Basic Attack System | P0 | M | Completed |
+| GAME-012 | Damage and Health System | P0 | M | Completed |
+| GAME-013 | Hit Detection and Lag Compensation | P0 | L | Completed |
+| GAME-014 | Crowd Control System | P1 | M | Completed |
+| GAME-015 | NPC Monster System | P1 | L | Completed |
+| GAME-016 | NPC AI Behavior System | P1 | M | Completed |
 | GAME-017 | World Events System | P2 | M | Not Started |
-| GAME-018 | In-Match Leveling System | P1 | M | Not Started |
-| GAME-019 | Player Stats and Scaling | P1 | S | Not Started |
-| GAME-020 | Solo Mode | P0 | M | Not Started |
-| GAME-021 | Duo Mode | P1 | M | Not Started |
+| GAME-018 | In-Match Leveling System | P1 | M | Completed |
+| GAME-019 | Player Stats and Scaling | P1 | S | Completed |
+| GAME-020 | Solo Mode | P0 | M | Completed |
+| GAME-021 | Duo Mode | P1 | M | Completed |
 | GAME-022 | Squad Mode | P3 | M | Not Started |
 | GAME-023 | Ranked Mode | P2 | L | Not Started |
-| GAME-024 | Practice/Tutorial Mode | P1 | M | Not Started |
+| GAME-024 | Practice/Tutorial Mode | P1 | M | Completed |

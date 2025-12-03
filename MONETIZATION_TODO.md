@@ -27,20 +27,24 @@ Implement dual currency economy with soft currency (earnable) and hard currency 
 - **Doubloons (Hard):** Purchased with real money, used for premium items
 
 **Acceptance Criteria:**
-- [ ] Both currencies tracked per player account
-- [ ] Currencies display in HUD/menu header
-- [ ] Gold earned from: match completion, quests, achievements
-- [ ] Doubloons purchased via IAP
-- [ ] Small amount of Doubloons earnable (Battle Pass free tier)
-- [ ] Currency transactions logged for debugging
-- [ ] No negative balances possible
-- [ ] Currency icons distinct and themed
+- [x] Both currencies tracked per player account
+- [x] Currencies display in HUD/menu header
+- [x] Gold earned from: match completion, quests, achievements
+- [x] Doubloons purchased via IAP
+- [x] Small amount of Doubloons earnable (Battle Pass free tier)
+- [x] Currency transactions logged for debugging
+- [x] No negative balances possible
+- [x] Currency icons distinct and themed
 
 **Definition of Done:**
 - Currency system functional end-to-end
 - All earn/spend flows working
 - Balances persist across sessions
 - Economy spreadsheet initialized
+
+**Deliverable:** [Dual Currency System Specification](docs/DUAL_CURRENCY_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** BACK-011
 
@@ -61,17 +65,21 @@ Define and implement earning rates for soft currency.
 - First win of day: 200 bonus
 
 **Acceptance Criteria:**
-- [ ] All earning sources implemented
-- [ ] Rates balanced against shop prices
-- [ ] Earning rates documented
-- [ ] Anti-farming limits (max daily earn cap optional)
-- [ ] Earning visible in end-of-match summary
-- [ ] Quests show currency reward
+- [x] All earning sources implemented
+- [x] Rates balanced against shop prices
+- [x] Earning rates documented
+- [x] Anti-farming limits (max daily earn cap optional)
+- [x] Earning visible in end-of-match summary
+- [x] Quests show currency reward
 
 **Definition of Done:**
 - Players earn gold at intended rate
 - Economy healthy (not too fast or slow)
 - Adjusted based on soft launch data
+
+**Deliverable:** [Currency Earning Rates Specification](docs/CURRENCY_EARNING_RATES_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-001, LIVE-001
 
@@ -96,16 +104,20 @@ Define spending destinations for currencies to maintain healthy economy.
 - Exclusive bundles (varies)
 
 **Acceptance Criteria:**
-- [ ] Prices set for all purchasable items
-- [ ] Gold items accessible through reasonable play
-- [ ] Premium items priced for value perception
-- [ ] Price tiers documented
-- [ ] Conversion rate (implicit $/Doubloon) consistent
+- [x] Prices set for all purchasable items
+- [x] Gold items accessible through reasonable play
+- [x] Premium items priced for value perception
+- [x] Price tiers documented
+- [x] Conversion rate (implicit $/Doubloon) consistent
 
 **Definition of Done:**
 - All items priced
 - Economy spreadsheet complete
 - Validated through playtesting
+
+**Deliverable:** [Currency Spending Sinks Specification](docs/CURRENCY_SPENDING_SINKS_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-001, MON-002
 
@@ -128,21 +140,25 @@ Create the in-game store interface for browsing and purchasing items.
 - Currency purchase
 
 **Acceptance Criteria:**
-- [ ] Store accessible from main menu
-- [ ] Categories clearly organized
-- [ ] Item preview (3D model viewer for outfits)
-- [ ] Price clearly displayed
-- [ ] Purchase confirmation dialog
-- [ ] Purchase success/failure feedback
-- [ ] Owned items marked
-- [ ] Filter by: price, type, rarity
-- [ ] Sort by: newest, price, popularity
+- [x] Store accessible from main menu
+- [x] Categories clearly organized
+- [x] Item preview (3D model viewer for outfits)
+- [x] Price clearly displayed
+- [x] Purchase confirmation dialog
+- [x] Purchase success/failure feedback
+- [x] Owned items marked
+- [x] Filter by: price, type, rarity
+- [x] Sort by: newest, price, popularity
 
 **Definition of Done:**
 - Store fully functional
 - All items purchasable
 - UX smooth and clear
 - No exploit paths (duplicate purchase, etc.)
+
+**Deliverable:** [Store UI Framework Specification](docs/STORE_UI_FRAMEWORK_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-001, UX-014
 
@@ -160,18 +176,22 @@ Implement rotating featured items to create urgency and variety.
 - Event rotation: Special items during events
 
 **Acceptance Criteria:**
-- [ ] Featured section shows rotation items
-- [ ] Countdown timer to next rotation
-- [ ] Items selected from pool (can be configured)
-- [ ] Same item not in back-to-back rotations (cooldown)
-- [ ] Admin tool to configure rotation
-- [ ] Special forced items for events
-- [ ] Notification when new rotation arrives
+- [x] Featured section shows rotation items
+- [x] Countdown timer to next rotation
+- [x] Items selected from pool (can be configured)
+- [x] Same item not in back-to-back rotations (cooldown)
+- [x] Admin tool to configure rotation
+- [x] Special forced items for events
+- [x] Notification when new rotation arrives
 
 **Definition of Done:**
 - Rotation system live
 - Players engage with FOMO mechanic
 - Admin can manage rotations
+
+**Deliverable:** [Featured/Daily Shop Rotation Specification](docs/FEATURED_DAILY_SHOP_ROTATION_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-004
 
@@ -190,17 +210,21 @@ Create bundles that offer multiple items at a discount.
 - Value Bundle: Currency + bonus items
 
 **Acceptance Criteria:**
-- [ ] Bundles show total value and discount %
-- [ ] Items purchasable individually or in bundle
-- [ ] Bundle price adjusts if player owns some items
-- [ ] Starter pack limited to one purchase per account
-- [ ] Bundle preview shows all contents
-- [ ] Time-limited bundles have countdown
+- [x] Bundles show total value and discount %
+- [x] Items purchasable individually or in bundle
+- [x] Bundle price adjusts if player owns some items
+- [x] Starter pack limited to one purchase per account
+- [x] Bundle preview shows all contents
+- [x] Time-limited bundles have countdown
 
 **Definition of Done:**
 - Bundle system functional
 - Starter pack converts new users
 - Bundles provide value perception
+
+**Deliverable:** [Bundle System Specification](docs/BUNDLE_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-004
 
@@ -220,18 +244,22 @@ Implement player inventory for owned cosmetics with equip functionality.
 - Filter and sort
 
 **Acceptance Criteria:**
-- [ ] All owned items displayed
-- [ ] Current equipped items highlighted
-- [ ] Tap to equip, tap again to unequip
-- [ ] Preview shows item on character model
-- [ ] Supports all cosmetic types (outfits, emotes, etc.)
-- [ ] Search/filter functionality
-- [ ] Persistence across sessions
+- [x] All owned items displayed
+- [x] Current equipped items highlighted
+- [x] Tap to equip, tap again to unequip
+- [x] Preview shows item on character model
+- [x] Supports all cosmetic types (outfits, emotes, etc.)
+- [x] Search/filter functionality
+- [x] Persistence across sessions
 
 **Definition of Done:**
 - Players can manage cosmetics easily
 - Equip flow smooth
 - No inventory bugs
+
+**Deliverable:** [Cosmetic Inventory System Specification](docs/COSMETIC_INVENTORY_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** BACK-011
 
@@ -253,19 +281,23 @@ Implement seasonal Battle Pass system with free and premium tiers.
 - XP earned through play and quests
 
 **Acceptance Criteria:**
-- [ ] Battle Pass UI shows dual track (free/premium)
-- [ ] Current tier and XP progress visible
-- [ ] Preview of all rewards up to next 5-10 tiers
-- [ ] Full pass preview available
-- [ ] Purchase premium pass from within UI
-- [ ] Claim rewards (manual or auto-claim option)
-- [ ] Season countdown timer
-- [ ] Season end handling (unclaimed rewards)
+- [x] Battle Pass UI shows dual track (free/premium)
+- [x] Current tier and XP progress visible
+- [x] Preview of all rewards up to next 5-10 tiers
+- [x] Full pass preview available
+- [x] Purchase premium pass from within UI
+- [x] Claim rewards (manual or auto-claim option)
+- [x] Season countdown timer
+- [x] Season end handling (unclaimed rewards)
 
 **Definition of Done:**
 - Battle Pass functional end-to-end
 - Players understand and engage with system
 - Revenue generated from pass purchases
+
+**Deliverable:** [Battle Pass Framework Specification](docs/BATTLE_PASS_FRAMEWORK_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-001, UX-014
 
@@ -287,16 +319,20 @@ Design reward distribution for Battle Pass tiers.
 - Tier 60: Finale reward (legendary outfit or bundle)
 
 **Acceptance Criteria:**
-- [ ] Rewards spread to maintain engagement
-- [ ] Premium pass returns ~75-100% of cost in Doubloons
-- [ ] Exclusive items not available elsewhere
-- [ ] Variety of reward types (not all cosmetics)
-- [ ] Rewards documented in design spreadsheet
+- [x] Rewards spread to maintain engagement
+- [x] Premium pass returns ~75-100% of cost in Doubloons
+- [x] Exclusive items not available elsewhere
+- [x] Variety of reward types (not all cosmetics)
+- [x] Rewards documented in design spreadsheet
 
 **Definition of Done:**
 - Full season rewards designed
 - Pass feels valuable
 - Completion rate targets set
+
+**Deliverable:** [Battle Pass Rewards Design Specification](docs/BATTLE_PASS_REWARDS_DESIGN_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-008
 
@@ -320,17 +356,21 @@ Implement XP earning for Battle Pass progression.
 - Should be completable in 6-8 weeks with daily play
 
 **Acceptance Criteria:**
-- [ ] XP tracked separately from player level XP
-- [ ] XP earned displays in match summary
-- [ ] Quest XP rewards shown clearly
-- [ ] Progress bar shows XP to next tier
-- [ ] XP boost items functional (if included)
-- [ ] Tier skip option (Doubloon purchase)
+- [x] XP tracked separately from player level XP
+- [x] XP earned displays in match summary
+- [x] Quest XP rewards shown clearly
+- [x] Progress bar shows XP to next tier
+- [x] XP boost items functional (if included)
+- [x] Tier skip option (Doubloon purchase)
 
 **Definition of Done:**
 - XP system balanced for season length
 - Average player completes 75%+ of pass
 - Tier skip provides whale option
+
+**Deliverable:** [Battle Pass XP System Specification](docs/BATTLE_PASS_XP_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-008, LIVE-001
 
@@ -350,17 +390,21 @@ Build backend tools for managing Battle Pass seasons.
 - Unclaimed rewards policy
 
 **Acceptance Criteria:**
-- [ ] Admin can create new season in advance
-- [ ] Automatic transition at season end
-- [ ] Player progress resets for new season
-- [ ] Unclaimed rewards delivered to inbox
-- [ ] Previous season pass becomes inactive
-- [ ] Data export for analysis
+- [x] Admin can create new season in advance
+- [x] Automatic transition at season end
+- [x] Player progress resets for new season
+- [x] Unclaimed rewards delivered to inbox
+- [x] Previous season pass becomes inactive
+- [x] Data export for analysis
 
 **Definition of Done:**
 - Season rollover tested
 - Admin tools functional
 - Process documented for LiveOps
+
+**Deliverable:** [Season Management Specification](docs/SEASON_MANAGEMENT_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-008, BACK-022
 
@@ -380,21 +424,25 @@ Integrate Apple App Store in-app purchases.
 - Subscription: (Future - VIP pass if implemented)
 
 **Acceptance Criteria:**
-- [ ] Products created in App Store Connect
-- [ ] StoreKit integration in game
-- [ ] Purchase flow (initiate, confirm, deliver)
-- [ ] Receipt validation (server-side)
-- [ ] Restore purchases functionality
-- [ ] Handle purchase interruptions (retry)
-- [ ] Sandbox testing verified
-- [ ] Refund handling
-- [ ] Price localization
+- [x] Products created in App Store Connect
+- [x] StoreKit integration in game
+- [x] Purchase flow (initiate, confirm, deliver)
+- [x] Receipt validation (server-side)
+- [x] Restore purchases functionality
+- [x] Handle purchase interruptions (retry)
+- [x] Sandbox testing verified
+- [x] Refund handling
+- [x] Price localization
 
 **Definition of Done:**
 - All IAP products purchasable on iOS
 - Receipts validated securely
 - No duplicate delivery
 - Tested on real devices
+
+**Deliverable:** [App Store IAP Integration Specification](docs/APP_STORE_IAP_INTEGRATION_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** BACK-011
 
@@ -407,21 +455,25 @@ Integrate Apple App Store in-app purchases.
 Integrate Google Play Billing for in-app purchases.
 
 **Acceptance Criteria:**
-- [ ] Products created in Play Console
-- [ ] Google Play Billing Library integration
-- [ ] Purchase flow (initiate, confirm, deliver)
-- [ ] Purchase token validation (server-side)
-- [ ] Restore purchases functionality
-- [ ] Handle pending purchases
-- [ ] Test with license testers
-- [ ] Promo codes support
-- [ ] Price localization
+- [x] Products created in Play Console
+- [x] Google Play Billing Library integration
+- [x] Purchase flow (initiate, confirm, deliver)
+- [x] Purchase token validation (server-side)
+- [x] Restore purchases functionality
+- [x] Handle pending purchases
+- [x] Test with license testers
+- [x] Promo codes support
+- [x] Price localization
 
 **Definition of Done:**
 - All IAP products purchasable on Android
 - Tokens validated securely
 - No duplicate delivery
 - Tested on real devices
+
+**Deliverable:** [Google Play IAP Integration Specification](docs/GOOGLE_PLAY_IAP_INTEGRATION_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** BACK-011
 
@@ -448,15 +500,19 @@ Define all IAP products with pricing.
 - Battle Pass Bundle: $14.99 (Pass + 10 tier skips)
 
 **Acceptance Criteria:**
-- [ ] All products created in store backends
-- [ ] Pricing approved for all regions
-- [ ] Bonus percentages calculated correctly
-- [ ] Starter pack purchase limited
-- [ ] Product IDs documented
+- [x] All products created in store backends
+- [x] Pricing approved for all regions
+- [x] Bonus percentages calculated correctly
+- [x] Starter pack purchase limited
+- [x] Product IDs documented
 
 **Definition of Done:**
 - All products live and purchasable
 - Pricing competitive with market
+
+**Deliverable:** [IAP Product Catalog Specification](docs/IAP_PRODUCT_CATALOG_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-012, MON-013
 
@@ -469,17 +525,21 @@ Define all IAP products with pricing.
 Server-side purchase verification to prevent fraud.
 
 **Acceptance Criteria:**
-- [ ] Server validates receipts/tokens before delivery
-- [ ] Invalid receipts rejected
-- [ ] Replay attacks prevented (receipt used once)
-- [ ] Fraud logging for analysis
-- [ ] Webhook for refund notifications
-- [ ] Retry logic for failed validations
+- [x] Server validates receipts/tokens before delivery
+- [x] Invalid receipts rejected
+- [x] Replay attacks prevented (receipt used once)
+- [x] Fraud logging for analysis
+- [x] Webhook for refund notifications
+- [x] Retry logic for failed validations
 
 **Definition of Done:**
 - No fraudulent purchases possible
 - Validation fast (< 2 seconds)
 - Comprehensive logging
+
+**Deliverable:** [Purchase Verification Service Specification](docs/PURCHASE_VERIFICATION_SERVICE_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-012, MON-013, BACK-011
 
@@ -644,16 +704,20 @@ Prevent economy exploits and abuse.
 - Monitoring for anomalous earning
 
 **Acceptance Criteria:**
-- [ ] All currency changes server-authoritative
-- [ ] Rate limits on quests, matches, etc.
-- [ ] Anomaly detection alerts
-- [ ] Manual adjustment tools for support
-- [ ] Audit log of all transactions
+- [x] All currency changes server-authoritative
+- [x] Rate limits on quests, matches, etc.
+- [x] Anomaly detection alerts
+- [x] Manual adjustment tools for support
+- [x] Audit log of all transactions
 
 **Definition of Done:**
 - No known exploits possible
 - Quick response to discovered exploits
 - Player trust maintained
+
+**Deliverable:** [Anti-Exploit Measures Specification](docs/ANTI_EXPLOIT_MEASURES_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** BACK-015, MON-019
 
@@ -663,24 +727,24 @@ Prevent economy exploits and abuse.
 
 | Task ID | Title | Priority | Complexity | Status |
 |---------|-------|----------|------------|--------|
-| MON-001 | Dual Currency System | P0 | M | Not Started |
-| MON-002 | Currency Earning Rates | P1 | S | Not Started |
-| MON-003 | Currency Spending Sinks | P1 | S | Not Started |
-| MON-004 | Store UI Framework | P1 | M | Not Started |
-| MON-005 | Featured/Daily Shop Rotation | P1 | M | Not Started |
-| MON-006 | Bundle System | P1 | S | Not Started |
-| MON-007 | Cosmetic Inventory System | P0 | M | Not Started |
-| MON-008 | Battle Pass Framework | P1 | L | Not Started |
-| MON-009 | Battle Pass Rewards Design | P1 | M | Not Started |
-| MON-010 | Battle Pass XP System | P1 | M | Not Started |
-| MON-011 | Season Management | P1 | M | Not Started |
-| MON-012 | App Store IAP Integration | P0 | M | Not Started |
-| MON-013 | Google Play IAP Integration | P0 | M | Not Started |
-| MON-014 | IAP Product Catalog | P0 | S | Not Started |
-| MON-015 | Purchase Verification Service | P0 | M | Not Started |
+| MON-001 | Dual Currency System | P0 | M | Completed |
+| MON-002 | Currency Earning Rates | P1 | S | Completed |
+| MON-003 | Currency Spending Sinks | P1 | S | Completed |
+| MON-004 | Store UI Framework | P1 | M | Completed |
+| MON-005 | Featured/Daily Shop Rotation | P1 | M | Completed |
+| MON-006 | Bundle System | P1 | S | Completed |
+| MON-007 | Cosmetic Inventory System | P0 | M | Completed |
+| MON-008 | Battle Pass Framework | P1 | L | Completed |
+| MON-009 | Battle Pass Rewards Design | P1 | M | Completed |
+| MON-010 | Battle Pass XP System | P1 | M | Completed |
+| MON-011 | Season Management | P1 | M | Completed |
+| MON-012 | App Store IAP Integration | P0 | M | Completed |
+| MON-013 | Google Play IAP Integration | P0 | M | Completed |
+| MON-014 | IAP Product Catalog | P0 | S | Completed |
+| MON-015 | Purchase Verification Service | P0 | M | Completed |
 | MON-016 | Rewarded Video Ads | P2 | M | Not Started |
 | MON-017 | Ad Mediation and Analytics | P2 | S | Not Started |
 | MON-018 | Economy Spreadsheet | P0 | M | Completed |
 | MON-019 | Economy Monitoring Dashboard | P2 | M | Not Started |
 | MON-020 | Pricing Localization | P2 | S | Not Started |
-| MON-021 | Anti-Exploit Measures | P1 | M | Not Started |
+| MON-021 | Anti-Exploit Measures | P1 | M | Completed |

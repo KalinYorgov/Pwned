@@ -23,15 +23,15 @@ This document covers all mobile-specific user experience elements including touc
 Implement responsive virtual joystick for player movement. The joystick should appear where the player touches on the left side of the screen and provide smooth, predictable movement control.
 
 **Acceptance Criteria:**
-- [ ] Touch anywhere on left 40% of screen activates movement joystick
-- [ ] Joystick appears at touch point (floating joystick)
-- [ ] Joystick has dead zone to prevent accidental movement
-- [ ] Full stick displacement = max speed; partial = proportional speed
-- [ ] Visual feedback shows joystick position and direction
-- [ ] Sprint option: double-tap and hold for sprint
-- [ ] Joystick size adjustable in settings (small/medium/large)
-- [ ] Optional fixed position joystick mode
-- [ ] Smooth acceleration/deceleration (not instant)
+- [x] Touch anywhere on left 40% of screen activates movement joystick
+- [x] Joystick appears at touch point (floating joystick)
+- [x] Joystick has dead zone to prevent accidental movement
+- [x] Full stick displacement = max speed; partial = proportional speed
+- [x] Visual feedback shows joystick position and direction
+- [x] Sprint option: double-tap and hold for sprint
+- [x] Joystick size adjustable in settings (small/medium/large)
+- [x] Optional fixed position joystick mode
+- [x] Smooth acceleration/deceleration (not instant)
 
 **Definition of Done:**
 - Movement feels responsive (< 16ms input lag)
@@ -39,6 +39,10 @@ Implement responsive virtual joystick for player movement. The joystick should a
 - No conflicts with other touch zones
 - Tested with various thumb sizes
 - Player feedback positive in playtesting
+
+**Deliverable:** [Virtual Joystick Movement Specification](docs/VIRTUAL_JOYSTICK_MOVEMENT_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** None
 
@@ -51,15 +55,15 @@ Implement responsive virtual joystick for player movement. The joystick should a
 Implement touch-based camera control for the third-person view. Players swipe on the right side of the screen to rotate the camera.
 
 **Acceptance Criteria:**
-- [ ] Touch and drag on right 60% of screen rotates camera
-- [ ] Horizontal swipe = camera yaw (rotate around player)
-- [ ] Vertical swipe = camera pitch (look up/down, with limits)
-- [ ] Camera sensitivity adjustable in settings (1-10 scale)
-- [ ] Camera smoothing option (for those who prefer less snappy)
-- [ ] Camera doesn't clip through walls (collision detection)
-- [ ] Quick 180-degree turn option (double-tap right side)
-- [ ] Camera auto-centers behind player when moving (optional)
-- [ ] Gyroscope/accelerometer aiming option
+- [x] Touch and drag on right 60% of screen rotates camera
+- [x] Horizontal swipe = camera yaw (rotate around player)
+- [x] Vertical swipe = camera pitch (look up/down, with limits)
+- [x] Camera sensitivity adjustable in settings (1-10 scale)
+- [x] Camera smoothing option (for those who prefer less snappy)
+- [x] Camera doesn't clip through walls (collision detection)
+- [x] Quick 180-degree turn option (double-tap right side)
+- [x] Camera auto-centers behind player when moving (optional)
+- [x] Gyroscope/accelerometer aiming option
 
 **Definition of Done:**
 - Camera feels natural and responsive
@@ -67,6 +71,10 @@ Implement touch-based camera control for the third-person view. Players swipe on
 - Works correctly in all gameplay situations
 - Gyro aiming calibration tested
 - Settings remembered per device
+
+**Deliverable:** [Camera Control System Specification](docs/CAMERA_CONTROL_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** None
 
@@ -84,16 +92,16 @@ Design and implement the touch button layout for abilities and basic attack. Mus
 - Each button sized for reliable touch (minimum 44pt)
 
 **Acceptance Criteria:**
-- [ ] Basic attack button in easy-to-reach position (bottom right)
-- [ ] 4 ability buttons arranged around basic attack
-- [ ] Clear visual distinction between offensive (red) and utility (blue) abilities
-- [ ] Button shows ability icon, cooldown overlay, and hotkey number
-- [ ] Press to activate instant abilities
-- [ ] Press and hold to enter targeting mode for skillshots
-- [ ] Drag from button to aim, release to fire
-- [ ] Cancel skillshot by dragging back to button
-- [ ] Buttons gray out when on cooldown
-- [ ] Customizable button positions via drag-and-drop editor
+- [x] Basic attack button in easy-to-reach position (bottom right)
+- [x] 4 ability buttons arranged around basic attack
+- [x] Clear visual distinction between offensive (red) and utility (blue) abilities
+- [x] Button shows ability icon, cooldown overlay, and hotkey number
+- [x] Press to activate instant abilities
+- [x] Press and hold to enter targeting mode for skillshots
+- [x] Drag from button to aim, release to fire
+- [x] Cancel skillshot by dragging back to button
+- [x] Buttons gray out when on cooldown
+- [x] Customizable button positions via drag-and-drop editor
 
 **Definition of Done:**
 - All abilities usable without looking at controls
@@ -101,6 +109,10 @@ Design and implement the touch button layout for abilities and basic attack. Mus
 - No accidental ability activations in testing
 - Layout works on 5.5" to 12.9" screens
 - Touch targets meet accessibility guidelines
+
+**Deliverable:** [Ability Button Layout Specification](docs/ABILITY_BUTTON_LAYOUT_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-007 (Ability Slot System)
 
@@ -118,15 +130,15 @@ Implement intuitive skillshot targeting for abilities that require aiming (proje
 3. **Quick Cast:** Tap ability to immediately fire in facing direction
 
 **Acceptance Criteria:**
-- [ ] All three targeting methods supported
-- [ ] Player can set preferred method in settings (per ability optional)
-- [ ] Targeting indicator shows trajectory/landing zone
-- [ ] Range indicator shows max ability range
-- [ ] Valid targets highlighted (enemies in range)
-- [ ] Invalid areas grayed out (out of range, blocked by terrain)
-- [ ] Targeting can be canceled without firing
-- [ ] Aim sensitivity adjustable
-- [ ] Joystick can be used simultaneously while aiming (move + aim)
+- [x] All three targeting methods supported
+- [x] Player can set preferred method in settings (per ability optional)
+- [x] Targeting indicator shows trajectory/landing zone
+- [x] Range indicator shows max ability range
+- [x] Valid targets highlighted (enemies in range)
+- [x] Invalid areas grayed out (out of range, blocked by terrain)
+- [x] Targeting can be canceled without firing
+- [x] Aim sensitivity adjustable
+- [x] Joystick can be used simultaneously while aiming (move + aim)
 
 **Definition of Done:**
 - Skillshots feel accurate and satisfying to land
@@ -134,6 +146,10 @@ Implement intuitive skillshot targeting for abilities that require aiming (proje
 - No frustration from "misfire" issues
 - Performance stable during targeting mode
 - Tested with all skillshot abilities
+
+**Deliverable:** [Skillshot Targeting System Specification](docs/SKILLSHOT_TARGETING_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** UX-003, GAME-008
 
@@ -151,14 +167,14 @@ Implement optional aim assist to help mobile players land shots. Should help acc
 - **Bullet Magnetism:** Projectiles slightly curve toward targets
 
 **Acceptance Criteria:**
-- [ ] Aim assist is optional (can disable in settings)
-- [ ] Assist strength adjustable (off, low, medium, high)
-- [ ] Only assists with visible, valid targets
-- [ ] Assist does not work through walls
-- [ ] Higher-skill abilities (like sniper shot) have less assist
-- [ ] Visual indicator shows when aim assist is active
-- [ ] No assist in ranked mode above certain tier (optional rule)
-- [ ] Assist works with both basic attack and abilities
+- [x] Aim assist is optional (can disable in settings)
+- [x] Assist strength adjustable (off, low, medium, high)
+- [x] Only assists with visible, valid targets
+- [x] Assist does not work through walls
+- [x] Higher-skill abilities (like sniper shot) have less assist
+- [x] Visual indicator shows when aim assist is active
+- [x] No assist in ranked mode above certain tier (optional rule)
+- [x] Assist works with both basic attack and abilities
 
 **Definition of Done:**
 - Casual players feel capable with assist on
@@ -168,6 +184,10 @@ Implement optional aim assist to help mobile players land shots. Should help acc
 - Clear communication in settings about assist effects
 
 **Dependencies:** GAME-011, GAME-013
+
+**Deliverable:** [Auto-Aim Assist System Specification](docs/AUTO_AIM_ASSIST_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 ---
 
@@ -243,15 +263,15 @@ Design and implement the in-game HUD showing all essential information without c
 - Ammo/cooldown indicators
 
 **Acceptance Criteria:**
-- [ ] All essential info visible at a glance
-- [ ] HUD elements do not obscure central gameplay area
-- [ ] Elements scaled appropriately for device size
-- [ ] Critical info (health, abilities) always visible
-- [ ] Secondary info (kill feed) can be minimized
-- [ ] HUD transparency adjustable
-- [ ] Safe area respected (notch, rounded corners)
-- [ ] Landscape orientation optimized
-- [ ] Portrait mode not supported (or limited)
+- [x] All essential info visible at a glance
+- [x] HUD elements do not obscure central gameplay area
+- [x] Elements scaled appropriately for device size
+- [x] Critical info (health, abilities) always visible
+- [x] Secondary info (kill feed) can be minimized
+- [x] HUD transparency adjustable
+- [x] Safe area respected (notch, rounded corners)
+- [x] Landscape orientation optimized
+- [x] Portrait mode not supported (or limited)
 
 **Definition of Done:**
 - HUD readable on 5" phone screens
@@ -259,6 +279,10 @@ Design and implement the in-game HUD showing all essential information without c
 - Quick access to all needed data
 - Tested on various aspect ratios (16:9, 18:9, 19.5:9)
 - Themed to match pirate aesthetic without sacrificing clarity
+
+**Deliverable:** [Main HUD Layout Specification](docs/MAIN_HUD_LAYOUT_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-007, GAME-018
 
@@ -279,15 +303,15 @@ Implement a minimap showing player position, storm location, teammates, and poin
 - Enemy sighting (briefly shown when shooting)
 
 **Acceptance Criteria:**
-- [ ] Minimap in corner (adjustable: any corner)
-- [ ] Zoomable minimap (pinch or button toggle)
-- [ ] Tap to enlarge to full-screen map view
-- [ ] Full map shows all named locations
-- [ ] Storm position clearly marked (current + next)
-- [ ] Team colors consistent
-- [ ] Pings appear on minimap with icons
-- [ ] North indicator for orientation
-- [ ] Treasure map aesthetic (styled border)
+- [x] Minimap in corner (adjustable: any corner)
+- [x] Zoomable minimap (pinch or button toggle)
+- [x] Tap to enlarge to full-screen map view
+- [x] Full map shows all named locations
+- [x] Storm position clearly marked (current + next)
+- [x] Team colors consistent
+- [x] Pings appear on minimap with icons
+- [x] North indicator for orientation
+- [x] Treasure map aesthetic (styled border)
 
 **Definition of Done:**
 - Minimap provides tactical advantage without distraction
@@ -295,6 +319,10 @@ Implement a minimap showing player position, storm location, teammates, and poin
 - Full map usable for strategic planning
 - Performance impact negligible
 - Works correctly as storm shrinks
+
+**Deliverable:** [Minimap System Specification](docs/MINIMAP_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-003, UX-010
 
@@ -315,14 +343,14 @@ Implement a quick communication system for team modes using contextual pings and
 - **Going here ping:** "I'm going here"
 
 **Acceptance Criteria:**
-- [ ] Tap and hold on screen opens ping wheel
-- [ ] Contextual pings (ping on enemy = "Enemy spotted")
-- [ ] Pings appear on minimap and in 3D world
-- [ ] Audio cue for teammates
-- [ ] Ping cooldown to prevent spam
-- [ ] Preset text messages for quick communication
-- [ ] Voice chat integration (push-to-talk button)
-- [ ] Mute/block options for abusive players
+- [x] Tap and hold on screen opens ping wheel
+- [x] Contextual pings (ping on enemy = "Enemy spotted")
+- [x] Pings appear on minimap and in 3D world
+- [x] Audio cue for teammates
+- [x] Ping cooldown to prevent spam
+- [x] Preset text messages for quick communication
+- [x] Voice chat integration (push-to-talk button)
+- [x] Mute/block options for abusive players
 
 **Definition of Done:**
 - Teams can communicate without voice
@@ -330,6 +358,10 @@ Implement a quick communication system for team modes using contextual pings and
 - Works reliably in all network conditions
 - No ping spam abuse possible
 - Voice chat quality acceptable
+
+**Deliverable:** [Ping/Communication System Specification](docs/PING_COMMUNICATION_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-021, BACK-003
 
@@ -348,14 +380,14 @@ Implement clear visual and audio feedback when dealing or receiving damage.
 - **Kill confirmation:** Distinct sound and visual
 
 **Acceptance Criteria:**
-- [ ] Hit marker appears on crosshair when damage dealt
-- [ ] Damage numbers float above damaged target
-- [ ] Directional damage indicator shows where attack came from
-- [ ] Screen edges flash red when taking damage (intensity = damage)
-- [ ] Low health persistent warning (heartbeat, red vignette)
-- [ ] Kill sound is satisfying and distinct
-- [ ] Optional screen shake on big hits (toggleable)
-- [ ] Haptic feedback on device (toggleable)
+- [x] Hit marker appears on crosshair when damage dealt
+- [x] Damage numbers float above damaged target
+- [x] Directional damage indicator shows where attack came from
+- [x] Screen edges flash red when taking damage (intensity = damage)
+- [x] Low health persistent warning (heartbeat, red vignette)
+- [x] Kill sound is satisfying and distinct
+- [x] Optional screen shake on big hits (toggleable)
+- [x] Haptic feedback on device (toggleable)
 
 **Definition of Done:**
 - Player always knows when they deal/receive damage
@@ -363,6 +395,10 @@ Implement clear visual and audio feedback when dealing or receiving damage.
 - Feedback doesn't obscure gameplay
 - All feedback toggleable for accessibility
 - Tested across ability types
+
+**Deliverable:** [Damage Feedback System Specification](docs/DAMAGE_FEEDBACK_SYSTEM_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-012
 
@@ -410,20 +446,24 @@ Design end-of-match screens showing results, stats, and rewards.
 - Play again / Return to lobby buttons
 
 **Acceptance Criteria:**
-- [ ] Victory screen is celebratory (confetti, music)
-- [ ] Defeat screen is encouraging (show what went well)
-- [ ] All relevant stats displayed
-- [ ] Rewards clearly shown with animation
-- [ ] Share button for results (social)
-- [ ] Quick rematch option
-- [ ] Return to lobby option
-- [ ] Loading next match while viewing results (background)
+- [x] Victory screen is celebratory (confetti, music)
+- [x] Defeat screen is encouraging (show what went well)
+- [x] All relevant stats displayed
+- [x] Rewards clearly shown with animation
+- [x] Share button for results (social)
+- [x] Quick rematch option
+- [x] Return to lobby option
+- [x] Loading next match while viewing results (background)
 
 **Definition of Done:**
 - Players feel rewarded for match completion
 - Stats accurate
 - Smooth transition to next match
 - Social sharing functional
+
+**Deliverable:** [Victory/Defeat Screen Specification](docs/VICTORY_DEFEAT_SCREEN_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-005, LIVE-003
 
@@ -447,15 +487,15 @@ Design the main menu hub where players access all game features.
 - Profile
 
 **Acceptance Criteria:**
-- [ ] Main menu loads quickly (< 3 seconds)
-- [ ] Clear visual hierarchy guiding to Play button
-- [ ] All sections accessible within 2 taps
-- [ ] Animated character/ship in background (themed)
-- [ ] News/events banner for announcements
-- [ ] Daily quest preview on main screen
-- [ ] Battle Pass progress visible
-- [ ] Currency displays (gold, premium)
-- [ ] Settings accessible from any screen
+- [x] Main menu loads quickly (< 3 seconds)
+- [x] Clear visual hierarchy guiding to Play button
+- [x] All sections accessible within 2 taps
+- [x] Animated character/ship in background (themed)
+- [x] News/events banner for announcements
+- [x] Daily quest preview on main screen
+- [x] Battle Pass progress visible
+- [x] Currency displays (gold, premium)
+- [x] Settings accessible from any screen
 
 **Definition of Done:**
 - Navigation is intuitive for new players
@@ -463,6 +503,10 @@ Design the main menu hub where players access all game features.
 - Performance is smooth (60 FPS menus)
 - All features discoverable
 - Tested with new users for UX issues
+
+**Deliverable:** [Main Menu Design Specification](docs/MAIN_MENU_DESIGN_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** MON-001, LIVE-001
 
@@ -482,15 +526,15 @@ Create comprehensive settings for gameplay, controls, audio, video, and account.
 5. **Account:** Login, link accounts, privacy, data
 
 **Acceptance Criteria:**
-- [ ] All settings organized in logical categories
-- [ ] Settings save immediately on change
-- [ ] Reset to defaults option
-- [ ] Preview changes before applying (for controls)
-- [ ] Device-specific recommendations shown
-- [ ] Cloud save settings to account
-- [ ] Import/export layout option
-- [ ] FPS counter toggle
-- [ ] Network stats display toggle
+- [x] All settings organized in logical categories
+- [x] Settings save immediately on change
+- [x] Reset to defaults option
+- [x] Preview changes before applying (for controls)
+- [x] Device-specific recommendations shown
+- [x] Cloud save settings to account
+- [x] Import/export layout option
+- [x] FPS counter toggle
+- [x] Network stats display toggle
 
 **Definition of Done:**
 - All player preferences addressable
@@ -498,6 +542,10 @@ Create comprehensive settings for gameplay, controls, audio, video, and account.
 - No settings cause crashes or issues
 - Tooltips explain complex options
 - Tested on low-end and high-end devices
+
+**Deliverable:** [Settings Menu Specification](docs/SETTINGS_MENU_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** BACK-005
 
@@ -517,20 +565,24 @@ Screen for selecting game mode before matchmaking.
 - Practice/Training
 
 **Acceptance Criteria:**
-- [ ] Each mode clearly described
-- [ ] Player count for each mode shown
-- [ ] Estimated wait time displayed
-- [ ] Locked modes show unlock requirements
-- [ ] LTM highlighted with event theming
-- [ ] One-tap to start matchmaking
-- [ ] Cancel matchmaking option
-- [ ] Map selection (if multiple maps)
+- [x] Each mode clearly described
+- [x] Player count for each mode shown
+- [x] Estimated wait time displayed
+- [x] Locked modes show unlock requirements
+- [x] LTM highlighted with event theming
+- [x] One-tap to start matchmaking
+- [x] Cancel matchmaking option
+- [x] Map selection (if multiple maps)
 
 **Definition of Done:**
 - Mode selection is quick and clear
 - Wait times reasonably accurate
 - LTMs draw attention appropriately
 - Works with all planned modes
+
+**Deliverable:** [Mode Selection Screen Specification](docs/MODE_SELECTION_SCREEN_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-020, GAME-021, GAME-023
 
@@ -543,19 +595,23 @@ Screen for selecting game mode before matchmaking.
 Design loading screens that maintain engagement and provide useful info.
 
 **Acceptance Criteria:**
-- [ ] Loading bar or spinner shows progress
-- [ ] Gameplay tips displayed during load
-- [ ] Character/cosmetic preview shown
-- [ ] Map preview for match loading
-- [ ] Loading time minimized (< 10 seconds target)
-- [ ] Themed artwork on loading screens
-- [ ] No false "100%" stuck issues
+- [x] Loading bar or spinner shows progress
+- [x] Gameplay tips displayed during load
+- [x] Character/cosmetic preview shown
+- [x] Map preview for match loading
+- [x] Loading time minimized (< 10 seconds target)
+- [x] Themed artwork on loading screens
+- [x] No false "100%" stuck issues
 
 **Definition of Done:**
 - Players stay engaged during loads
 - Loading feels fast
 - Tips are actually helpful
 - No jarring transitions
+
+**Deliverable:** [Loading Screens Specification](docs/LOADING_SCREENS_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** None
 
@@ -680,18 +736,22 @@ Automatically detect device capabilities and set optimal default settings.
 - Battery level
 
 **Acceptance Criteria:**
-- [ ] Device benchmark on first launch
-- [ ] Auto-set graphics quality (Low/Medium/High/Ultra)
-- [ ] Recommend FPS cap based on device
-- [ ] Warn if device below minimum specs
-- [ ] Thermal throttling detection and adjustment
-- [ ] Battery saver mode recommendation when low
-- [ ] Store device profiles for common devices
+- [x] Device benchmark on first launch
+- [x] Auto-set graphics quality (Low/Medium/High/Ultra)
+- [x] Recommend FPS cap based on device
+- [x] Warn if device below minimum specs
+- [x] Thermal throttling detection and adjustment
+- [x] Battery saver mode recommendation when low
+- [x] Store device profiles for common devices
 
 **Definition of Done:**
 - 90%+ devices get optimal settings automatically
 - No crashes from settings too high
 - Performance smooth on detected settings
+
+**Deliverable:** [Device Performance Detection Specification](docs/DEVICE_PERFORMANCE_DETECTION_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** None
 
@@ -726,17 +786,21 @@ Implement battery-saving features for extended mobile play sessions.
 Ensure UI respects device safe areas (notches, rounded corners, home indicators).
 
 **Acceptance Criteria:**
-- [ ] UI elements inside safe area boundaries
-- [ ] No critical info hidden by notch
-- [ ] Works on iPhone (all notch types)
-- [ ] Works on Android (various punch-holes, cutouts)
-- [ ] Landscape both directions supported
-- [ ] Tablet layouts respected
+- [x] UI elements inside safe area boundaries
+- [x] No critical info hidden by notch
+- [x] Works on iPhone (all notch types)
+- [x] Works on Android (various punch-holes, cutouts)
+- [x] Landscape both directions supported
+- [x] Tablet layouts respected
 
 **Definition of Done:**
 - No UI occlusion on any device
 - Tested on 20+ device configurations
 - Dynamic safe area detection
+
+**Deliverable:** [Notch and Safe Area Handling Specification](docs/NOTCH_SAFE_AREA_HANDLING_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** None
 
@@ -749,17 +813,21 @@ Ensure UI respects device safe areas (notches, rounded corners, home indicators)
 Display network quality to help players understand performance issues.
 
 **Acceptance Criteria:**
-- [ ] Ping display (ms) in HUD (optional)
-- [ ] Connection quality icon (green/yellow/red bars)
-- [ ] Warning when connection poor
-- [ ] Packet loss indicator
-- [ ] Server region shown
-- [ ] Reconnection status when disconnected
+- [x] Ping display (ms) in HUD (optional)
+- [x] Connection quality icon (green/yellow/red bars)
+- [x] Warning when connection poor
+- [x] Packet loss indicator
+- [x] Server region shown
+- [x] Reconnection status when disconnected
 
 **Definition of Done:**
 - Players can diagnose connection issues
 - Indicators accurate and real-time
 - Reconnection works smoothly
+
+**Deliverable:** [Network Quality Indicator Specification](docs/NETWORK_QUALITY_INDICATOR_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** BACK-003
 
@@ -783,20 +851,24 @@ Design the first-time user journey from app install to first match completion.
 7. Prompt to play more
 
 **Acceptance Criteria:**
-- [ ] FTUE completable in < 10 minutes
-- [ ] Can skip tutorial after first time
-- [ ] Progress saved immediately (no lost progress on crash)
-- [ ] Rewarding feeling after tutorial (free cosmetic)
-- [ ] Introduces core loop naturally
-- [ ] No overwhelming info dumps
-- [ ] Guest play option (link account later)
-- [ ] Age gate if required by region
+- [x] FTUE completable in < 10 minutes
+- [x] Can skip tutorial after first time
+- [x] Progress saved immediately (no lost progress on crash)
+- [x] Rewarding feeling after tutorial (free cosmetic)
+- [x] Introduces core loop naturally
+- [x] No overwhelming info dumps
+- [x] Guest play option (link account later)
+- [x] Age gate if required by region
 
 **Definition of Done:**
 - Day 1 retention improved by FTUE
 - 80%+ complete tutorial
 - Players understand how to play after FTUE
 - A/B tested for optimization
+
+**Deliverable:** [First-Time User Experience Specification](docs/FIRST_TIME_USER_EXPERIENCE_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-024, BACK-005
 
@@ -820,20 +892,24 @@ Create step-by-step interactive tutorial teaching core mechanics.
 9. Victory (tutorial bot match)
 
 **Acceptance Criteria:**
-- [ ] Each step has clear instruction
-- [ ] Action is gated until player performs it
-- [ ] Visual arrows/highlights guide player
-- [ ] Voice-over or text narration (pirate themed)
-- [ ] Can pause and resume tutorial
-- [ ] Skip option (for returning players)
-- [ ] Tutorial progress saved
-- [ ] Reward upon completion (gold, skin)
+- [x] Each step has clear instruction
+- [x] Action is gated until player performs it
+- [x] Visual arrows/highlights guide player
+- [x] Voice-over or text narration (pirate themed)
+- [x] Can pause and resume tutorial
+- [x] Skip option (for returning players)
+- [x] Tutorial progress saved
+- [x] Reward upon completion (gold, skin)
 
 **Definition of Done:**
 - New players competent after tutorial
 - Tutorial is engaging, not boring
 - No softlocks or progression bugs
 - Tested with actual new players
+
+**Deliverable:** [Interactive Tutorial Specification](docs/INTERACTIVE_TUTORIAL_SPEC.md)
+
+**Status:** Completed
 
 **Dependencies:** GAME-024
 
@@ -873,31 +949,31 @@ Display helpful hints during gameplay for new players without being intrusive fo
 
 | Task ID | Title | Priority | Complexity | Status |
 |---------|-------|----------|------------|--------|
-| UX-001 | Virtual Joystick Movement | P0 | M | Not Started |
-| UX-002 | Camera Control System | P0 | M | Not Started |
-| UX-003 | Ability Button Layout | P0 | M | Not Started |
-| UX-004 | Skillshot Targeting System | P0 | M | Not Started |
-| UX-005 | Auto-Aim Assist System | P1 | M | Not Started |
+| UX-001 | Virtual Joystick Movement | P0 | M | Completed |
+| UX-002 | Camera Control System | P0 | M | Completed |
+| UX-003 | Ability Button Layout | P0 | M | Completed |
+| UX-004 | Skillshot Targeting System | P0 | M | Completed |
+| UX-005 | Auto-Aim Assist System | P1 | M | Completed |
 | UX-006 | Gesture Controls | P2 | S | Not Started |
 | UX-007 | Controller Support | P3 | M | Not Started |
-| UX-008 | Main HUD Layout | P0 | M | Not Started |
-| UX-009 | Minimap System | P0 | M | Not Started |
-| UX-010 | Ping/Communication System | P1 | M | Not Started |
-| UX-011 | Damage Feedback System | P0 | S | Not Started |
+| UX-008 | Main HUD Layout | P0 | M | Completed |
+| UX-009 | Minimap System | P0 | M | Completed |
+| UX-010 | Ping/Communication System | P1 | M | Completed |
+| UX-011 | Damage Feedback System | P0 | S | Completed |
 | UX-012 | Spectator UI | P2 | S | Not Started |
-| UX-013 | Victory/Defeat Screen | P1 | S | Not Started |
-| UX-014 | Main Menu Design | P1 | M | Not Started |
-| UX-015 | Settings Menu | P0 | M | Not Started |
-| UX-016 | Mode Selection Screen | P1 | S | Not Started |
-| UX-017 | Loading Screens | P1 | S | Not Started |
+| UX-013 | Victory/Defeat Screen | P1 | S | Completed |
+| UX-014 | Main Menu Design | P1 | M | Completed |
+| UX-015 | Settings Menu | P0 | M | Completed |
+| UX-016 | Mode Selection Screen | P1 | S | Completed |
+| UX-017 | Loading Screens | P1 | S | Completed |
 | UX-018 | Colorblind Modes | P2 | S | Not Started |
 | UX-019 | Text and UI Scaling | P2 | S | Not Started |
 | UX-020 | Audio Accessibility | P2 | S | Not Started |
 | UX-021 | Reduced Motion Mode | P3 | S | Not Started |
-| UX-022 | Device Performance Detection | P1 | M | Not Started |
+| UX-022 | Device Performance Detection | P1 | M | Completed |
 | UX-023 | Battery Optimization | P2 | S | Not Started |
-| UX-024 | Notch and Safe Area Handling | P0 | S | Not Started |
-| UX-025 | Network Quality Indicator | P1 | S | Not Started |
-| UX-026 | First-Time User Experience | P1 | L | Not Started |
-| UX-027 | Interactive Tutorial | P1 | M | Not Started |
+| UX-024 | Notch and Safe Area Handling | P0 | S | Completed |
+| UX-025 | Network Quality Indicator | P1 | S | Completed |
+| UX-026 | First-Time User Experience | P1 | L | Completed |
+| UX-027 | Interactive Tutorial | P1 | M | Completed |
 | UX-028 | Contextual Hints System | P2 | S | Not Started |
