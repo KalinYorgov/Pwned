@@ -630,7 +630,7 @@ Enable players to share achievements and moments.
 ## 6. Communication and Engagement
 
 ### LIVE-020: In-Game News/Announcements
-**Priority:** P1 | **Complexity:** S
+**Priority:** P1 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Communicate with players through in-game messaging.
@@ -643,17 +643,20 @@ Communicate with players through in-game messaging.
 - Community spotlights
 
 **Acceptance Criteria:**
-- [ ] News section in main menu
-- [ ] Banner for urgent announcements
-- [ ] Rich text/images support
-- [ ] Read/unread tracking
-- [ ] Remote update (no app deploy needed)
-- [ ] Localization support
+- [x] News section in main menu
+- [x] Banner for urgent announcements
+- [x] Rich text/images support
+- [x] Read/unread tracking
+- [x] Remote update (no app deploy needed)
+- [x] Localization support
 
 **Definition of Done:**
 - Announcements reach players
 - CMS or admin tool for updates
 - Tested for engagement
+
+**Deliverables:**
+- [In-Game News/Announcements Specification](docs/IN_GAME_NEWS_ANNOUNCEMENTS_SPEC.md)
 
 **Dependencies:** None
 
@@ -810,7 +813,7 @@ Build comprehensive analytics dashboard for live ops decisions.
 | LIVE-017 | Guilds/Crews System | P3 | L | Not Started |
 | LIVE-018 | Referral Program | P3 | M | Not Started |
 | LIVE-019 | Social Sharing | P2 | S | Not Started |
-| LIVE-020 | In-Game News/Announcements | P1 | S | Not Started |
+| LIVE-020 | In-Game News/Announcements | P1 | S | Completed |
 | LIVE-021 | Customer Support Integration | P1 | M | Not Started |
 | LIVE-022 | Survey and Feedback System | P2 | S | Not Started |
 | LIVE-023 | Content Update Pipeline | P1 | L | Not Started |
