@@ -286,7 +286,7 @@ Implement rotating limited-time game modes for variety.
 ## 3. Retention Mechanics
 
 ### LIVE-009: Daily Login Rewards
-**Priority:** P1 | **Complexity:** S
+**Priority:** P1 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Reward players for daily logins to build habit.
@@ -301,18 +301,21 @@ Reward players for daily logins to build habit.
 - Day 7: Rare Chest + 10 Doubloons
 
 **Acceptance Criteria:**
-- [ ] Daily login tracked
-- [ ] Rewards shown in calendar UI
-- [ ] Claim button for each day
-- [ ] Streak tracker (days consecutive)
-- [ ] Streak breaks reset to day 1 (or partial reset)
-- [ ] Returning player catch-up (optional)
-- [ ] Monthly reset with escalating rewards
+- [x] Daily login tracked
+- [x] Rewards shown in calendar UI
+- [x] Claim button for each day
+- [x] Streak tracker (days consecutive)
+- [x] Streak breaks reset to day 1 (or partial reset)
+- [x] Returning player catch-up (optional)
+- [x] Monthly reset with escalating rewards
 
 **Definition of Done:**
 - Login rewards functional
 - Players motivated to log in daily
 - Tested for timezone edge cases
+
+**Deliverables:**
+- [Daily Login Rewards Specification](docs/DAILY_LOGIN_REWARDS_SPEC.md)
 
 **Dependencies:** BACK-011
 
@@ -790,7 +793,7 @@ Build comprehensive analytics dashboard for live ops decisions.
 | LIVE-006 | Seasonal Events | P2 | M | Not Started |
 | LIVE-007 | Community Challenges | P2 | S | Not Started |
 | LIVE-008 | Limited-Time Modes (LTM) | P2 | M | Not Started |
-| LIVE-009 | Daily Login Rewards | P1 | S | Not Started |
+| LIVE-009 | Daily Login Rewards | P1 | S | Completed |
 | LIVE-010 | First Win of the Day | P1 | S | Not Started |
 | LIVE-011 | Come Back Rewards | P2 | S | Not Started |
 | LIVE-012 | Push Notifications | P2 | M | Not Started |
