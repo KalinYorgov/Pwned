@@ -211,7 +211,7 @@ Implement orchestration layer to dynamically scale game servers based on demand.
 ---
 
 ### BACK-006: Regional Server Deployment
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Deploy game servers in multiple geographic regions to minimize player latency.
@@ -223,19 +223,22 @@ Deploy game servers in multiple geographic regions to minimize player latency.
 - South America (Sao Paulo) - optional
 
 **Acceptance Criteria:**
-- [ ] Servers deployed in at least 3 major regions
-- [ ] Players auto-matched to nearest region
-- [ ] Region selection override option
-- [ ] Cross-region play for parties (use leader's region)
-- [ ] Latency displayed in region selector
-- [ ] Region-specific capacity planning
-- [ ] Data replication between regions for accounts
+- [x] Servers deployed in at least 3 major regions
+- [x] Players auto-matched to nearest region
+- [x] Region selection override option
+- [x] Cross-region play for parties (use leader's region)
+- [x] Latency displayed in region selector
+- [x] Region-specific capacity planning
+- [x] Data replication between regions for accounts
 
 **Definition of Done:**
 - Players in target regions have < 80ms ping
 - Region selection works correctly
 - Cross-region parties connect properly
 - Capacity sufficient for each region's playerbase
+
+**Deliverables:**
+- [Regional Server Deployment Specification](docs/REGIONAL_SERVER_DEPLOYMENT_SPEC.md)
 
 **Dependencies:** BACK-005
 
@@ -804,7 +807,7 @@ Implement A/B testing capability to test features and changes before full rollou
 | BACK-003 | Skill-Based Matchmaking | P2 | M | Not Started |
 | BACK-004 | Dedicated Game Servers | P0 | XL | Completed |
 | BACK-005 | Server Orchestration | P0 | L | Completed |
-| BACK-006 | Regional Server Deployment | P1 | M | Not Started |
+| BACK-006 | Regional Server Deployment | P1 | M | Completed |
 | BACK-007 | Real-Time Netcode | P0 | XL | Completed |
 | BACK-008 | Reconnection System | P1 | M | Not Started |
 | BACK-009 | Voice Chat Service | P2 | M | Not Started |
