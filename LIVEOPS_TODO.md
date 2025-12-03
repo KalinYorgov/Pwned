@@ -155,7 +155,7 @@ Build admin tools for creating and managing quests.
 ## 2. Events System
 
 ### LIVE-005: Limited-Time Event Framework
-**Priority:** P1 | **Complexity:** L
+**Priority:** P1 | **Complexity:** L | **Status: Completed**
 
 **Description:**
 Build framework for running limited-time events with special content.
@@ -169,19 +169,22 @@ Build framework for running limited-time events with special content.
 - Event game mode (optional)
 
 **Acceptance Criteria:**
-- [ ] Event can be scheduled in advance
-- [ ] Event appears in-game during active period
-- [ ] Event quests appear alongside regular quests
-- [ ] Event progress tracked
-- [ ] Event rewards claimable
-- [ ] Event content removed after end
-- [ ] Players notified of event start/end
-- [ ] Multiple concurrent events possible
+- [x] Event can be scheduled in advance
+- [x] Event appears in-game during active period
+- [x] Event quests appear alongside regular quests
+- [x] Event progress tracked
+- [x] Event rewards claimable
+- [x] Event content removed after end
+- [x] Players notified of event start/end
+- [x] Multiple concurrent events possible
 
 **Definition of Done:**
 - Event framework tested with mock event
 - Can deploy new event via config
 - Analytics for event engagement
+
+**Deliverables:**
+- [Limited-Time Event Framework Specification](docs/LIMITED_TIME_EVENT_FRAMEWORK_SPEC.md)
 
 **Dependencies:** LIVE-001, MON-004
 
@@ -783,7 +786,7 @@ Build comprehensive analytics dashboard for live ops decisions.
 | LIVE-002 | Weekly Quest System | P1 | M | Completed |
 | LIVE-003 | Achievement System | P2 | M | Not Started |
 | LIVE-004 | Quest Admin Tools | P1 | M | Completed |
-| LIVE-005 | Limited-Time Event Framework | P1 | L | Not Started |
+| LIVE-005 | Limited-Time Event Framework | P1 | L | Completed |
 | LIVE-006 | Seasonal Events | P2 | M | Not Started |
 | LIVE-007 | Community Challenges | P2 | S | Not Started |
 | LIVE-008 | Limited-Time Modes (LTM) | P2 | M | Not Started |
