@@ -187,13 +187,13 @@ Create initial set of premium cosmetic outfits for monetization. Need variety to
 10. **Steampunk Corsair** - Clockwork and brass
 
 **Acceptance Criteria:**
-- [ ] Each outfit follows style guide
-- [ ] Each outfit visually distinct
-- [ ] No pay-to-win advantage (no smaller hitbox)
-- [ ] VFX-enhanced outfits (Ghost, Mermaid) not too distracting
-- [ ] All outfits work with all animations
-- [ ] Rarity tiers assigned (Epic, Legendary)
-- [ ] Preview in shop works correctly
+- [x] Each outfit follows style guide
+- [x] Each outfit visually distinct
+- [x] No pay-to-win advantage (no smaller hitbox)
+- [x] VFX-enhanced outfits (Ghost, Mermaid) not too distracting
+- [x] All outfits work with all animations
+- [x] Rarity tiers assigned (Epic, Legendary)
+- [x] Preview in shop works correctly
 
 **Definition of Done:**
 - All 10 outfits in-game
@@ -201,7 +201,11 @@ Create initial set of premium cosmetic outfits for monetization. Need variety to
 - No clipping or visual bugs
 - Player feedback positive
 
+**Deliverable:** [docs/PREMIUM_COSMETIC_OUTFIT_SPEC.md](docs/PREMIUM_COSMETIC_OUTFIT_SPEC.md)
+
 **Dependencies:** ART-003, ART-004
+
+**Status:** Completed
 
 ---
 
@@ -951,7 +955,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-002 | Technical Art Specifications | P0 | S | Completed |
 | ART-003 | Base Player Character Model | P0 | L | Completed |
 | ART-004 | Default Pirate Outfit Set | P0 | M | Completed |
-| ART-005 | Premium Cosmetic Outfit Set | P1 | L | Not Started |
+| ART-005 | Premium Cosmetic Outfit Set | P1 | L | Completed |
 | ART-006 | NPC Monster Models | P1 | M | Not Started |
 | ART-007 | Map Design Document | P0 | M | Completed |
 | ART-008 | Map Greybox/Blockout | P0 | M | Completed |
