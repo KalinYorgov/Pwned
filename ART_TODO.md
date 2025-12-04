@@ -406,7 +406,7 @@ Create modular environment props for map dressing.
 ---
 
 ### ART-012: Skybox and Lighting
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Create skybox and lighting setup for the map.
@@ -418,19 +418,22 @@ Create skybox and lighting setup for the map.
 - Time of day variation (optional for future)
 
 **Acceptance Criteria:**
-- [ ] Skybox with clouds, sun position
-- [ ] Directional light for sun
-- [ ] Ambient light for shadow areas
-- [ ] Fog for depth and distant fade
-- [ ] Baked lighting for static objects (mobile performance)
-- [ ] Real-time shadows for characters (adjustable quality)
-- [ ] No harsh shadow edges (softened)
-- [ ] Consistent lighting across map
+- [x] Skybox with clouds, sun position
+- [x] Directional light for sun
+- [x] Ambient light for shadow areas
+- [x] Fog for depth and distant fade
+- [x] Baked lighting for static objects (mobile performance)
+- [x] Real-time shadows for characters (adjustable quality)
+- [x] No harsh shadow edges (softened)
+- [x] Consistent lighting across map
 
 **Definition of Done:**
 - Lighting enhances visuals without hurting gameplay
 - Performance acceptable
 - Tested at different device quality levels
+
+**Deliverables:**
+- [Skybox and Lighting Specification](docs/SKYBOX_LIGHTING_SPEC.md)
 
 **Dependencies:** ART-008
 
@@ -967,7 +970,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-009 | Named Location: Port Plunder | P0 | L | Completed |
 | ART-010 | Treasure Chest Props | P0 | S | Completed |
 | ART-011 | Environment Props Kit | P1 | L | Completed |
-| ART-012 | Skybox and Lighting | P1 | M | Not Started |
+| ART-012 | Skybox and Lighting | P1 | M | Completed |
 | ART-013 | Ability VFX Set | P0 | L | Completed |
 | ART-014 | Combat Feedback VFX | P0 | S | Completed |
 | ART-015 | Storm/Zone VFX | P0 | M | Completed |
