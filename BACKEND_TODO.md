@@ -584,7 +584,7 @@ Ensure all critical game logic is validated server-side to prevent client-side c
 ---
 
 ### BACK-016: Anti-Cheat System
-**Priority:** P1 | **Complexity:** L
+**Priority:** P1 | **Complexity:** L | **Status: Completed**
 
 **Description:**
 Implement detection and prevention systems for cheating beyond server authority.
@@ -597,15 +597,15 @@ Implement detection and prevention systems for cheating beyond server authority.
 - Ban system (temp and permanent)
 
 **Acceptance Criteria:**
-- [ ] Client-side integrity checks
-- [ ] Detection of memory modification
-- [ ] Flagging of statistical anomalies (too high accuracy, etc.)
-- [ ] Player report system with categories
-- [ ] Review queue for reported players
-- [ ] Temp bans for first offense (escalating)
-- [ ] Permanent bans for severe/repeat offenses
-- [ ] Ban appeal process
-- [ ] Hardware ID bans for repeat offenders
+- [x] Client-side integrity checks
+- [x] Detection of memory modification
+- [x] Flagging of statistical anomalies (too high accuracy, etc.)
+- [x] Player report system with categories
+- [x] Review queue for reported players
+- [x] Temp bans for first offense (escalating)
+- [x] Permanent bans for severe/repeat offenses
+- [x] Ban appeal process
+- [x] Hardware ID bans for repeat offenders
 
 **Definition of Done:**
 - Known cheats detected and prevented
@@ -613,6 +613,9 @@ Implement detection and prevention systems for cheating beyond server authority.
 - Ban system functional and fair
 - Appeals process in place
 - Continuous updates for new cheats
+
+**Deliverables:**
+- [Anti-Cheat System Specification](docs/ANTI_CHEAT_SYSTEM_SPEC.md)
 
 **Dependencies:** BACK-015
 
@@ -826,7 +829,7 @@ Implement A/B testing capability to test features and changes before full rollou
 | BACK-013 | Friends and Social Service | P1 | M | Completed |
 | BACK-014 | Leaderboards Service | P2 | S | Not Started |
 | BACK-015 | Server-Authoritative Validation | P0 | L | Completed |
-| BACK-016 | Anti-Cheat System | P1 | L | Not Started |
+| BACK-016 | Anti-Cheat System | P1 | L | Completed |
 | BACK-017 | Rate Limiting and DDoS Protection | P1 | M | Not Started |
 | BACK-018 | Secure Communication | P0 | S | Completed |
 | BACK-019 | Game Analytics | P1 | M | Not Started |
