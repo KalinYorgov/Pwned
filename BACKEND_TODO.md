@@ -622,7 +622,7 @@ Implement detection and prevention systems for cheating beyond server authority.
 ---
 
 ### BACK-017: Rate Limiting and DDoS Protection
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Protect services from abuse and denial-of-service attacks.
@@ -633,18 +633,21 @@ Protect services from abuse and denial-of-service attacks.
 - Abuse detection and blocking
 
 **Acceptance Criteria:**
-- [ ] API endpoints rate limited appropriately
-- [ ] Excessive requests result in temp block
-- [ ] Game servers behind DDoS protection (e.g., Cloudflare, AWS Shield)
-- [ ] Traffic spikes don't crash services
-- [ ] Alerting for attack detection
-- [ ] Graceful degradation under attack
+- [x] API endpoints rate limited appropriately
+- [x] Excessive requests result in temp block
+- [x] Game servers behind DDoS protection (e.g., Cloudflare, AWS Shield)
+- [x] Traffic spikes don't crash services
+- [x] Alerting for attack detection
+- [x] Graceful degradation under attack
 
 **Definition of Done:**
 - Services remain available during attacks
 - Legitimate users not affected by limits
 - Attack response procedures documented
 - Tested with load testing tools
+
+**Deliverables:**
+- [Rate Limiting and DDoS Protection Specification](docs/RATE_LIMITING_DDOS_PROTECTION_SPEC.md)
 
 **Dependencies:** BACK-004, BACK-011
 
@@ -830,7 +833,7 @@ Implement A/B testing capability to test features and changes before full rollou
 | BACK-014 | Leaderboards Service | P2 | S | Not Started |
 | BACK-015 | Server-Authoritative Validation | P0 | L | Completed |
 | BACK-016 | Anti-Cheat System | P1 | L | Completed |
-| BACK-017 | Rate Limiting and DDoS Protection | P1 | M | Not Started |
+| BACK-017 | Rate Limiting and DDoS Protection | P1 | M | Completed |
 | BACK-018 | Secure Communication | P0 | S | Completed |
 | BACK-019 | Game Analytics | P1 | M | Not Started |
 | BACK-020 | Server Monitoring | P0 | M | Completed |
