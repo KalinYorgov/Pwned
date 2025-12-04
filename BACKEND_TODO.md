@@ -475,7 +475,7 @@ Save player progress and purchases to cloud for cross-device play.
 ---
 
 ### BACK-013: Friends and Social Service
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Implement friends list and social features for player connections.
@@ -488,15 +488,15 @@ Implement friends list and social features for player connections.
 - Join friend's party
 
 **Acceptance Criteria:**
-- [ ] Send friend request by username or ID
-- [ ] Accept/decline friend requests
-- [ ] Friends list with online status
-- [ ] Invite friend to party from friends list
-- [ ] View friend's profile
-- [ ] Block player (hides from matching, blocks invites)
-- [ ] Recent players from last N matches
-- [ ] Import friends from platform (Game Center, etc.)
-- [ ] Presence updates in real-time
+- [x] Send friend request by username or ID
+- [x] Accept/decline friend requests
+- [x] Friends list with online status
+- [x] Invite friend to party from friends list
+- [x] View friend's profile
+- [x] Block player (hides from matching, blocks invites)
+- [x] Recent players from last N matches
+- [x] Import friends from platform (Game Center, etc.)
+- [x] Presence updates in real-time
 
 **Definition of Done:**
 - Friend operations fast and reliable
@@ -504,6 +504,9 @@ Implement friends list and social features for player connections.
 - Block system prevents all interaction
 - Privacy respected
 - Tested with large friend lists
+
+**Deliverables:**
+- [Friends and Social Service Specification](docs/FRIENDS_SOCIAL_SERVICE_SPEC.md)
 
 **Dependencies:** BACK-011
 
@@ -820,7 +823,7 @@ Implement A/B testing capability to test features and changes before full rollou
 | BACK-010 | Authentication System | P0 | M | Completed |
 | BACK-011 | Player Profile Service | P0 | M | Completed |
 | BACK-012 | Cloud Save System | P1 | M | Completed |
-| BACK-013 | Friends and Social Service | P1 | M | Not Started |
+| BACK-013 | Friends and Social Service | P1 | M | Completed |
 | BACK-014 | Leaderboards Service | P2 | S | Not Started |
 | BACK-015 | Server-Authoritative Validation | P0 | L | Completed |
 | BACK-016 | Anti-Cheat System | P1 | L | Not Started |
