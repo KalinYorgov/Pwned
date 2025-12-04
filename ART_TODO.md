@@ -374,7 +374,7 @@ Create treasure chest models for loot spawns.
 ---
 
 ### ART-011: Environment Props Kit
-**Priority:** P1 | **Complexity:** L
+**Priority:** P1 | **Complexity:** L | **Status: Completed**
 
 **Description:**
 Create modular environment props for map dressing.
@@ -386,17 +386,20 @@ Create modular environment props for map dressing.
 - **Interactive:** Ziplines, jump pads (if gameplay includes)
 
 **Acceptance Criteria:**
-- [ ] Props modular and reusable
-- [ ] Consistent scale and style
-- [ ] LOD variants for distant props
-- [ ] Collision appropriate (no weird catching)
-- [ ] Atlas textures where possible
-- [ ] Cover objects clearly readable
+- [x] Props modular and reusable
+- [x] Consistent scale and style
+- [x] LOD variants for distant props
+- [x] Collision appropriate (no weird catching)
+- [x] Atlas textures where possible
+- [x] Cover objects clearly readable
 
 **Definition of Done:**
 - Complete prop kit for map dressing
 - All props placed on map
 - Performance budget met
+
+**Deliverables:**
+- [Environment Props Kit Specification](docs/ENVIRONMENT_PROPS_KIT_SPEC.md)
 
 **Dependencies:** ART-001, ART-007
 
@@ -963,7 +966,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-008 | Map Greybox/Blockout | P0 | M | Completed |
 | ART-009 | Named Location: Port Plunder | P0 | L | Completed |
 | ART-010 | Treasure Chest Props | P0 | S | Completed |
-| ART-011 | Environment Props Kit | P1 | L | Not Started |
+| ART-011 | Environment Props Kit | P1 | L | Completed |
 | ART-012 | Skybox and Lighting | P1 | M | Not Started |
 | ART-013 | Ability VFX Set | P0 | L | Completed |
 | ART-014 | Combat Feedback VFX | P0 | S | Completed |
