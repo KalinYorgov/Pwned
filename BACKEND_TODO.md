@@ -440,7 +440,7 @@ Manage player profiles including stats, inventory, progression, and settings.
 ---
 
 ### BACK-012: Cloud Save System
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Save player progress and purchases to cloud for cross-device play.
@@ -453,19 +453,22 @@ Save player progress and purchases to cloud for cross-device play.
 - Match history (last 20 matches)
 
 **Acceptance Criteria:**
-- [ ] Progress saves automatically after each match
-- [ ] Cloud data syncs on login
-- [ ] Conflict resolution if offline progress exists
-- [ ] Offline play caches locally, syncs later
-- [ ] Purchase restoration from cloud
-- [ ] No data loss on device change
-- [ ] Data versioning for schema updates
+- [x] Progress saves automatically after each match
+- [x] Cloud data syncs on login
+- [x] Conflict resolution if offline progress exists
+- [x] Offline play caches locally, syncs later
+- [x] Purchase restoration from cloud
+- [x] No data loss on device change
+- [x] Data versioning for schema updates
 
 **Definition of Done:**
 - Zero data loss in normal operation
 - Cross-device works seamlessly
 - Conflict handling tested
 - Migration path for data schema changes
+
+**Deliverables:**
+- [Cloud Save System Specification](docs/CLOUD_SAVE_SYSTEM_SPEC.md)
 
 **Dependencies:** BACK-011
 
@@ -816,7 +819,7 @@ Implement A/B testing capability to test features and changes before full rollou
 | BACK-009 | Voice Chat Service | P2 | M | Not Started |
 | BACK-010 | Authentication System | P0 | M | Completed |
 | BACK-011 | Player Profile Service | P0 | M | Completed |
-| BACK-012 | Cloud Save System | P1 | M | Not Started |
+| BACK-012 | Cloud Save System | P1 | M | Completed |
 | BACK-013 | Friends and Social Service | P1 | M | Not Started |
 | BACK-014 | Leaderboards Service | P2 | S | Not Started |
 | BACK-015 | Server-Authoritative Validation | P0 | L | Completed |
