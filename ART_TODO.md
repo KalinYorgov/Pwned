@@ -209,7 +209,7 @@ Create initial set of premium cosmetic outfits for monetization. Need variety to
 ---
 
 ### ART-006: NPC Monster Models
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Create monster models for PvE camps.
@@ -221,18 +221,21 @@ Create monster models for PvE camps.
 4. **Mini-Boss: Kraken Tentacle** - Large, animated obstacle (5k triangles)
 
 **Acceptance Criteria:**
-- [ ] Each monster has distinct silhouette
-- [ ] Animations for idle, walk, attack, death
-- [ ] Fits pirate theme
-- [ ] Readable threat level from appearance
-- [ ] Performance acceptable with 20+ on screen
-- [ ] LOD variants
+- [x] Each monster has distinct silhouette
+- [x] Animations for idle, walk, attack, death
+- [x] Fits pirate theme
+- [x] Readable threat level from appearance
+- [x] Performance acceptable with 20+ on screen
+- [x] LOD variants
 
 **Definition of Done:**
 - All monsters in-game and functional
 - AI uses models correctly
 - No performance issues
 - Thematically cohesive
+
+**Deliverables:**
+- [NPC Monster Models Specification](docs/NPC_MONSTER_MODELS_SPEC.md)
 
 **Dependencies:** ART-001, GAME-015
 
@@ -955,7 +958,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-003 | Base Player Character Model | P0 | L | Completed |
 | ART-004 | Default Pirate Outfit Set | P0 | M | Completed |
 | ART-005 | Premium Cosmetic Outfit Set | P1 | L | Completed |
-| ART-006 | NPC Monster Models | P1 | M | Not Started |
+| ART-006 | NPC Monster Models | P1 | M | Completed |
 | ART-007 | Map Design Document | P0 | M | Completed |
 | ART-008 | Map Greybox/Blockout | P0 | M | Completed |
 | ART-009 | Named Location: Port Plunder | P0 | L | Completed |
