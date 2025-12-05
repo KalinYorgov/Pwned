@@ -656,7 +656,7 @@ Create icons for all abilities.
 ---
 
 ### ART-019: Currency and Item Icons
-**Priority:** P1 | **Complexity:** S
+**Priority:** P1 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Create icons for currencies, items, and collectibles.
@@ -670,14 +670,17 @@ Create icons for currencies, items, and collectibles.
 - Consumable icons (if any)
 
 **Acceptance Criteria:**
-- [ ] Each currency visually distinct
-- [ ] Premium currency clearly premium-looking
-- [ ] Icons work at various sizes
-- [ ] Consistent with pirate theme
+- [x] Each currency visually distinct
+- [x] Premium currency clearly premium-looking
+- [x] Icons work at various sizes
+- [x] Consistent with pirate theme
 
 **Definition of Done:**
 - All icons in-game
 - Economy UI uses correct icons
+
+**Deliverables:**
+- [Currency and Item Icons Specification](docs/CURRENCY_ITEM_ICONS_SPEC.md)
 
 **Dependencies:** MON-001
 
@@ -980,7 +983,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-016 | UI VFX and Polish | P1 | S | Completed |
 | ART-017 | UI Theme and Iconography | P0 | M | Completed |
 | ART-018 | Ability Icons | P0 | S | Completed |
-| ART-019 | Currency and Item Icons | P1 | S | Not Started |
+| ART-019 | Currency and Item Icons | P1 | S | Completed |
 | ART-020 | Shop and Menu Backgrounds | P1 | S | Not Started |
 | ART-021 | Character Animation Set | P0 | L | Completed |
 | ART-022 | Ability-Specific Animations | P1 | M | Not Started |
