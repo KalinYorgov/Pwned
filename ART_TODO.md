@@ -556,7 +556,7 @@ Create visual effects for the shrinking storm zone.
 ---
 
 ### ART-016: UI VFX and Polish
-**Priority:** P1 | **Complexity:** S
+**Priority:** P1 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Create polish effects for UI elements.
@@ -570,14 +570,17 @@ Create polish effects for UI elements.
 - Currency gain/spend
 
 **Acceptance Criteria:**
-- [ ] UI feels responsive and alive
-- [ ] Reward reveals are exciting
-- [ ] Effects don't slow UI performance
-- [ ] Consistent with art style
+- [x] UI feels responsive and alive
+- [x] Reward reveals are exciting
+- [x] Effects don't slow UI performance
+- [x] Consistent with art style
 
 **Definition of Done:**
 - All key UI moments have polish VFX
 - Players enjoy UI interactions
+
+**Deliverables:**
+- [UI VFX and Polish Specification](docs/UI_VFX_POLISH_SPEC.md)
 
 **Dependencies:** UX-014
 
@@ -974,7 +977,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-013 | Ability VFX Set | P0 | L | Completed |
 | ART-014 | Combat Feedback VFX | P0 | S | Completed |
 | ART-015 | Storm/Zone VFX | P0 | M | Completed |
-| ART-016 | UI VFX and Polish | P1 | S | Not Started |
+| ART-016 | UI VFX and Polish | P1 | S | Completed |
 | ART-017 | UI Theme and Iconography | P0 | M | Completed |
 | ART-018 | Ability Icons | P0 | S | Completed |
 | ART-019 | Currency and Item Icons | P1 | S | Not Started |
