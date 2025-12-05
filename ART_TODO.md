@@ -818,7 +818,7 @@ Create emote animations for player expression and monetization.
 ---
 
 ### ART-024: Monster Animations
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Create animations for NPC monsters.
@@ -832,14 +832,17 @@ Create animations for NPC monsters.
 - Death
 
 **Acceptance Criteria:**
-- [ ] Animations match monster personality
-- [ ] Attack animations readable (telegraph)
-- [ ] Death animations satisfying
-- [ ] Performance acceptable with many monsters
+- [x] Animations match monster personality
+- [x] Attack animations readable (telegraph)
+- [x] Death animations satisfying
+- [x] Performance acceptable with many monsters
 
 **Definition of Done:**
 - All monsters animated
 - AI uses animations correctly
+
+**Deliverables:**
+- [Monster Animations Specification](docs/MONSTER_ANIMATIONS_SPEC.md)
 
 **Dependencies:** ART-006
 
@@ -994,7 +997,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-021 | Character Animation Set | P0 | L | Completed |
 | ART-022 | Ability-Specific Animations | P1 | M | Completed |
 | ART-023 | Emote Animations | P2 | M | Not Started |
-| ART-024 | Monster Animations | P1 | M | Not Started |
+| ART-024 | Monster Animations | P1 | M | Completed |
 | ART-025 | Audio Style Guide | P1 | S | Not Started |
 | ART-026 | Music Tracks | P1 | M | Not Started |
 | ART-027 | Sound Effects | P0 | L | Completed |
