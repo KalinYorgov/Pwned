@@ -687,7 +687,7 @@ Create icons for currencies, items, and collectibles.
 ---
 
 ### ART-020: Shop and Menu Backgrounds
-**Priority:** P1 | **Complexity:** S
+**Priority:** P1 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Create background art for menus and shop screens.
@@ -700,15 +700,18 @@ Create background art for menus and shop screens.
 - Loading screens (various pirate scenes)
 
 **Acceptance Criteria:**
-- [ ] Backgrounds atmospheric but not distracting
-- [ ] UI elements readable over backgrounds
-- [ ] Subtle animation (waves, flags) for polish
-- [ ] Multiple loading screens for variety
-- [ ] Compressed for mobile (memory)
+- [x] Backgrounds atmospheric but not distracting
+- [x] UI elements readable over backgrounds
+- [x] Subtle animation (waves, flags) for polish
+- [x] Multiple loading screens for variety
+- [x] Compressed for mobile (memory)
 
 **Definition of Done:**
 - All key screens have backgrounds
 - Performance not impacted
+
+**Deliverables:**
+- [Shop and Menu Backgrounds Specification](docs/SHOP_MENU_BACKGROUNDS_SPEC.md)
 
 **Dependencies:** UX-014
 
@@ -984,7 +987,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-017 | UI Theme and Iconography | P0 | M | Completed |
 | ART-018 | Ability Icons | P0 | S | Completed |
 | ART-019 | Currency and Item Icons | P1 | S | Completed |
-| ART-020 | Shop and Menu Backgrounds | P1 | S | Not Started |
+| ART-020 | Shop and Menu Backgrounds | P1 | S | Completed |
 | ART-021 | Character Animation Set | P0 | L | Completed |
 | ART-022 | Ability-Specific Animations | P1 | M | Not Started |
 | ART-023 | Emote Animations | P2 | M | Not Started |
