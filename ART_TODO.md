@@ -754,7 +754,7 @@ Create core animation set for player characters.
 ---
 
 ### ART-022: Ability-Specific Animations
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Create unique animations for signature abilities.
@@ -767,14 +767,17 @@ Create unique animations for signature abilities.
 - (Others can use generic casting)
 
 **Acceptance Criteria:**
-- [ ] Each highlighted ability has unique animation
-- [ ] Animations match VFX timing
-- [ ] Can blend back to locomotion smoothly
-- [ ] Animation canceling feels right
+- [x] Each highlighted ability has unique animation
+- [x] Animations match VFX timing
+- [x] Can blend back to locomotion smoothly
+- [x] Animation canceling feels right
 
 **Definition of Done:**
 - Unique animations in-game
 - Ability usage more satisfying
+
+**Deliverables:**
+- [Ability-Specific Animations Specification](docs/ABILITY_SPECIFIC_ANIMATIONS_SPEC.md)
 
 **Dependencies:** ART-021, GAME-008
 
@@ -989,7 +992,7 @@ Record voice over for tutorials, announcements, and characters.
 | ART-019 | Currency and Item Icons | P1 | S | Completed |
 | ART-020 | Shop and Menu Backgrounds | P1 | S | Completed |
 | ART-021 | Character Animation Set | P0 | L | Completed |
-| ART-022 | Ability-Specific Animations | P1 | M | Not Started |
+| ART-022 | Ability-Specific Animations | P1 | M | Completed |
 | ART-023 | Emote Animations | P2 | M | Not Started |
 | ART-024 | Monster Animations | P1 | M | Not Started |
 | ART-025 | Audio Style Guide | P1 | S | Not Started |
