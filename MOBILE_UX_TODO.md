@@ -658,23 +658,26 @@ Implement colorblind accessibility options for players with color vision deficie
 ---
 
 ### UX-019: Text and UI Scaling
-**Priority:** P2 | **Complexity:** S
+**Priority:** P2 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Allow scaling of text and UI elements for accessibility and device size optimization.
 
 **Acceptance Criteria:**
-- [ ] HUD scale slider (75% to 150%)
-- [ ] Text size adjustment for menus
-- [ ] Button size linked to HUD scale or separate
-- [ ] High contrast mode option
-- [ ] Bold text option
-- [ ] Preview before applying
+- [x] HUD scale slider (75% to 150%)
+- [x] Text size adjustment for menus
+- [x] Button size linked to HUD scale or separate
+- [x] High contrast mode option
+- [x] Bold text option
+- [x] Preview before applying
 
 **Definition of Done:**
 - UI usable on small phones and tablets
 - Text readable at all sizes
 - No UI overlap at extreme scales
+
+**Deliverables:**
+- [Text and UI Scaling Specification](docs/TEXT_UI_SCALING_SPEC.md)
 
 **Dependencies:** UX-008
 
@@ -976,7 +979,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-016 | Mode Selection Screen | P1 | S | Completed |
 | UX-017 | Loading Screens | P1 | S | Completed |
 | UX-018 | Colorblind Modes | P2 | S | Completed |
-| UX-019 | Text and UI Scaling | P2 | S | Not Started |
+| UX-019 | Text and UI Scaling | P2 | S | Completed |
 | UX-020 | Audio Accessibility | P2 | S | Not Started |
 | UX-021 | Reduced Motion Mode | P3 | S | Not Started |
 | UX-022 | Device Performance Detection | P1 | M | Completed |
