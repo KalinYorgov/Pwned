@@ -408,26 +408,29 @@ Implement clear visual and audio feedback when dealing or receiving damage.
 ---
 
 ### UX-012: Spectator UI
-**Priority:** P2 | **Complexity:** S
+**Priority:** P2 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Create the UI overlay for spectating matches after elimination.
 
 **Acceptance Criteria:**
-- [ ] Clear "SPECTATING" label
-- [ ] Observed player's name and stats visible
-- [ ] Controls to switch between players
-- [ ] Free camera toggle
-- [ ] Leave match button
-- [ ] Remaining player count
-- [ ] Match timer
-- [ ] Spectator chat (isolated from alive players)
+- [x] Clear "SPECTATING" label
+- [x] Observed player's name and stats visible
+- [x] Controls to switch between players
+- [x] Free camera toggle
+- [x] Leave match button
+- [x] Remaining player count
+- [x] Match timer
+- [x] Spectator chat (isolated from alive players)
 
 **Definition of Done:**
 - Spectating is engaging experience
 - UI does not obscure action
 - Player switching is smooth
 - All controls intuitive
+
+**Deliverables:**
+- [Spectator UI Specification](docs/SPECTATOR_UI_SPEC.md)
 
 **Dependencies:** GAME-006
 
@@ -963,7 +966,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-009 | Minimap System | P0 | M | Completed |
 | UX-010 | Ping/Communication System | P1 | M | Completed |
 | UX-011 | Damage Feedback System | P0 | S | Completed |
-| UX-012 | Spectator UI | P2 | S | Not Started |
+| UX-012 | Spectator UI | P2 | S | Completed |
 | UX-013 | Victory/Defeat Screen | P1 | S | Completed |
 | UX-014 | Main Menu Design | P1 | M | Completed |
 | UX-015 | Settings Menu | P0 | M | Completed |
