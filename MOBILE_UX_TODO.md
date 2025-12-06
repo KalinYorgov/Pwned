@@ -684,7 +684,7 @@ Allow scaling of text and UI elements for accessibility and device size optimiza
 ---
 
 ### UX-020: Audio Accessibility
-**Priority:** P2 | **Complexity:** S
+**Priority:** P2 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Add audio accessibility features for hearing-impaired players.
@@ -695,17 +695,20 @@ Add audio accessibility features for hearing-impaired players.
 - Vibration for audio events
 
 **Acceptance Criteria:**
-- [ ] Subtitles for any voiced content
-- [ ] Visual ping when enemy fires nearby (directional)
-- [ ] Visual storm warning (not just audio)
-- [ ] Low health visual indicator (not just heartbeat)
-- [ ] Mono audio option
-- [ ] Vibration patterns for different events
+- [x] Subtitles for any voiced content
+- [x] Visual ping when enemy fires nearby (directional)
+- [x] Visual storm warning (not just audio)
+- [x] Low health visual indicator (not just heartbeat)
+- [x] Mono audio option
+- [x] Vibration patterns for different events
 
 **Definition of Done:**
 - Deaf players can play effectively
 - No critical info audio-only
 - Visual indicators don't clutter HUD
+
+**Deliverables:**
+- [Audio Accessibility Specification](docs/AUDIO_ACCESSIBILITY_SPEC.md)
 
 **Dependencies:** UX-011
 
@@ -980,7 +983,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-017 | Loading Screens | P1 | S | Completed |
 | UX-018 | Colorblind Modes | P2 | S | Completed |
 | UX-019 | Text and UI Scaling | P2 | S | Completed |
-| UX-020 | Audio Accessibility | P2 | S | Not Started |
+| UX-020 | Audio Accessibility | P2 | S | Completed |
 | UX-021 | Reduced Motion Mode | P3 | S | Not Started |
 | UX-022 | Device Performance Detection | P1 | M | Completed |
 | UX-023 | Battery Optimization | P2 | S | Not Started |
