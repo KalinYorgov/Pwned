@@ -177,20 +177,20 @@ Handle player death, elimination announcement, and match end conditions. When a 
 ---
 
 ### GAME-006: Spectator Mode
-**Priority:** P2 | **Complexity:** M
+**Priority:** P2 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Allow eliminated players to spectate remaining players in the match. In team modes, spectate teammates first; after team elimination, can spectate any player.
 
 **Acceptance Criteria:**
-- [ ] Eliminated players automatically enter spectator mode
-- [ ] Free camera or follow-player camera options
-- [ ] Can cycle through alive players (in solos: random; in teams: teammates first)
-- [ ] Spectator UI shows observed player's health, abilities, kill count
-- [ ] Spectators cannot interact with game world
-- [ ] Chat between spectators is isolated (no info leak to alive players)
-- [ ] Option to leave spectate and return to lobby at any time
-- [ ] Spectator count shown to alive players (optional setting)
+- [x] Eliminated players automatically enter spectator mode
+- [x] Free camera or follow-player camera options
+- [x] Can cycle through alive players (in solos: random; in teams: teammates first)
+- [x] Spectator UI shows observed player's health, abilities, kill count
+- [x] Spectators cannot interact with game world
+- [x] Chat between spectators is isolated (no info leak to alive players)
+- [x] Option to leave spectate and return to lobby at any time
+- [x] Spectator count shown to alive players (optional setting)
 
 **Definition of Done:**
 - No information leaking from spectator to alive teammates (anti-cheat)
@@ -198,6 +198,9 @@ Allow eliminated players to spectate remaining players in the match. In team mod
 - Network bandwidth for spectators is optimized
 - Works correctly with 30+ spectators per match
 - UI clearly indicates spectator mode
+
+**Deliverables:**
+- [Spectator Mode Specification](docs/SPECTATOR_MODE_SPEC.md)
 
 **Dependencies:** GAME-005, UX-012 (Spectator UI)
 
@@ -841,7 +844,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-003 | Storm/Safe Zone System | P0 | M | Completed |
 | GAME-004 | Loot Spawn System | P0 | M | Completed |
 | GAME-005 | Player Elimination System | P0 | S | Completed |
-| GAME-006 | Spectator Mode | P2 | M | Not Started |
+| GAME-006 | Spectator Mode | P2 | M | Completed |
 | GAME-007 | Ability Slot System | P0 | M | Completed |
 | GAME-008 | Core Ability Implementation | P0 | XL | Completed |
 | GAME-009 | Ability Upgrade System | P1 | M | Completed |
