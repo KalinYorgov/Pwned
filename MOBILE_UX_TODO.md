@@ -192,7 +192,7 @@ Implement optional aim assist to help mobile players land shots. Should help acc
 ---
 
 ### UX-006: Gesture Controls
-**Priority:** P2 | **Complexity:** S
+**Priority:** P2 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Implement additional gesture controls for quality-of-life actions.
@@ -204,16 +204,19 @@ Implement additional gesture controls for quality-of-life actions.
 - **Swipe from edge:** Open scoreboard (optional)
 
 **Acceptance Criteria:**
-- [ ] Gestures do not conflict with core controls
-- [ ] Gestures are optional and can be disabled
-- [ ] Gesture actions are also available via buttons
-- [ ] Visual feedback confirms gesture recognized
-- [ ] Gestures documented in settings/help
+- [x] Gestures do not conflict with core controls
+- [x] Gestures are optional and can be disabled
+- [x] Gesture actions are also available via buttons
+- [x] Visual feedback confirms gesture recognized
+- [x] Gestures documented in settings/help
 
 **Definition of Done:**
 - Gestures feel natural and discoverable
 - No accidental gesture triggers during combat
 - Tested on various device sizes
+
+**Deliverables:**
+- [Gesture Controls Specification](docs/GESTURE_CONTROLS_SPEC.md)
 
 **Dependencies:** UX-001, UX-002
 
@@ -954,7 +957,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-003 | Ability Button Layout | P0 | M | Completed |
 | UX-004 | Skillshot Targeting System | P0 | M | Completed |
 | UX-005 | Auto-Aim Assist System | P1 | M | Completed |
-| UX-006 | Gesture Controls | P2 | S | Not Started |
+| UX-006 | Gesture Controls | P2 | S | Completed |
 | UX-007 | Controller Support | P3 | M | Not Started |
 | UX-008 | Main HUD Layout | P0 | M | Completed |
 | UX-009 | Minimap System | P0 | M | Completed |
