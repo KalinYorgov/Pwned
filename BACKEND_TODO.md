@@ -287,7 +287,7 @@ Implement the real-time networking layer for gameplay synchronization. Must hand
 ---
 
 ### BACK-008: Reconnection System
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Allow players to reconnect to ongoing matches after disconnect. Critical for mobile where interruptions are common (calls, app switching).
@@ -300,20 +300,23 @@ Allow players to reconnect to ongoing matches after disconnect. Critical for mob
 5. If grace period expires, player eliminated
 
 **Acceptance Criteria:**
-- [ ] Grace period of 60 seconds for reconnection
-- [ ] Player character invulnerable during disconnect (or hidden)
-- [ ] Reconnect option shown when relaunching during match
-- [ ] State restored accurately (health, abilities, position)
-- [ ] Teammates notified of disconnect/reconnect
-- [ ] Multiple reconnects allowed per match
-- [ ] Quick reconnection (< 5 seconds)
-- [ ] Works across app restart
+- [x] Grace period of 60 seconds for reconnection
+- [x] Player character invulnerable during disconnect (or hidden)
+- [x] Reconnect option shown when relaunching during match
+- [x] State restored accurately (health, abilities, position)
+- [x] Teammates notified of disconnect/reconnect
+- [x] Multiple reconnects allowed per match
+- [x] Quick reconnection (< 5 seconds)
+- [x] Works across app restart
 
 **Definition of Done:**
 - Reconnection success rate > 95%
 - No exploit potential (disconnect to avoid death)
 - State restore is accurate
 - Tested with various disconnect scenarios
+
+**Deliverables:**
+- [Reconnection System Specification](docs/RECONNECTION_SYSTEM_SPEC.md)
 
 **Dependencies:** BACK-007
 
@@ -437,7 +440,7 @@ Manage player profiles including stats, inventory, progression, and settings.
 ---
 
 ### BACK-012: Cloud Save System
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Save player progress and purchases to cloud for cross-device play.
@@ -450,13 +453,13 @@ Save player progress and purchases to cloud for cross-device play.
 - Match history (last 20 matches)
 
 **Acceptance Criteria:**
-- [ ] Progress saves automatically after each match
-- [ ] Cloud data syncs on login
-- [ ] Conflict resolution if offline progress exists
-- [ ] Offline play caches locally, syncs later
-- [ ] Purchase restoration from cloud
-- [ ] No data loss on device change
-- [ ] Data versioning for schema updates
+- [x] Progress saves automatically after each match
+- [x] Cloud data syncs on login
+- [x] Conflict resolution if offline progress exists
+- [x] Offline play caches locally, syncs later
+- [x] Purchase restoration from cloud
+- [x] No data loss on device change
+- [x] Data versioning for schema updates
 
 **Definition of Done:**
 - Zero data loss in normal operation
@@ -464,12 +467,15 @@ Save player progress and purchases to cloud for cross-device play.
 - Conflict handling tested
 - Migration path for data schema changes
 
+**Deliverables:**
+- [Cloud Save System Specification](docs/CLOUD_SAVE_SYSTEM_SPEC.md)
+
 **Dependencies:** BACK-011
 
 ---
 
 ### BACK-013: Friends and Social Service
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Implement friends list and social features for player connections.
@@ -482,15 +488,15 @@ Implement friends list and social features for player connections.
 - Join friend's party
 
 **Acceptance Criteria:**
-- [ ] Send friend request by username or ID
-- [ ] Accept/decline friend requests
-- [ ] Friends list with online status
-- [ ] Invite friend to party from friends list
-- [ ] View friend's profile
-- [ ] Block player (hides from matching, blocks invites)
-- [ ] Recent players from last N matches
-- [ ] Import friends from platform (Game Center, etc.)
-- [ ] Presence updates in real-time
+- [x] Send friend request by username or ID
+- [x] Accept/decline friend requests
+- [x] Friends list with online status
+- [x] Invite friend to party from friends list
+- [x] View friend's profile
+- [x] Block player (hides from matching, blocks invites)
+- [x] Recent players from last N matches
+- [x] Import friends from platform (Game Center, etc.)
+- [x] Presence updates in real-time
 
 **Definition of Done:**
 - Friend operations fast and reliable
@@ -498,6 +504,9 @@ Implement friends list and social features for player connections.
 - Block system prevents all interaction
 - Privacy respected
 - Tested with large friend lists
+
+**Deliverables:**
+- [Friends and Social Service Specification](docs/FRIENDS_SOCIAL_SERVICE_SPEC.md)
 
 **Dependencies:** BACK-011
 
@@ -575,7 +584,7 @@ Ensure all critical game logic is validated server-side to prevent client-side c
 ---
 
 ### BACK-016: Anti-Cheat System
-**Priority:** P1 | **Complexity:** L
+**Priority:** P1 | **Complexity:** L | **Status: Completed**
 
 **Description:**
 Implement detection and prevention systems for cheating beyond server authority.
@@ -588,15 +597,15 @@ Implement detection and prevention systems for cheating beyond server authority.
 - Ban system (temp and permanent)
 
 **Acceptance Criteria:**
-- [ ] Client-side integrity checks
-- [ ] Detection of memory modification
-- [ ] Flagging of statistical anomalies (too high accuracy, etc.)
-- [ ] Player report system with categories
-- [ ] Review queue for reported players
-- [ ] Temp bans for first offense (escalating)
-- [ ] Permanent bans for severe/repeat offenses
-- [ ] Ban appeal process
-- [ ] Hardware ID bans for repeat offenders
+- [x] Client-side integrity checks
+- [x] Detection of memory modification
+- [x] Flagging of statistical anomalies (too high accuracy, etc.)
+- [x] Player report system with categories
+- [x] Review queue for reported players
+- [x] Temp bans for first offense (escalating)
+- [x] Permanent bans for severe/repeat offenses
+- [x] Ban appeal process
+- [x] Hardware ID bans for repeat offenders
 
 **Definition of Done:**
 - Known cheats detected and prevented
@@ -605,12 +614,15 @@ Implement detection and prevention systems for cheating beyond server authority.
 - Appeals process in place
 - Continuous updates for new cheats
 
+**Deliverables:**
+- [Anti-Cheat System Specification](docs/ANTI_CHEAT_SYSTEM_SPEC.md)
+
 **Dependencies:** BACK-015
 
 ---
 
 ### BACK-017: Rate Limiting and DDoS Protection
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Protect services from abuse and denial-of-service attacks.
@@ -621,18 +633,21 @@ Protect services from abuse and denial-of-service attacks.
 - Abuse detection and blocking
 
 **Acceptance Criteria:**
-- [ ] API endpoints rate limited appropriately
-- [ ] Excessive requests result in temp block
-- [ ] Game servers behind DDoS protection (e.g., Cloudflare, AWS Shield)
-- [ ] Traffic spikes don't crash services
-- [ ] Alerting for attack detection
-- [ ] Graceful degradation under attack
+- [x] API endpoints rate limited appropriately
+- [x] Excessive requests result in temp block
+- [x] Game servers behind DDoS protection (e.g., Cloudflare, AWS Shield)
+- [x] Traffic spikes don't crash services
+- [x] Alerting for attack detection
+- [x] Graceful degradation under attack
 
 **Definition of Done:**
 - Services remain available during attacks
 - Legitimate users not affected by limits
 - Attack response procedures documented
 - Tested with load testing tools
+
+**Deliverables:**
+- [Rate Limiting and DDoS Protection Specification](docs/RATE_LIMITING_DDOS_PROTECTION_SPEC.md)
 
 **Dependencies:** BACK-004, BACK-011
 
@@ -668,7 +683,7 @@ Encrypt all client-server communication.
 ## 6. Analytics and Monitoring
 
 ### BACK-019: Game Analytics
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Implement analytics tracking for game events to understand player behavior and balance.
@@ -683,20 +698,23 @@ Implement analytics tracking for game events to understand player behavior and b
 - Feature usage (modes, menus)
 
 **Acceptance Criteria:**
-- [ ] Events tracked with timestamps and user IDs
-- [ ] Events sent to analytics service (Unity Analytics, GameAnalytics, etc.)
-- [ ] Custom dashboards for key metrics
-- [ ] Retention cohort analysis (D1, D7, D30)
-- [ ] Funnel analysis (tutorial, first match, first purchase)
-- [ ] Ability balance data (pick rate, win rate)
-- [ ] Real-time events for live monitoring
-- [ ] GDPR-compliant consent for tracking
+- [x] Events tracked with timestamps and user IDs
+- [x] Events sent to analytics service (Unity Analytics, GameAnalytics, etc.)
+- [x] Custom dashboards for key metrics
+- [x] Retention cohort analysis (D1, D7, D30)
+- [x] Funnel analysis (tutorial, first match, first purchase)
+- [x] Ability balance data (pick rate, win rate)
+- [x] Real-time events for live monitoring
+- [x] GDPR-compliant consent for tracking
 
 **Definition of Done:**
 - All critical events tracked
 - Dashboards answer key questions
 - Data used for game improvements
 - Privacy compliance verified
+
+**Deliverables:**
+- [Game Analytics Specification](docs/GAME_ANALYTICS_SPEC.md)
 
 **Dependencies:** None
 
@@ -809,18 +827,18 @@ Implement A/B testing capability to test features and changes before full rollou
 | BACK-005 | Server Orchestration | P0 | L | Completed |
 | BACK-006 | Regional Server Deployment | P1 | M | Completed |
 | BACK-007 | Real-Time Netcode | P0 | XL | Completed |
-| BACK-008 | Reconnection System | P1 | M | Not Started |
+| BACK-008 | Reconnection System | P1 | M | Completed |
 | BACK-009 | Voice Chat Service | P2 | M | Not Started |
 | BACK-010 | Authentication System | P0 | M | Completed |
 | BACK-011 | Player Profile Service | P0 | M | Completed |
-| BACK-012 | Cloud Save System | P1 | M | Not Started |
-| BACK-013 | Friends and Social Service | P1 | M | Not Started |
+| BACK-012 | Cloud Save System | P1 | M | Completed |
+| BACK-013 | Friends and Social Service | P1 | M | Completed |
 | BACK-014 | Leaderboards Service | P2 | S | Not Started |
 | BACK-015 | Server-Authoritative Validation | P0 | L | Completed |
-| BACK-016 | Anti-Cheat System | P1 | L | Not Started |
-| BACK-017 | Rate Limiting and DDoS Protection | P1 | M | Not Started |
+| BACK-016 | Anti-Cheat System | P1 | L | Completed |
+| BACK-017 | Rate Limiting and DDoS Protection | P1 | M | Completed |
 | BACK-018 | Secure Communication | P0 | S | Completed |
-| BACK-019 | Game Analytics | P1 | M | Not Started |
+| BACK-019 | Game Analytics | P1 | M | Completed |
 | BACK-020 | Server Monitoring | P0 | M | Completed |
 | BACK-021 | Crash Reporting | P0 | S | Completed |
 | BACK-022 | A/B Testing Framework | P2 | M | Not Started |

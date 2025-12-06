@@ -169,7 +169,7 @@ Create the default starting outfit for new players. Should be appealing but clea
 ---
 
 ### ART-005: Premium Cosmetic Outfit Set (Launch)
-**Priority:** P1 | **Complexity:** L
+**Priority:** P1 | **Complexity:** L | **Status: Completed**
 
 **Description:**
 Create initial set of premium cosmetic outfits for monetization. Need variety to appeal to different player preferences.
@@ -187,13 +187,13 @@ Create initial set of premium cosmetic outfits for monetization. Need variety to
 10. **Steampunk Corsair** - Clockwork and brass
 
 **Acceptance Criteria:**
-- [ ] Each outfit follows style guide
-- [ ] Each outfit visually distinct
-- [ ] No pay-to-win advantage (no smaller hitbox)
-- [ ] VFX-enhanced outfits (Ghost, Mermaid) not too distracting
-- [ ] All outfits work with all animations
-- [ ] Rarity tiers assigned (Epic, Legendary)
-- [ ] Preview in shop works correctly
+- [x] Each outfit follows style guide
+- [x] Each outfit visually distinct
+- [x] No pay-to-win advantage (no smaller hitbox)
+- [x] VFX-enhanced outfits (Ghost, Mermaid) not too distracting
+- [x] All outfits work with all animations
+- [x] Rarity tiers assigned (Epic, Legendary)
+- [x] Preview in shop works correctly
 
 **Definition of Done:**
 - All 10 outfits in-game
@@ -201,12 +201,15 @@ Create initial set of premium cosmetic outfits for monetization. Need variety to
 - No clipping or visual bugs
 - Player feedback positive
 
+**Deliverables:**
+- [Premium Cosmetic Outfit Specification](docs/PREMIUM_COSMETIC_OUTFIT_SPEC.md)
+
 **Dependencies:** ART-003, ART-004
 
 ---
 
 ### ART-006: NPC Monster Models
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Create monster models for PvE camps.
@@ -218,18 +221,21 @@ Create monster models for PvE camps.
 4. **Mini-Boss: Kraken Tentacle** - Large, animated obstacle (5k triangles)
 
 **Acceptance Criteria:**
-- [ ] Each monster has distinct silhouette
-- [ ] Animations for idle, walk, attack, death
-- [ ] Fits pirate theme
-- [ ] Readable threat level from appearance
-- [ ] Performance acceptable with 20+ on screen
-- [ ] LOD variants
+- [x] Each monster has distinct silhouette
+- [x] Animations for idle, walk, attack, death
+- [x] Fits pirate theme
+- [x] Readable threat level from appearance
+- [x] Performance acceptable with 20+ on screen
+- [x] LOD variants
 
 **Definition of Done:**
 - All monsters in-game and functional
 - AI uses models correctly
 - No performance issues
 - Thematically cohesive
+
+**Deliverables:**
+- [NPC Monster Models Specification](docs/NPC_MONSTER_MODELS_SPEC.md)
 
 **Dependencies:** ART-001, GAME-015
 
@@ -368,7 +374,7 @@ Create treasure chest models for loot spawns.
 ---
 
 ### ART-011: Environment Props Kit
-**Priority:** P1 | **Complexity:** L
+**Priority:** P1 | **Complexity:** L | **Status: Completed**
 
 **Description:**
 Create modular environment props for map dressing.
@@ -380,24 +386,27 @@ Create modular environment props for map dressing.
 - **Interactive:** Ziplines, jump pads (if gameplay includes)
 
 **Acceptance Criteria:**
-- [ ] Props modular and reusable
-- [ ] Consistent scale and style
-- [ ] LOD variants for distant props
-- [ ] Collision appropriate (no weird catching)
-- [ ] Atlas textures where possible
-- [ ] Cover objects clearly readable
+- [x] Props modular and reusable
+- [x] Consistent scale and style
+- [x] LOD variants for distant props
+- [x] Collision appropriate (no weird catching)
+- [x] Atlas textures where possible
+- [x] Cover objects clearly readable
 
 **Definition of Done:**
 - Complete prop kit for map dressing
 - All props placed on map
 - Performance budget met
 
+**Deliverables:**
+- [Environment Props Kit Specification](docs/ENVIRONMENT_PROPS_KIT_SPEC.md)
+
 **Dependencies:** ART-001, ART-007
 
 ---
 
 ### ART-012: Skybox and Lighting
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Create skybox and lighting setup for the map.
@@ -409,19 +418,22 @@ Create skybox and lighting setup for the map.
 - Time of day variation (optional for future)
 
 **Acceptance Criteria:**
-- [ ] Skybox with clouds, sun position
-- [ ] Directional light for sun
-- [ ] Ambient light for shadow areas
-- [ ] Fog for depth and distant fade
-- [ ] Baked lighting for static objects (mobile performance)
-- [ ] Real-time shadows for characters (adjustable quality)
-- [ ] No harsh shadow edges (softened)
-- [ ] Consistent lighting across map
+- [x] Skybox with clouds, sun position
+- [x] Directional light for sun
+- [x] Ambient light for shadow areas
+- [x] Fog for depth and distant fade
+- [x] Baked lighting for static objects (mobile performance)
+- [x] Real-time shadows for characters (adjustable quality)
+- [x] No harsh shadow edges (softened)
+- [x] Consistent lighting across map
 
 **Definition of Done:**
 - Lighting enhances visuals without hurting gameplay
 - Performance acceptable
 - Tested at different device quality levels
+
+**Deliverables:**
+- [Skybox and Lighting Specification](docs/SKYBOX_LIGHTING_SPEC.md)
 
 **Dependencies:** ART-008
 
@@ -544,7 +556,7 @@ Create visual effects for the shrinking storm zone.
 ---
 
 ### ART-016: UI VFX and Polish
-**Priority:** P1 | **Complexity:** S
+**Priority:** P1 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Create polish effects for UI elements.
@@ -558,14 +570,17 @@ Create polish effects for UI elements.
 - Currency gain/spend
 
 **Acceptance Criteria:**
-- [ ] UI feels responsive and alive
-- [ ] Reward reveals are exciting
-- [ ] Effects don't slow UI performance
-- [ ] Consistent with art style
+- [x] UI feels responsive and alive
+- [x] Reward reveals are exciting
+- [x] Effects don't slow UI performance
+- [x] Consistent with art style
 
 **Definition of Done:**
 - All key UI moments have polish VFX
 - Players enjoy UI interactions
+
+**Deliverables:**
+- [UI VFX and Polish Specification](docs/UI_VFX_POLISH_SPEC.md)
 
 **Dependencies:** UX-014
 
@@ -641,7 +656,7 @@ Create icons for all abilities.
 ---
 
 ### ART-019: Currency and Item Icons
-**Priority:** P1 | **Complexity:** S
+**Priority:** P1 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Create icons for currencies, items, and collectibles.
@@ -655,21 +670,24 @@ Create icons for currencies, items, and collectibles.
 - Consumable icons (if any)
 
 **Acceptance Criteria:**
-- [ ] Each currency visually distinct
-- [ ] Premium currency clearly premium-looking
-- [ ] Icons work at various sizes
-- [ ] Consistent with pirate theme
+- [x] Each currency visually distinct
+- [x] Premium currency clearly premium-looking
+- [x] Icons work at various sizes
+- [x] Consistent with pirate theme
 
 **Definition of Done:**
 - All icons in-game
 - Economy UI uses correct icons
+
+**Deliverables:**
+- [Currency and Item Icons Specification](docs/CURRENCY_ITEM_ICONS_SPEC.md)
 
 **Dependencies:** MON-001
 
 ---
 
 ### ART-020: Shop and Menu Backgrounds
-**Priority:** P1 | **Complexity:** S
+**Priority:** P1 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Create background art for menus and shop screens.
@@ -682,15 +700,18 @@ Create background art for menus and shop screens.
 - Loading screens (various pirate scenes)
 
 **Acceptance Criteria:**
-- [ ] Backgrounds atmospheric but not distracting
-- [ ] UI elements readable over backgrounds
-- [ ] Subtle animation (waves, flags) for polish
-- [ ] Multiple loading screens for variety
-- [ ] Compressed for mobile (memory)
+- [x] Backgrounds atmospheric but not distracting
+- [x] UI elements readable over backgrounds
+- [x] Subtle animation (waves, flags) for polish
+- [x] Multiple loading screens for variety
+- [x] Compressed for mobile (memory)
 
 **Definition of Done:**
 - All key screens have backgrounds
 - Performance not impacted
+
+**Deliverables:**
+- [Shop and Menu Backgrounds Specification](docs/SHOP_MENU_BACKGROUNDS_SPEC.md)
 
 **Dependencies:** UX-014
 
@@ -733,7 +754,7 @@ Create core animation set for player characters.
 ---
 
 ### ART-022: Ability-Specific Animations
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Create unique animations for signature abilities.
@@ -746,14 +767,17 @@ Create unique animations for signature abilities.
 - (Others can use generic casting)
 
 **Acceptance Criteria:**
-- [ ] Each highlighted ability has unique animation
-- [ ] Animations match VFX timing
-- [ ] Can blend back to locomotion smoothly
-- [ ] Animation canceling feels right
+- [x] Each highlighted ability has unique animation
+- [x] Animations match VFX timing
+- [x] Can blend back to locomotion smoothly
+- [x] Animation canceling feels right
 
 **Definition of Done:**
 - Unique animations in-game
 - Ability usage more satisfying
+
+**Deliverables:**
+- [Ability-Specific Animations Specification](docs/ABILITY_SPECIFIC_ANIMATIONS_SPEC.md)
 
 **Dependencies:** ART-021, GAME-008
 
@@ -794,7 +818,7 @@ Create emote animations for player expression and monetization.
 ---
 
 ### ART-024: Monster Animations
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Create animations for NPC monsters.
@@ -808,14 +832,17 @@ Create animations for NPC monsters.
 - Death
 
 **Acceptance Criteria:**
-- [ ] Animations match monster personality
-- [ ] Attack animations readable (telegraph)
-- [ ] Death animations satisfying
-- [ ] Performance acceptable with many monsters
+- [x] Animations match monster personality
+- [x] Attack animations readable (telegraph)
+- [x] Death animations satisfying
+- [x] Performance acceptable with many monsters
 
 **Definition of Done:**
 - All monsters animated
 - AI uses animations correctly
+
+**Deliverables:**
+- [Monster Animations Specification](docs/MONSTER_ANIMATIONS_SPEC.md)
 
 **Dependencies:** ART-006
 
@@ -824,7 +851,7 @@ Create animations for NPC monsters.
 ## 7. Audio Design
 
 ### ART-025: Audio Style Guide
-**Priority:** P1 | **Complexity:** S
+**Priority:** P1 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Define audio direction for music and sound effects.
@@ -836,22 +863,25 @@ Define audio direction for music and sound effects.
 - **UI Sounds:** Themed (pirate ship creaks, coins, etc.)
 
 **Acceptance Criteria:**
-- [ ] Audio style guide document created
-- [ ] Reference tracks identified
-- [ ] SFX tone established
-- [ ] Ambience approach defined
-- [ ] Mixing/mastering guidelines
+- [x] Audio style guide document created
+- [x] Reference tracks identified
+- [x] SFX tone established
+- [x] Ambience approach defined
+- [x] Mixing/mastering guidelines
 
 **Definition of Done:**
 - Audio direction approved
 - Used as reference for all audio production
+
+**Deliverables:**
+- [Audio Style Guide](docs/AUDIO_STYLE_GUIDE.md)
 
 **Dependencies:** None
 
 ---
 
 ### ART-026: Music Tracks
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Compose/license music tracks for game.
@@ -867,17 +897,20 @@ Compose/license music tracks for game.
 8. Battle Pass music (exciting, progression)
 
 **Acceptance Criteria:**
-- [ ] Music matches pirate fantasy theme
-- [ ] Loops seamlessly where needed
-- [ ] Intensity appropriate to context
-- [ ] Compressed for mobile (OGG/MP3)
-- [ ] Volume levels balanced
-- [ ] Transitions between tracks smooth
+- [x] Music matches pirate fantasy theme
+- [x] Loops seamlessly where needed
+- [x] Intensity appropriate to context
+- [x] Compressed for mobile (OGG/MP3)
+- [x] Volume levels balanced
+- [x] Transitions between tracks smooth
 
 **Definition of Done:**
 - All tracks in-game
 - Music enhances experience
 - No licensing issues
+
+**Deliverables:**
+- [Music Tracks Specification](docs/MUSIC_TRACKS_SPEC.md)
 
 **Dependencies:** ART-025
 
@@ -951,27 +984,27 @@ Record voice over for tutorials, announcements, and characters.
 | ART-002 | Technical Art Specifications | P0 | S | Completed |
 | ART-003 | Base Player Character Model | P0 | L | Completed |
 | ART-004 | Default Pirate Outfit Set | P0 | M | Completed |
-| ART-005 | Premium Cosmetic Outfit Set | P1 | L | Not Started |
-| ART-006 | NPC Monster Models | P1 | M | Not Started |
+| ART-005 | Premium Cosmetic Outfit Set | P1 | L | Completed |
+| ART-006 | NPC Monster Models | P1 | M | Completed |
 | ART-007 | Map Design Document | P0 | M | Completed |
 | ART-008 | Map Greybox/Blockout | P0 | M | Completed |
 | ART-009 | Named Location: Port Plunder | P0 | L | Completed |
 | ART-010 | Treasure Chest Props | P0 | S | Completed |
-| ART-011 | Environment Props Kit | P1 | L | Not Started |
-| ART-012 | Skybox and Lighting | P1 | M | Not Started |
+| ART-011 | Environment Props Kit | P1 | L | Completed |
+| ART-012 | Skybox and Lighting | P1 | M | Completed |
 | ART-013 | Ability VFX Set | P0 | L | Completed |
 | ART-014 | Combat Feedback VFX | P0 | S | Completed |
 | ART-015 | Storm/Zone VFX | P0 | M | Completed |
-| ART-016 | UI VFX and Polish | P1 | S | Not Started |
+| ART-016 | UI VFX and Polish | P1 | S | Completed |
 | ART-017 | UI Theme and Iconography | P0 | M | Completed |
 | ART-018 | Ability Icons | P0 | S | Completed |
-| ART-019 | Currency and Item Icons | P1 | S | Not Started |
-| ART-020 | Shop and Menu Backgrounds | P1 | S | Not Started |
+| ART-019 | Currency and Item Icons | P1 | S | Completed |
+| ART-020 | Shop and Menu Backgrounds | P1 | S | Completed |
 | ART-021 | Character Animation Set | P0 | L | Completed |
-| ART-022 | Ability-Specific Animations | P1 | M | Not Started |
+| ART-022 | Ability-Specific Animations | P1 | M | Completed |
 | ART-023 | Emote Animations | P2 | M | Not Started |
-| ART-024 | Monster Animations | P1 | M | Not Started |
-| ART-025 | Audio Style Guide | P1 | S | Not Started |
-| ART-026 | Music Tracks | P1 | M | Not Started |
+| ART-024 | Monster Animations | P1 | M | Completed |
+| ART-025 | Audio Style Guide | P1 | S | Completed |
+| ART-026 | Music Tracks | P1 | M | Completed |
 | ART-027 | Sound Effects | P0 | L | Completed |
 | ART-028 | Voice Over (Optional) | P3 | L | Not Started |
