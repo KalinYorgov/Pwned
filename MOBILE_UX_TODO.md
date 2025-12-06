@@ -626,7 +626,7 @@ Design loading screens that maintain engagement and provide useful info.
 ## 4. Accessibility Features
 
 ### UX-018: Colorblind Modes
-**Priority:** P2 | **Complexity:** S
+**Priority:** P2 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Implement colorblind accessibility options for players with color vision deficiencies.
@@ -637,18 +637,21 @@ Implement colorblind accessibility options for players with color vision deficie
 - Tritanopia (blue-yellow)
 
 **Acceptance Criteria:**
-- [ ] Colorblind modes adjustable in settings
-- [ ] Enemy vs teammate colors adjusted per mode
-- [ ] Ability colors adjusted for clarity
-- [ ] Storm/zone colors adjusted
-- [ ] Loot rarity colors adjusted
-- [ ] Minimap colors adjusted
-- [ ] Preview mode before applying
+- [x] Colorblind modes adjustable in settings
+- [x] Enemy vs teammate colors adjusted per mode
+- [x] Ability colors adjusted for clarity
+- [x] Storm/zone colors adjusted
+- [x] Loot rarity colors adjusted
+- [x] Minimap colors adjusted
+- [x] Preview mode before applying
 
 **Definition of Done:**
 - Game playable for colorblind users
 - No critical information lost
 - Tested with colorblind users or simulation tools
+
+**Deliverables:**
+- [Colorblind Modes Specification](docs/COLORBLIND_MODES_SPEC.md)
 
 **Dependencies:** UX-008
 
@@ -972,7 +975,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-015 | Settings Menu | P0 | M | Completed |
 | UX-016 | Mode Selection Screen | P1 | S | Completed |
 | UX-017 | Loading Screens | P1 | S | Completed |
-| UX-018 | Colorblind Modes | P2 | S | Not Started |
+| UX-018 | Colorblind Modes | P2 | S | Completed |
 | UX-019 | Text and UI Scaling | P2 | S | Not Started |
 | UX-020 | Audio Accessibility | P2 | S | Not Started |
 | UX-021 | Reduced Motion Mode | P3 | S | Not Started |
