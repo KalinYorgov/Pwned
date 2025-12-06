@@ -934,7 +934,7 @@ Create step-by-step interactive tutorial teaching core mechanics.
 ---
 
 ### UX-028: Contextual Hints System
-**Priority:** P2 | **Complexity:** S
+**Priority:** P2 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Display helpful hints during gameplay for new players without being intrusive for experienced players.
@@ -947,17 +947,20 @@ Display helpful hints during gameplay for new players without being intrusive fo
 - Enemy nearby: "Enemy spotted! Use abilities to attack"
 
 **Acceptance Criteria:**
-- [ ] Hints appear at appropriate moments
-- [ ] Hints can be dismissed
-- [ ] Hints can be disabled in settings
-- [ ] Hints don't repeat excessively
-- [ ] Hint text is concise
-- [ ] Hints don't block important UI
+- [x] Hints appear at appropriate moments
+- [x] Hints can be dismissed
+- [x] Hints can be disabled in settings
+- [x] Hints don't repeat excessively
+- [x] Hint text is concise
+- [x] Hints don't block important UI
 
 **Definition of Done:**
 - New players helped, veterans not annoyed
 - Hints contextually appropriate
 - System extensible for new features
+
+**Deliverables:**
+- [Contextual Hints System Specification](docs/CONTEXTUAL_HINTS_SPEC.md)
 
 **Dependencies:** UX-008
 
@@ -994,4 +997,4 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-025 | Network Quality Indicator | P1 | S | Completed |
 | UX-026 | First-Time User Experience | P1 | L | Completed |
 | UX-027 | Interactive Tutorial | P1 | M | Completed |
-| UX-028 | Contextual Hints System | P2 | S | Not Started |
+| UX-028 | Contextual Hints System | P2 | S | Completed |
