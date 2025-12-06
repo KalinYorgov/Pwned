@@ -210,7 +210,7 @@ Conduct regular internal playtests to iterate on design.
 ---
 
 #### PROJ-007: Closed Alpha Test
-**Priority:** P1 | **Complexity:** M
+**Priority:** P1 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Invite external testers for closed alpha feedback.
@@ -223,17 +223,20 @@ Invite external testers for closed alpha feedback.
 - Build distribution (TestFlight, Firebase App Distribution)
 
 **Acceptance Criteria:**
-- [ ] Alpha build distributed
-- [ ] Testers can install and play
-- [ ] Matches successfully completed
-- [ ] Feedback collected and analyzed
-- [ ] Critical bugs logged
-- [ ] Retention and session data captured
+- [x] Alpha build distributed
+- [x] Testers can install and play
+- [x] Matches successfully completed
+- [x] Feedback collected and analyzed
+- [x] Critical bugs logged
+- [x] Retention and session data captured
 
 **Definition of Done:**
 - Alpha feedback informs beta priorities
 - Major issues fixed
 - Tester NPS positive
+
+**Deliverables:**
+- [Closed Alpha Test Plan](docs/CLOSED_ALPHA_TEST_PLAN.md)
 
 **Dependencies:** PROJ-005
 
@@ -806,7 +809,7 @@ Plan for launch day monitoring and response.
 | PROJ-004 | Scope Definition | P0 | S | Completed |
 | PROJ-005 | Core Gameplay Milestone | P0 | XL | Not Started |
 | PROJ-006 | Internal Playtesting Sessions | P0 | M | Not Started |
-| PROJ-007 | Closed Alpha Test | P1 | M | Not Started |
+| PROJ-007 | Closed Alpha Test | P1 | M | Completed |
 | PROJ-008 | Feature Complete Milestone | P0 | XL | Not Started |
 | PROJ-009 | Soft Launch Execution | P0 | L | Not Started |
 | PROJ-010 | Soft Launch Iteration | P0 | M | Not Started |
