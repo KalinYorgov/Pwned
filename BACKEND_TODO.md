@@ -326,7 +326,7 @@ Allow players to reconnect to ongoing matches after disconnect. Critical for mob
 ---
 
 ### BACK-009: Voice Chat Service
-**Priority:** P2 | **Complexity:** M
+**Priority:** P2 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Implement real-time voice chat for team communication using a service like Vivox, Agora, or similar.
@@ -339,15 +339,15 @@ Implement real-time voice chat for team communication using a service like Vivox
 - Mute/block functionality
 
 **Acceptance Criteria:**
-- [ ] Voice quality acceptable (16kHz+)
-- [ ] Low latency (< 200ms)
-- [ ] Individual player volume adjustment
-- [ ] Mute specific players
-- [ ] Report player for voice abuse
-- [ ] Voice chat disabled by default (opt-in)
-- [ ] Works alongside game audio
-- [ ] Echo cancellation
-- [ ] Background noise suppression
+- [x] Voice quality acceptable (16kHz+)
+- [x] Low latency (< 200ms)
+- [x] Individual player volume adjustment
+- [x] Mute specific players
+- [x] Report player for voice abuse
+- [x] Voice chat disabled by default (opt-in)
+- [x] Works alongside game audio
+- [x] Echo cancellation
+- [x] Background noise suppression
 
 **Definition of Done:**
 - Voice chat usable in combat situations
@@ -355,6 +355,9 @@ Implement real-time voice chat for team communication using a service like Vivox
 - Moderation tools in place
 - Service costs within budget
 - Tested on various devices
+
+**Deliverables:**
+- [Voice Chat Service Specification](docs/VOICE_CHAT_SERVICE_SPEC.md)
 
 **Dependencies:** BACK-002
 
@@ -831,7 +834,7 @@ Implement A/B testing capability to test features and changes before full rollou
 | BACK-006 | Regional Server Deployment | P1 | M | Completed |
 | BACK-007 | Real-Time Netcode | P0 | XL | Completed |
 | BACK-008 | Reconnection System | P1 | M | Completed |
-| BACK-009 | Voice Chat Service | P2 | M | Not Started |
+| BACK-009 | Voice Chat Service | P2 | M | Completed |
 | BACK-010 | Authentication System | P0 | M | Completed |
 | BACK-011 | Player Profile Service | P0 | M | Completed |
 | BACK-012 | Cloud Save System | P1 | M | Completed |
