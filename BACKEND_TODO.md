@@ -95,7 +95,7 @@ Implement the party system allowing players to team up before queuing.
 ---
 
 ### BACK-003: Skill-Based Matchmaking (SBMM)
-**Priority:** P2 | **Complexity:** M
+**Priority:** P2 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Implement skill rating system and SBMM for ranked mode to ensure competitive, fair matches.
@@ -107,15 +107,15 @@ Implement skill rating system and SBMM for ranked mode to ensure competitive, fa
 - Rank reflects MMR with thresholds
 
 **Acceptance Criteria:**
-- [ ] New players start at baseline MMR
-- [ ] MMR adjusts after each match (wins gain, losses lose)
-- [ ] Placement matches (10 games) to calibrate initial rank
-- [ ] MMR considers kills, placement, and damage
-- [ ] Queue matches players within MMR range
-- [ ] Range expands over time if no match found
-- [ ] Party MMR averaged for team queue
-- [ ] Smurf detection (rapid climb triggers review)
-- [ ] Seasonal MMR reset (soft reset)
+- [x] New players start at baseline MMR
+- [x] MMR adjusts after each match (wins gain, losses lose)
+- [x] Placement matches (10 games) to calibrate initial rank
+- [x] MMR considers kills, placement, and damage
+- [x] Queue matches players within MMR range
+- [x] Range expands over time if no match found
+- [x] Party MMR averaged for team queue
+- [x] Smurf detection (rapid climb triggers review)
+- [x] Seasonal MMR reset (soft reset)
 
 **Definition of Done:**
 - Matches feel balanced to players
@@ -123,6 +123,9 @@ Implement skill rating system and SBMM for ranked mode to ensure competitive, fa
 - No excessive stomp matches
 - Algorithm tuned through data analysis
 - No MMR manipulation exploits
+
+**Deliverables:**
+- [Skill-Based Matchmaking Specification](docs/SKILL_BASED_MATCHMAKING_SPEC.md)
 
 **Dependencies:** BACK-001, BACK-007
 
@@ -822,7 +825,7 @@ Implement A/B testing capability to test features and changes before full rollou
 |---------|-------|----------|------------|--------|
 | BACK-001 | Core Matchmaking Service | P0 | L | Completed |
 | BACK-002 | Party/Squad System | P1 | M | Completed |
-| BACK-003 | Skill-Based Matchmaking | P2 | M | Not Started |
+| BACK-003 | Skill-Based Matchmaking | P2 | M | Completed |
 | BACK-004 | Dedicated Game Servers | P0 | XL | Completed |
 | BACK-005 | Server Orchestration | P0 | L | Completed |
 | BACK-006 | Regional Server Deployment | P1 | M | Completed |
