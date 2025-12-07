@@ -574,7 +574,7 @@ Create the AI behavior system for NPC monsters. AI should be simple but engaging
 ---
 
 ### GAME-017: World Events System
-**Priority:** P2 | **Complexity:** M
+**Priority:** P2 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Implement dynamic world events that occur during matches to create excitement and convergence points. These are optional high-risk, high-reward encounters.
@@ -586,13 +586,13 @@ Implement dynamic world events that occur during matches to create excitement an
 4. **Ghost Galleon:** Temporary PvE area appears, clear for exclusive rewards
 
 **Acceptance Criteria:**
-- [ ] 1-2 events occur per match at random times
-- [ ] Events announced globally (audio, UI notification)
-- [ ] Event locations marked on map
-- [ ] Events are contested (designed for player conflict)
-- [ ] Event rewards are significantly better than normal loot
-- [ ] Events have time limits (disappear if not engaged)
-- [ ] Events are optional (can ignore and still win)
+- [x] 1-2 events occur per match at random times
+- [x] Events announced globally (audio, UI notification)
+- [x] Event locations marked on map
+- [x] Events are contested (designed for player conflict)
+- [x] Event rewards are significantly better than normal loot
+- [x] Events have time limits (disappear if not engaged)
+- [x] Events are optional (can ignore and still win)
 
 **Definition of Done:**
 - Events feel exciting and create memorable moments
@@ -600,6 +600,9 @@ Implement dynamic world events that occur during matches to create excitement an
 - Rewards worth the risk
 - Server handles events without performance impact
 - Tested with full player count contesting events
+
+**Deliverables:**
+- [World Events System Specification](docs/WORLD_EVENTS_SYSTEM_SPEC.md)
 
 **Dependencies:** GAME-015, GAME-004
 
@@ -858,7 +861,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-014 | Crowd Control System | P1 | M | Completed |
 | GAME-015 | NPC Monster System | P1 | L | Completed |
 | GAME-016 | NPC AI Behavior System | P1 | M | Completed |
-| GAME-017 | World Events System | P2 | M | Not Started |
+| GAME-017 | World Events System | P2 | M | Completed |
 | GAME-018 | In-Match Leveling System | P1 | M | Completed |
 | GAME-019 | Player Stats and Scaling | P1 | S | Completed |
 | GAME-020 | Solo Mode | P0 | M | Completed |
