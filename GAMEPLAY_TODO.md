@@ -772,7 +772,7 @@ Extend team modes to support 3-4 player squads for post-launch content.
 ---
 
 ### GAME-023: Ranked Mode
-**Priority:** P2 | **Complexity:** L
+**Priority:** P2 | **Complexity:** L | **Status: Completed**
 
 **Description:**
 Implement competitive ranked mode with skill-based matchmaking, ranks, and seasonal resets.
@@ -787,14 +787,14 @@ Implement competitive ranked mode with skill-based matchmaking, ranks, and seaso
 7. Pirate King (Top 100)
 
 **Acceptance Criteria:**
-- [ ] Ranked points (RP) gained/lost based on placement and kills
-- [ ] SBMM matches players of similar rank
-- [ ] Visible rank and progress in profile
-- [ ] Seasonal reset (soft reset, not full)
-- [ ] Season rewards based on peak rank achieved
-- [ ] Ranked exclusive cosmetics
-- [ ] Stricter AFK/leaving penalties in ranked
-- [ ] Minimum level requirement to enter ranked
+- [x] Ranked points (RP) gained/lost based on placement and kills
+- [x] SBMM matches players of similar rank
+- [x] Visible rank and progress in profile
+- [x] Seasonal reset (soft reset, not full)
+- [x] Season rewards based on peak rank achieved
+- [x] Ranked exclusive cosmetics
+- [x] Stricter AFK/leaving penalties in ranked
+- [x] Minimum level requirement to enter ranked
 
 **Definition of Done:**
 - Rank system feels competitive and fair
@@ -802,6 +802,9 @@ Implement competitive ranked mode with skill-based matchmaking, ranks, and seaso
 - Season infrastructure ready
 - Rewards pipeline established
 - Anti-smurf measures in place
+
+**Deliverables:**
+- [Ranked Mode Specification](docs/RANKED_MODE_SPEC.md)
 
 **Dependencies:** GAME-020, BACK-001, BACK-006
 
@@ -867,5 +870,5 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-020 | Solo Mode | P0 | M | Completed |
 | GAME-021 | Duo Mode | P1 | M | Completed |
 | GAME-022 | Squad Mode | P3 | M | Not Started |
-| GAME-023 | Ranked Mode | P2 | L | Not Started |
+| GAME-023 | Ranked Mode | P2 | L | Completed |
 | GAME-024 | Practice/Tutorial Mode | P1 | M | Completed |
