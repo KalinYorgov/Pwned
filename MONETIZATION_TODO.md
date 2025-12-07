@@ -548,7 +548,7 @@ Server-side purchase verification to prevent fraud.
 ## 5. Advertising
 
 ### MON-016: Rewarded Video Ads
-**Priority:** P2 | **Complexity:** M
+**Priority:** P2 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Implement optional rewarded video ads for non-paying players.
@@ -560,19 +560,22 @@ Implement optional rewarded video ads for non-paying players.
 - Free spin: "Watch ad for free loot crate"
 
 **Acceptance Criteria:**
-- [ ] Ad SDK integrated (Unity Ads, AdMob, IronSource)
-- [ ] Ads strictly opt-in (player choice)
-- [ ] Clear reward shown before watching
-- [ ] Reward delivered after completion
-- [ ] Handle ad not available gracefully
-- [ ] Daily limit on rewarded ads (5-10 per day)
-- [ ] No ads during match gameplay
-- [ ] Mediation for best fill rates
+- [x] Ad SDK integrated (Unity Ads, AdMob, IronSource)
+- [x] Ads strictly opt-in (player choice)
+- [x] Clear reward shown before watching
+- [x] Reward delivered after completion
+- [x] Handle ad not available gracefully
+- [x] Daily limit on rewarded ads (5-10 per day)
+- [x] No ads during match gameplay
+- [x] Mediation for best fill rates
 
 **Definition of Done:**
 - Rewarded ads functional
 - Revenue generated without hurting UX
 - Fill rates acceptable (>90%)
+
+**Deliverables:**
+- [Rewarded Video Ads Specification](docs/REWARDED_VIDEO_ADS_SPEC.md)
 
 **Dependencies:** BACK-011
 
@@ -742,7 +745,7 @@ Prevent economy exploits and abuse.
 | MON-013 | Google Play IAP Integration | P0 | M | Completed |
 | MON-014 | IAP Product Catalog | P0 | S | Completed |
 | MON-015 | Purchase Verification Service | P0 | M | Completed |
-| MON-016 | Rewarded Video Ads | P2 | M | Not Started |
+| MON-016 | Rewarded Video Ads | P2 | M | Completed |
 | MON-017 | Ad Mediation and Analytics | P2 | S | Not Started |
 | MON-018 | Economy Spreadsheet | P0 | M | Completed |
 | MON-019 | Economy Monitoring Dashboard | P2 | M | Not Started |
