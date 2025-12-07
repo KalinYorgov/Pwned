@@ -325,7 +325,7 @@ Implement the ability upgrade mechanic where collecting duplicate abilities incr
 ---
 
 ### GAME-010: Ability Combo System
-**Priority:** P2 | **Complexity:** M
+**Priority:** P2 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Design and implement synergies between certain abilities when used in combination. This adds strategic depth and rewards players who find complementary ability pairs.
@@ -337,12 +337,12 @@ Design and implement synergies between certain abilities when used in combinatio
 - Poison Mackerel + Healing Grog = Poison heals you instead
 
 **Acceptance Criteria:**
-- [ ] At least 5 ability combos implemented for launch
-- [ ] Combo effects trigger when abilities used within time/space window
-- [ ] Visual/audio feedback indicates combo triggered
-- [ ] Combos documented in ability descriptions ("Combos with: X")
-- [ ] Combo effects are balanced (reward, not requirement)
-- [ ] Discovery of combos can be part of progression/achievements
+- [x] At least 5 ability combos implemented for launch
+- [x] Combo effects trigger when abilities used within time/space window
+- [x] Visual/audio feedback indicates combo triggered
+- [x] Combos documented in ability descriptions ("Combos with: X")
+- [x] Combo effects are balanced (reward, not requirement)
+- [x] Discovery of combos can be part of progression/achievements
 
 **Definition of Done:**
 - All combo interactions tested in multiplayer
@@ -350,6 +350,9 @@ Design and implement synergies between certain abilities when used in combinatio
 - Combo indicators clear but not UI-cluttering
 - Balance validated through playtesting
 - Combos feel rewarding and intentional
+
+**Deliverables:**
+- [Ability Combo System Specification](docs/ABILITY_COMBO_SYSTEM_SPEC.md)
 
 **Dependencies:** GAME-008, GAME-009
 
@@ -848,7 +851,7 @@ Create a single-player or low-stakes mode for new players to learn game mechanic
 | GAME-007 | Ability Slot System | P0 | M | Completed |
 | GAME-008 | Core Ability Implementation | P0 | XL | Completed |
 | GAME-009 | Ability Upgrade System | P1 | M | Completed |
-| GAME-010 | Ability Combo System | P2 | M | Not Started |
+| GAME-010 | Ability Combo System | P2 | M | Completed |
 | GAME-011 | Basic Attack System | P0 | M | Completed |
 | GAME-012 | Damage and Health System | P0 | M | Completed |
 | GAME-013 | Hit Detection and Lag Compensation | P0 | L | Completed |
