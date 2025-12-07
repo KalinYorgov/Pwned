@@ -519,7 +519,7 @@ Implement friends list and social features for player connections.
 ---
 
 ### BACK-014: Leaderboards Service
-**Priority:** P2 | **Complexity:** S
+**Priority:** P2 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Implement global and friends leaderboards for competitive engagement.
@@ -531,19 +531,22 @@ Implement global and friends leaderboards for competitive engagement.
 - Seasonal leaderboards
 
 **Acceptance Criteria:**
-- [ ] Leaderboards update in near real-time
-- [ ] Filter by time period (all-time, season, week)
-- [ ] Show player's own rank
-- [ ] Friends-only leaderboard view
-- [ ] Multiple stat categories (wins, kills, winrate)
-- [ ] Anti-cheat validation before leaderboard entry
-- [ ] Handle ties fairly
+- [x] Leaderboards update in near real-time
+- [x] Filter by time period (all-time, season, week)
+- [x] Show player's own rank
+- [x] Friends-only leaderboard view
+- [x] Multiple stat categories (wins, kills, winrate)
+- [x] Anti-cheat validation before leaderboard entry
+- [x] Handle ties fairly
 
 **Definition of Done:**
 - Leaderboards accurate and fast
 - Cheaters excluded
 - Engaging for competitive players
 - Scales to millions of players
+
+**Deliverables:**
+- [Leaderboards Service Specification](docs/LEADERBOARDS_SERVICE_SPEC.md)
 
 **Dependencies:** BACK-007 (Stats), BACK-013
 
@@ -839,7 +842,7 @@ Implement A/B testing capability to test features and changes before full rollou
 | BACK-011 | Player Profile Service | P0 | M | Completed |
 | BACK-012 | Cloud Save System | P1 | M | Completed |
 | BACK-013 | Friends and Social Service | P1 | M | Completed |
-| BACK-014 | Leaderboards Service | P2 | S | Not Started |
+| BACK-014 | Leaderboards Service | P2 | S | Completed |
 | BACK-015 | Server-Authoritative Validation | P0 | L | Completed |
 | BACK-016 | Anti-Cheat System | P1 | L | Completed |
 | BACK-017 | Rate Limiting and DDoS Protection | P1 | M | Completed |
