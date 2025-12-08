@@ -678,22 +678,25 @@ Build dashboard to monitor live economy health.
 ---
 
 ### MON-020: Pricing Localization
-**Priority:** P2 | **Complexity:** S
+**Priority:** P2 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Implement region-appropriate pricing for IAP.
 
 **Acceptance Criteria:**
-- [ ] Prices set per region in store backends
-- [ ] Lower prices for lower GDP regions (where appropriate)
-- [ ] Currency display matches region
-- [ ] Compliance with regional regulations
-- [ ] Exchange rate considerations for value perception
+- [x] Prices set per region in store backends
+- [x] Lower prices for lower GDP regions (where appropriate)
+- [x] Currency display matches region
+- [x] Compliance with regional regulations
+- [x] Exchange rate considerations for value perception
 
 **Definition of Done:**
 - Prices appropriate globally
 - No lost revenue from mispricing
 - Tested in target regions
+
+**Deliverables:**
+- [Pricing Localization Specification](docs/PRICING_LOCALIZATION_SPEC.md)
 
 **Dependencies:** MON-012, MON-013
 
@@ -755,5 +758,5 @@ Prevent economy exploits and abuse.
 | MON-017 | Ad Mediation and Analytics | P2 | S | Completed |
 | MON-018 | Economy Spreadsheet | P0 | M | Completed |
 | MON-019 | Economy Monitoring Dashboard | P2 | M | Completed |
-| MON-020 | Pricing Localization | P2 | S | Not Started |
+| MON-020 | Pricing Localization | P2 | S | Completed |
 | MON-021 | Anti-Exploit Measures | P1 | M | Completed |
