@@ -86,7 +86,7 @@ Implement weekly quests with larger objectives and rewards.
 ---
 
 ### LIVE-003: Achievement System
-**Priority:** P2 | **Complexity:** M
+**Priority:** P2 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Implement long-term achievement goals for players to work toward.
@@ -100,19 +100,22 @@ Implement long-term achievement goals for players to work toward.
 - **Mastery:** Reach ranks, complete passes
 
 **Acceptance Criteria:**
-- [ ] Achievement tracking across all sessions
-- [ ] Tiered achievements (Bronze/Silver/Gold/Platinum)
-- [ ] Rewards per achievement (Gold, Doubloons, cosmetics)
-- [ ] Achievement gallery UI
-- [ ] Pop-up notification on unlock
-- [ ] Profile displays achievement count/score
-- [ ] Hidden achievements for discovery
-- [ ] At least 50 achievements at launch
+- [x] Achievement tracking across all sessions
+- [x] Tiered achievements (Bronze/Silver/Gold/Platinum)
+- [x] Rewards per achievement (Gold, Doubloons, cosmetics)
+- [x] Achievement gallery UI
+- [x] Pop-up notification on unlock
+- [x] Profile displays achievement count/score
+- [x] Hidden achievements for discovery
+- [x] At least 50 achievements at launch
 
 **Definition of Done:**
 - Achievement system functional
 - Players have long-term goals
 - Achievements feel rewarding
+
+**Deliverables:**
+- [Achievement System Specification](docs/ACHIEVEMENT_SYSTEM_SPEC.md)
 
 **Dependencies:** BACK-011
 
@@ -805,7 +808,7 @@ Build comprehensive analytics dashboard for live ops decisions.
 |---------|-------|----------|------------|--------|
 | LIVE-001 | Daily Quest System | P1 | M | Completed |
 | LIVE-002 | Weekly Quest System | P1 | M | Completed |
-| LIVE-003 | Achievement System | P2 | M | Not Started |
+| LIVE-003 | Achievement System | P2 | M | Completed |
 | LIVE-004 | Quest Admin Tools | P1 | M | Completed |
 | LIVE-005 | Limited-Time Event Framework | P1 | L | Completed |
 | LIVE-006 | Seasonal Events | P2 | M | Not Started |
