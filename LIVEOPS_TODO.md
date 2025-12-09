@@ -391,7 +391,7 @@ Reward players who return after absence to re-engage churned users.
 ---
 
 ### LIVE-012: Push Notifications
-**Priority:** P2 | **Complexity:** M
+**Priority:** P2 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Implement push notifications to bring players back.
@@ -405,18 +405,21 @@ Implement push notifications to bring players back.
 - Lapsed player win-back
 
 **Acceptance Criteria:**
-- [ ] Push notification SDK integrated (Firebase, OneSignal)
-- [ ] Player opt-in/opt-out controls
-- [ ] Notification categories toggleable
-- [ ] Scheduled notifications
-- [ ] Personalization tokens
-- [ ] A/B test notification copy
-- [ ] Analytics on open rates
+- [x] Push notification SDK integrated (Firebase, OneSignal)
+- [x] Player opt-in/opt-out controls
+- [x] Notification categories toggleable
+- [x] Scheduled notifications
+- [x] Personalization tokens
+- [x] A/B test notification copy
+- [x] Analytics on open rates
 
 **Definition of Done:**
 - Notifications functional on iOS and Android
 - Positive engagement impact
 - Opt-out respected
+
+**Deliverables:**
+- [Push Notifications Specification](docs/PUSH_NOTIFICATIONS_SPEC.md)
 
 **Dependencies:** BACK-010
 
@@ -829,7 +832,7 @@ Build comprehensive analytics dashboard for live ops decisions.
 | LIVE-009 | Daily Login Rewards | P1 | S | Completed |
 | LIVE-010 | First Win of the Day | P1 | S | Completed |
 | LIVE-011 | Come Back Rewards | P2 | S | Completed |
-| LIVE-012 | Push Notifications | P2 | M | Not Started |
+| LIVE-012 | Push Notifications | P2 | M | Completed |
 | LIVE-013 | Player Level System | P1 | M | Completed |
 | LIVE-014 | Player Titles and Badges | P2 | S | Not Started |
 | LIVE-015 | Ranked Season Structure | P2 | M | Not Started |
