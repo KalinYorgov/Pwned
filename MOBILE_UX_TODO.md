@@ -223,25 +223,28 @@ Implement additional gesture controls for quality-of-life actions.
 ---
 
 ### UX-007: Controller Support
-**Priority:** P3 | **Complexity:** M
+**Priority:** P3 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Add support for external Bluetooth/USB controllers for players who prefer physical controls.
 
 **Acceptance Criteria:**
-- [ ] Auto-detect connected controllers
-- [ ] Standard mobile controller mapping (MFi, Xbox, PlayStation)
-- [ ] All actions mappable to controller buttons
-- [ ] Controller and touch can be used simultaneously
-- [ ] Controller-specific UI (button prompts change to icons)
-- [ ] Vibration/haptic feedback on controller
-- [ ] Fair matchmaking consideration (optional separate queue)
+- [x] Auto-detect connected controllers
+- [x] Standard mobile controller mapping (MFi, Xbox, PlayStation)
+- [x] All actions mappable to controller buttons
+- [x] Controller and touch can be used simultaneously
+- [x] Controller-specific UI (button prompts change to icons)
+- [x] Vibration/haptic feedback on controller
+- [x] Fair matchmaking consideration (optional separate queue)
 
 **Definition of Done:**
 - Smooth experience on supported controllers
 - Button prompts accurate for controller type
 - No advantage over touch players (or balanced)
 - Tested with popular mobile controllers
+
+**Deliverables:**
+- [Controller Support Specification](docs/CONTROLLER_SUPPORT_SPEC.md)
 
 **Dependencies:** All UX tasks
 
@@ -976,7 +979,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-004 | Skillshot Targeting System | P0 | M | Completed |
 | UX-005 | Auto-Aim Assist System | P1 | M | Completed |
 | UX-006 | Gesture Controls | P2 | S | Completed |
-| UX-007 | Controller Support | P3 | M | Not Started |
+| UX-007 | Controller Support | P3 | M | Completed |
 | UX-008 | Main HUD Layout | P0 | M | Completed |
 | UX-009 | Minimap System | P0 | M | Completed |
 | UX-010 | Ping/Communication System | P1 | M | Completed |
