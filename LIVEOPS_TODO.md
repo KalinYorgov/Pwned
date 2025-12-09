@@ -466,7 +466,7 @@ Implement account-level progression that persists across matches.
 ---
 
 ### LIVE-014: Player Titles and Badges
-**Priority:** P2 | **Complexity:** S
+**Priority:** P2 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Award titles and badges for accomplishments.
@@ -478,16 +478,19 @@ Award titles and badges for accomplishments.
 - Season badges for ranks achieved
 
 **Acceptance Criteria:**
-- [ ] Titles/badges unlockable via achievements
-- [ ] Display selected title under name
-- [ ] Badge showcase on profile
-- [ ] Limited/rare badges for prestige
-- [ ] Seasonal badges (non-tradeable)
+- [x] Titles/badges unlockable via achievements
+- [x] Display selected title under name
+- [x] Badge showcase on profile
+- [x] Limited/rare badges for prestige
+- [x] Seasonal badges (non-tradeable)
 
 **Definition of Done:**
 - Title/badge system functional
 - Prestige value created
 - Players display proudly
+
+**Deliverables:**
+- [Player Titles and Badges Specification](docs/PLAYER_TITLES_BADGES_SPEC.md)
 
 **Dependencies:** LIVE-003
 
@@ -834,7 +837,7 @@ Build comprehensive analytics dashboard for live ops decisions.
 | LIVE-011 | Come Back Rewards | P2 | S | Completed |
 | LIVE-012 | Push Notifications | P2 | M | Completed |
 | LIVE-013 | Player Level System | P1 | M | Completed |
-| LIVE-014 | Player Titles and Badges | P2 | S | Not Started |
+| LIVE-014 | Player Titles and Badges | P2 | S | Completed |
 | LIVE-015 | Ranked Season Structure | P2 | M | Not Started |
 | LIVE-016 | Mastery System | P3 | M | Not Started |
 | LIVE-017 | Guilds/Crews System | P3 | L | Not Started |
