@@ -534,7 +534,7 @@ Define ranked season structure with rewards.
 ---
 
 ### LIVE-016: Mastery System (Post-Launch)
-**Priority:** P3 | **Complexity:** M
+**Priority:** P3 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Implement ability or playstyle mastery for depth.
@@ -546,15 +546,18 @@ Implement ability or playstyle mastery for depth.
 - Visible mastery to other players
 
 **Acceptance Criteria:**
-- [ ] Usage tracked per ability
-- [ ] Mastery XP earned
-- [ ] Mastery levels unlocked
-- [ ] Mastery-specific cosmetic rewards
-- [ ] Displayed in profile and loadout
+- [x] Usage tracked per ability
+- [x] Mastery XP earned
+- [x] Mastery levels unlocked
+- [x] Mastery-specific cosmetic rewards
+- [x] Displayed in profile and loadout
 
 **Definition of Done:**
 - Mastery adds long-term goals
 - Diverse playstyle encouraged
+
+**Deliverables:**
+- [Mastery System Specification](docs/MASTERY_SYSTEM_SPEC.md)
 
 **Dependencies:** GAME-008
 
@@ -848,7 +851,7 @@ Build comprehensive analytics dashboard for live ops decisions.
 | LIVE-013 | Player Level System | P1 | M | Completed |
 | LIVE-014 | Player Titles and Badges | P2 | S | Completed |
 | LIVE-015 | Ranked Season Structure | P2 | M | Completed |
-| LIVE-016 | Mastery System | P3 | M | Not Started |
+| LIVE-016 | Mastery System | P3 | M | Completed |
 | LIVE-017 | Guilds/Crews System | P3 | L | Not Started |
 | LIVE-018 | Referral Program | P3 | M | Not Started |
 | LIVE-019 | Social Sharing | P2 | S | Completed |
