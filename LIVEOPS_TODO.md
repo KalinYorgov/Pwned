@@ -566,7 +566,7 @@ Implement ability or playstyle mastery for depth.
 ## 5. Social and Community
 
 ### LIVE-017: Guilds/Crews System
-**Priority:** P3 | **Complexity:** L
+**Priority:** P3 | **Complexity:** L | **Status: Completed**
 
 **Description:**
 Implement guild system for player communities.
@@ -580,19 +580,22 @@ Implement guild system for player communities.
 - Guild quests/challenges
 
 **Acceptance Criteria:**
-- [ ] Create/join/leave guild
-- [ ] Guild roster management
-- [ ] Guild ranks (leader, officer, member)
-- [ ] Guild chat channel
-- [ ] Guild XP and leveling
-- [ ] Guild perks at levels
-- [ ] Weekly guild challenges
-- [ ] Guild vs guild events (future)
+- [x] Create/join/leave guild
+- [x] Guild roster management
+- [x] Guild ranks (leader, officer, member)
+- [x] Guild chat channel
+- [x] Guild XP and leveling
+- [x] Guild perks at levels
+- [x] Weekly guild challenges
+- [x] Guild vs guild events (future)
 
 **Definition of Done:**
 - Guild system functional
 - Social bonds strengthen retention
 - Active guilds formed
+
+**Deliverables:**
+- [Guilds/Crews System Specification](docs/GUILDS_CREWS_SYSTEM_SPEC.md)
 
 **Dependencies:** BACK-013
 
@@ -852,7 +855,7 @@ Build comprehensive analytics dashboard for live ops decisions.
 | LIVE-014 | Player Titles and Badges | P2 | S | Completed |
 | LIVE-015 | Ranked Season Structure | P2 | M | Completed |
 | LIVE-016 | Mastery System | P3 | M | Completed |
-| LIVE-017 | Guilds/Crews System | P3 | L | Not Started |
+| LIVE-017 | Guilds/Crews System | P3 | L | Completed |
 | LIVE-018 | Referral Program | P3 | M | Not Started |
 | LIVE-019 | Social Sharing | P2 | S | Completed |
 | LIVE-020 | In-Game News/Announcements | P1 | S | Completed |
