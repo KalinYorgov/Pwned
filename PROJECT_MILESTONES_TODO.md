@@ -326,7 +326,7 @@ Launch in limited markets to test live operations.
 ---
 
 #### PROJ-010: Soft Launch Iteration
-**Priority:** P0 | **Complexity:** M
+**Priority:** P0 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Iterate on game based on soft launch data.
@@ -339,16 +339,19 @@ Iterate on game based on soft launch data.
 - Bug fixing (from crash reports)
 
 **Acceptance Criteria:**
-- [ ] Key metrics tracked weekly
-- [ ] Updates deployed bi-weekly minimum
-- [ ] Player feedback reviewed
-- [ ] Improvement in target metrics
-- [ ] Ready for global launch
+- [x] Key metrics tracked weekly
+- [x] Updates deployed bi-weekly minimum
+- [x] Player feedback reviewed
+- [x] Improvement in target metrics
+- [x] Ready for global launch
 
 **Definition of Done:**
 - Metrics within acceptable range
 - Team confident for global
 - Content pipeline operational
+
+**Deliverables:**
+- [Soft Launch Iteration Specification](docs/SOFT_LAUNCH_ITERATION_SPEC.md)
 
 **Dependencies:** PROJ-009
 
@@ -830,7 +833,7 @@ Plan for launch day monitoring and response.
 | PROJ-007 | Closed Alpha Test | P1 | M | Completed |
 | PROJ-008 | Feature Complete Milestone | P0 | XL | Completed |
 | PROJ-009 | Soft Launch Execution | P0 | L | Completed |
-| PROJ-010 | Soft Launch Iteration | P0 | M | Not Started |
+| PROJ-010 | Soft Launch Iteration | P0 | M | Completed |
 | PROJ-011 | Global Launch Preparation | P0 | L | Not Started |
 | PROJ-012 | Global Launch Execution | P0 | M | Not Started |
 | PROJ-013 | Live Operations Cadence | P0 | L | Not Started |
