@@ -262,7 +262,7 @@ Implement server-wide challenges where all players contribute to a goal.
 ---
 
 ### LIVE-008: Limited-Time Modes (LTM)
-**Priority:** P2 | **Complexity:** M
+**Priority:** P2 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Implement rotating limited-time game modes for variety.
@@ -276,17 +276,20 @@ Implement rotating limited-time game modes for variety.
 - **Mini Royale:** Smaller map, 20 players
 
 **Acceptance Criteria:**
-- [ ] LTM selectable when active
-- [ ] LTM rules enforced (modified from base)
-- [ ] LTM rotation schedule
-- [ ] LTM-specific rewards (optional)
-- [ ] Announce LTM start
-- [ ] Can run alongside standard modes
+- [x] LTM selectable when active
+- [x] LTM rules enforced (modified from base)
+- [x] LTM rotation schedule
+- [x] LTM-specific rewards (optional)
+- [x] Announce LTM start
+- [x] Can run alongside standard modes
 
 **Definition of Done:**
 - At least 2 LTMs ready for rotation
 - Provides gameplay variety
 - Positive player feedback
+
+**Deliverables:**
+- [Limited-Time Modes Specification](docs/LIMITED_TIME_MODES_SPEC.md)
 
 **Dependencies:** GAME-020
 
@@ -819,7 +822,7 @@ Build comprehensive analytics dashboard for live ops decisions.
 | LIVE-005 | Limited-Time Event Framework | P1 | L | Completed |
 | LIVE-006 | Seasonal Events | P2 | M | Completed |
 | LIVE-007 | Community Challenges | P2 | S | Completed |
-| LIVE-008 | Limited-Time Modes (LTM) | P2 | M | Not Started |
+| LIVE-008 | Limited-Time Modes (LTM) | P2 | M | Completed |
 | LIVE-009 | Daily Login Rewards | P1 | S | Completed |
 | LIVE-010 | First Win of the Day | P1 | S | Completed |
 | LIVE-011 | Come Back Rewards | P2 | S | Not Started |
