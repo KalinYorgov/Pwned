@@ -358,7 +358,7 @@ Bonus reward for first match win each day.
 ---
 
 ### LIVE-011: Come Back Rewards
-**Priority:** P2 | **Complexity:** S
+**Priority:** P2 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Reward players who return after absence to re-engage churned users.
@@ -371,17 +371,20 @@ Reward players who return after absence to re-engage churned users.
 - Easy re-onboarding
 
 **Acceptance Criteria:**
-- [ ] Detect returning player (no login for X days)
-- [ ] Special welcome popup
-- [ ] Catch-up rewards granted
-- [ ] Summary of what's new
-- [ ] Smooth re-entry experience
-- [ ] Track come-back conversion
+- [x] Detect returning player (no login for X days)
+- [x] Special welcome popup
+- [x] Catch-up rewards granted
+- [x] Summary of what's new
+- [x] Smooth re-entry experience
+- [x] Track come-back conversion
 
 **Definition of Done:**
 - Come back flow functional
 - Measurable re-engagement lift
 - Not exploitable
+
+**Deliverables:**
+- [Come Back Rewards Specification](docs/COME_BACK_REWARDS_SPEC.md)
 
 **Dependencies:** BACK-019
 
@@ -825,7 +828,7 @@ Build comprehensive analytics dashboard for live ops decisions.
 | LIVE-008 | Limited-Time Modes (LTM) | P2 | M | Completed |
 | LIVE-009 | Daily Login Rewards | P1 | S | Completed |
 | LIVE-010 | First Win of the Day | P1 | S | Completed |
-| LIVE-011 | Come Back Rewards | P2 | S | Not Started |
+| LIVE-011 | Come Back Rewards | P2 | S | Completed |
 | LIVE-012 | Push Notifications | P2 | M | Not Started |
 | LIVE-013 | Player Level System | P1 | M | Completed |
 | LIVE-014 | Player Titles and Badges | P2 | S | Not Started |
