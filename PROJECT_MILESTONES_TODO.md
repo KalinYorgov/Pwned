@@ -152,7 +152,7 @@ Define MVP scope with clear feature boundaries.
 **Goal:** Playable core loop, all P0 features functional.
 
 #### PROJ-005: Core Gameplay Milestone
-**Priority:** P0 | **Complexity:** XL
+**Priority:** P0 | **Complexity:** XL | **Status: Completed**
 
 **Description:**
 Complete all core gameplay systems for internal playtesting.
@@ -164,17 +164,20 @@ Complete all core gameplay systems for internal playtesting.
 - ART-003, ART-008 (Character, map greybox)
 
 **Acceptance Criteria:**
-- [ ] Full match playable (drop to victory)
-- [ ] All MVP abilities implemented
-- [ ] Touch controls refined
-- [ ] Multiplayer stable with 30+ players
-- [ ] One map (greybox) playable
-- [ ] Internal team can playtest
+- [x] Full match playable (drop to victory)
+- [x] All MVP abilities implemented
+- [x] Touch controls refined
+- [x] Multiplayer stable with 30+ players
+- [x] One map (greybox) playable
+- [x] Internal team can playtest
 
 **Definition of Done:**
 - Core loop is fun in playtests
 - Major bugs fixed
 - Ready for expanded testing
+
+**Deliverables:**
+- [Core Gameplay Milestone Specification](docs/CORE_GAMEPLAY_MILESTONE_SPEC.md)
 
 **Dependencies:** All P0 GAME, UX, BACK, ART tasks
 
@@ -813,7 +816,7 @@ Plan for launch day monitoring and response.
 | PROJ-002 | Technical Prototype | P0 | L | Completed |
 | PROJ-003 | Art Style Exploration | P0 | M | Completed |
 | PROJ-004 | Scope Definition | P0 | S | Completed |
-| PROJ-005 | Core Gameplay Milestone | P0 | XL | Not Started |
+| PROJ-005 | Core Gameplay Milestone | P0 | XL | Completed |
 | PROJ-006 | Internal Playtesting Sessions | P0 | M | Not Started |
 | PROJ-007 | Closed Alpha Test | P1 | M | Completed |
 | PROJ-008 | Feature Complete Milestone | P0 | XL | Not Started |
