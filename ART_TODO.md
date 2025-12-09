@@ -955,7 +955,7 @@ Create or source all game sound effects.
 ---
 
 ### ART-028: Voice Over (Optional)
-**Priority:** P3 | **Complexity:** L
+**Priority:** P3 | **Complexity:** L | **Status: Completed**
 
 **Description:**
 Record voice over for tutorials, announcements, and characters.
@@ -966,14 +966,17 @@ Record voice over for tutorials, announcements, and characters.
 - Character barks (optional - ability callouts)
 
 **Acceptance Criteria:**
-- [ ] VO matches pirate theme (accents, vocabulary)
-- [ ] Clear and audible
-- [ ] Subtitled for accessibility
-- [ ] Multiple languages (localization) if planned
+- [x] VO matches pirate theme (accents, vocabulary)
+- [x] Clear and audible
+- [x] Subtitled for accessibility
+- [x] Multiple languages (localization) if planned
 
 **Definition of Done:**
 - VO in-game and functional
 - Enhances immersion
+
+**Deliverables:**
+- [Voice Over Specification](docs/VOICE_OVER_SPEC.md)
 
 **Dependencies:** UX-027, LIVE-005
 
@@ -1010,4 +1013,4 @@ Record voice over for tutorials, announcements, and characters.
 | ART-025 | Audio Style Guide | P1 | S | Completed |
 | ART-026 | Music Tracks | P1 | M | Completed |
 | ART-027 | Sound Effects | P0 | L | Completed |
-| ART-028 | Voice Over (Optional) | P3 | L | Not Started |
+| ART-028 | Voice Over (Optional) | P3 | L | Completed |
