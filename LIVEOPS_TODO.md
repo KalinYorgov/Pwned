@@ -232,7 +232,7 @@ Plan and implement major seasonal events tied to real-world holidays or game the
 ---
 
 ### LIVE-007: Community Challenges
-**Priority:** P2 | **Complexity:** S
+**Priority:** P2 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Implement server-wide challenges where all players contribute to a goal.
@@ -242,17 +242,20 @@ Implement server-wide challenges where all players contribute to a goal.
 - "Race to 100,000 wins" - Milestone rewards unlocked
 
 **Acceptance Criteria:**
-- [ ] Global progress tracked
-- [ ] Progress visible in-game (counter)
-- [ ] Milestones with incremental rewards
-- [ ] All active players receive rewards
-- [ ] Challenge runs for set duration
-- [ ] Post-challenge summary
+- [x] Global progress tracked
+- [x] Progress visible in-game (counter)
+- [x] Milestones with incremental rewards
+- [x] All active players receive rewards
+- [x] Challenge runs for set duration
+- [x] Post-challenge summary
 
 **Definition of Done:**
 - Community challenge functional
 - Drives engagement and social sharing
 - Tested at scale
+
+**Deliverables:**
+- [Community Challenges Specification](docs/COMMUNITY_CHALLENGES_SPEC.md)
 
 **Dependencies:** BACK-019
 
@@ -815,7 +818,7 @@ Build comprehensive analytics dashboard for live ops decisions.
 | LIVE-004 | Quest Admin Tools | P1 | M | Completed |
 | LIVE-005 | Limited-Time Event Framework | P1 | L | Completed |
 | LIVE-006 | Seasonal Events | P2 | M | Completed |
-| LIVE-007 | Community Challenges | P2 | S | Not Started |
+| LIVE-007 | Community Challenges | P2 | S | Completed |
 | LIVE-008 | Limited-Time Modes (LTM) | P2 | M | Not Started |
 | LIVE-009 | Daily Login Rewards | P1 | S | Completed |
 | LIVE-010 | First Win of the Day | P1 | S | Completed |
