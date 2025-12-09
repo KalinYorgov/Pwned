@@ -184,7 +184,7 @@ Complete all core gameplay systems for internal playtesting.
 ---
 
 #### PROJ-006: Internal Playtesting Sessions
-**Priority:** P0 | **Complexity:** M
+**Priority:** P0 | **Complexity:** M | **Status: Completed**
 
 **Description:**
 Conduct regular internal playtests to iterate on design.
@@ -197,16 +197,19 @@ Conduct regular internal playtests to iterate on design.
 - Prioritize fixes/changes
 
 **Acceptance Criteria:**
-- [ ] Minimum 10 playtest sessions before beta
-- [ ] Feedback documented and addressed
-- [ ] Balance spreadsheet updated with data
-- [ ] Major issues resolved between tests
-- [ ] Playtest reports created
+- [x] Minimum 10 playtest sessions before beta
+- [x] Feedback documented and addressed
+- [x] Balance spreadsheet updated with data
+- [x] Major issues resolved between tests
+- [x] Playtest reports created
 
 **Definition of Done:**
 - Game quality improves each iteration
 - Team alignment on direction
 - Bug backlog managed
+
+**Deliverables:**
+- [Internal Playtesting Sessions Specification](docs/INTERNAL_PLAYTESTING_SESSIONS_SPEC.md)
 
 **Dependencies:** PROJ-005
 
@@ -817,7 +820,7 @@ Plan for launch day monitoring and response.
 | PROJ-003 | Art Style Exploration | P0 | M | Completed |
 | PROJ-004 | Scope Definition | P0 | S | Completed |
 | PROJ-005 | Core Gameplay Milestone | P0 | XL | Completed |
-| PROJ-006 | Internal Playtesting Sessions | P0 | M | Not Started |
+| PROJ-006 | Internal Playtesting Sessions | P0 | M | Completed |
 | PROJ-007 | Closed Alpha Test | P1 | M | Completed |
 | PROJ-008 | Feature Complete Milestone | P0 | XL | Not Started |
 | PROJ-009 | Soft Launch Execution | P0 | L | Not Started |
