@@ -718,21 +718,24 @@ Add audio accessibility features for hearing-impaired players.
 ---
 
 ### UX-021: Reduced Motion Mode
-**Priority:** P3 | **Complexity:** S
+**Priority:** P3 | **Complexity:** S | **Status: Completed**
 
 **Description:**
 Add option to reduce screen effects for players sensitive to motion or flashing.
 
 **Acceptance Criteria:**
-- [ ] Disable screen shake
-- [ ] Reduce camera bob
-- [ ] Limit flashy VFX
-- [ ] Disable blood/gore effects
-- [ ] Static UI elements (no bounce animations)
+- [x] Disable screen shake
+- [x] Reduce camera bob
+- [x] Limit flashy VFX
+- [x] Disable blood/gore effects
+- [x] Static UI elements (no bounce animations)
 
 **Definition of Done:**
 - Players with motion sensitivity can play comfortably
 - Core gameplay unchanged
+
+**Deliverables:**
+- [Reduced Motion Mode Specification](docs/REDUCED_MOTION_MODE_SPEC.md)
 
 **Dependencies:** None
 
@@ -993,7 +996,7 @@ Display helpful hints during gameplay for new players without being intrusive fo
 | UX-018 | Colorblind Modes | P2 | S | Completed |
 | UX-019 | Text and UI Scaling | P2 | S | Completed |
 | UX-020 | Audio Accessibility | P2 | S | Completed |
-| UX-021 | Reduced Motion Mode | P3 | S | Not Started |
+| UX-021 | Reduced Motion Mode | P3 | S | Completed |
 | UX-022 | Device Performance Detection | P1 | M | Completed |
 | UX-023 | Battery Optimization | P2 | S | Completed |
 | UX-024 | Notch and Safe Area Handling | P0 | S | Completed |
