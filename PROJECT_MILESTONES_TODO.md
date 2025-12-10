@@ -437,7 +437,7 @@ Execute worldwide launch.
 **Goal:** Sustain and grow the game post-launch.
 
 #### PROJ-013: Live Operations Cadence
-**Priority:** P0 | **Complexity:** L
+**Priority:** P0 | **Complexity:** L | **Status: Completed**
 
 **Description:**
 Establish ongoing live operations rhythm.
@@ -450,16 +450,19 @@ Establish ongoing live operations rhythm.
 - Seasonal: Battle Pass, major event
 
 **Acceptance Criteria:**
-- [ ] Ops schedule documented
-- [ ] Team roles assigned (who does what)
-- [ ] Runbooks for common tasks
-- [ ] Escalation paths defined
-- [ ] On-call rotation if needed
+- [x] Ops schedule documented
+- [x] Team roles assigned (who does what)
+- [x] Runbooks for common tasks
+- [x] Escalation paths defined
+- [x] On-call rotation if needed
 
 **Definition of Done:**
 - Smooth ongoing operations
 - No fire drills (planned work)
 - Team sustainable
+
+**Deliverables:**
+- [Live Operations Cadence Specification](docs/LIVE_OPERATIONS_CADENCE_SPEC.md)
 
 **Dependencies:** PROJ-012
 
@@ -842,7 +845,7 @@ Plan for launch day monitoring and response.
 | PROJ-010 | Soft Launch Iteration | P0 | M | Completed |
 | PROJ-011 | Global Launch Preparation | P0 | L | Completed |
 | PROJ-012 | Global Launch Execution | P0 | M | Completed |
-| PROJ-013 | Live Operations Cadence | P0 | L | Not Started |
+| PROJ-013 | Live Operations Cadence | P0 | L | Completed |
 | PROJ-014 | Post-Launch Content Roadmap | P1 | M | Completed |
 | PROJ-015 | Team Structure Definition | P0 | S | ✅ Completed |
 | PROJ-016 | Outsourcing Plan | P1 | S | Completed |
